@@ -2,7 +2,7 @@
 
 **An undergraduate thesis workspace connecting GNSS integrity, secure software updates, and UAV swarm rejoining.**
 
-**Team:** Samet Ünsal · Ceren Tolunay · Halil Abacı
+**Team:** [Samet Ünsal](https://github.com/mathissdupont) · [Ceren Tolunay](https://github.com/cerentolunay) · [Halil Abacı](https://github.com/halilabaci)
 
 **Status:** Research scoping. The final thesis topic and novelty claim are not yet established.
 
@@ -62,4 +62,4 @@ The checker validates repository consistency. It does not verify scientific clai
 - Treat negative results and failed recovery attempts as data.
 - Record the conditions under which a claim holds; do not claim that simulation establishes hardware security.
 
-The public repository is [mathissdupont/swarm-rejoin](https://github.com/mathissdupont/swarm-rejoin). Use [GitHub issues](https://github.com/mathissdupont/swarm-rejoin/issues) for research tasks. See [CONTRIBUTING.md](CONTRIBUTING.md) for collaboration and licensing. Public visibility does not by itself grant an open-source license; a redistribution license has not been selected.
+The public repository is [mathissdupont/swarm-rejoin](https://github.com/mathissdupont/swarm-rejoin). Use [GitHub issues](https://github.com/mathissdupont/swarm-rejoin/issues) for research tasks and the [backlog index](docs/08-backlog.md) to find each proposed lead. See [CONTRIBUTORS.md](CONTRIBUTORS.md) for team accounts and [CONTRIBUTING.md](CONTRIBUTING.md) for collaboration and licensing. Public visibility does not by itself grant an open-source license; a redistribution license has not been selected.

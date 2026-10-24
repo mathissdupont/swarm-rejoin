@@ -2,6 +2,8 @@
 
 Authors: **Samet Ünsal, Ceren Tolunay, Halil Abacı**.
 
+Verified GitHub accounts are listed in [CONTRIBUTORS.md](../CONTRIBUTORS.md). Start with the [live research issue index](08-backlog.md); proposed leads and formal GitHub assignees are distinct while an invitation is pending.
+
 The team described a two-semester thesis of roughly nine academic months, with likely submission in **May 2027** and no mandated technology. This plan starts on **2026-10-24**; the remaining work window is about seven months. The official deadline and milestones still need confirmation.
 
 ## Proposed ownership

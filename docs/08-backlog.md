@@ -1,6 +1,30 @@
-# Initial backlog
+# Research issues and backlog
 
-Every task below is **open**. Leads are proposed. Do not mark work complete without an inspectable artifact.
+The live research issues were created on **2026-10-24**. Leads below are proposed research owners. GitHub contains the current completion state and formal assignments; pending collaborator invitations can delay assignment without changing the proposed lead.
+
+## Live research issues
+
+| ID | GitHub issue | Proposed lead | Completion artifact |
+| --- | --- | --- | --- |
+| R01 | [#1 — Closest reconnection, attestation, and update studies](https://github.com/mathissdupont/swarm-rejoin/issues/1) | All | Three section-cited, cross-reviewed notes |
+| R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | Mechanism/threat table and two failure traces |
+| R03 | [#3 — GNSS/IMU integrity evidence](https://github.com/mathissdupont/swarm-rejoin/issues/3) | Ceren | Navigation evidence contract and validation plan |
+| R04 | [#4 — Swarm, localization, and update literature](https://github.com/mathissdupont/swarm-rejoin/issues/4) | Halil | Search log, reading notes, and comparator table |
+| R07 | [#5 — T2: update freshness under GNSS time faults](https://github.com/mathissdupont/swarm-rejoin/issues/5) | Ceren + Samet | One candidate assessment and refutation criterion |
+| R08 | [#6 — T3: signed navigation configuration rollout](https://github.com/mathissdupont/swarm-rejoin/issues/6) | Samet + Ceren | One candidate assessment and minimal study |
+| R09 | [#7 — T4: updates and cooperative localization](https://github.com/mathissdupont/swarm-rejoin/issues/7) | Halil + Ceren | One candidate assessment and checked update sequence |
+| R10 | [#8 — T5: navigation recovery after rollback](https://github.com/mathissdupont/swarm-rejoin/issues/8) | Samet + Ceren + Halil | Stale-evidence example and candidate assessment |
+| R11 | [#9 — T6: joint fault benchmark](https://github.com/mathissdupont/swarm-rejoin/issues/9) | All | Coverage/overlap table and reusable artifact plan |
+| R05 | [#10 — Compare T1–T6](https://github.com/mathissdupont/swarm-rejoin/issues/10) | All | One-page comparison and proposed decision |
+| R06 | [#11 — Confirm the main question with the advisor](https://github.com/mathissdupont/swarm-rejoin/issues/11) | All | Accepted decision record and revised scope |
+| D01 | [#12 — Shared evidence and role contracts](https://github.com/mathissdupont/swarm-rejoin/issues/12) | All | Versioned contract and three checked traces |
+| D03 | [#13 — Baselines, independent truth, and metrics](https://github.com/mathissdupont/swarm-rejoin/issues/13) | Halil + team | Evaluation specification and worked metric examples |
+
+Start with [milestone 1: research scope and topic selection](https://github.com/mathissdupont/swarm-rejoin/milestone/1). Its 7 November date is a provisional review target. [Milestone 2](https://github.com/mathissdupont/swarm-rejoin/milestone/2) covers shared models after the topic decision; it has no fixed due date.
+
+## Later implementation scope
+
+The table below keeps the larger scope visible. It is not a claim that every implementation task already has a GitHub issue. Do not mark work complete without an inspectable artifact.
 
 | ID | Priority | Lead | Task | Acceptance evidence |
 | --- | --- | --- | --- | --- |
@@ -21,6 +45,6 @@ Every task below is **open**. Leads are proposed. Do not mark work complete with
 | E02 | Later | All | Execute main experiments and ablations | Revision/seed/configuration records, raw traces, failures, intervals, negative cases |
 | S01 | Optional | All | Build two/three-vehicle PX4 case study | Pinned environment and measured reconnect/update-service traces; fidelity limits stated |
 | W01 | Ongoing | All | Write thesis and maintain bibliography | Claims linked to sources or run IDs; peer-reviewed draft sections |
-| O01 | Setup | Samet | Publish the public repository and invite the team | Public owner/repository verified; collaborator invitations and acceptance checked separately; license remains a team decision |
+| O01 | Setup | Samet | Publish the public repository and invite the team | Public repository created; write invitations sent to the verified accounts; acceptance checked separately; license remains a team decision |
 
 Use [research issue templates](../.github/ISSUE_TEMPLATE/research_task.md) and [decision records](../research/templates/decision-record.md) as work begins. Live task state and assignments belong in [GitHub issues](https://github.com/mathissdupont/swarm-rejoin/issues). The table above is a scope map, not an automatically synchronized issue-status report.
