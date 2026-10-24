@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.1",
+  "status": "design_only",
+  "default_agent_count": 6,
+  "policy_ids": ["B0", "B1", "B2", "B3", "P"],
+  "parameter_status": "Fault magnitudes, timing distributions, thresholds, clock bounds, and mission scale require justified models and pilots.",
+  "scenarios": [
+    {
+      "id": "S01",
+      "name": "Clean reconnect",
+      "family": "control",
+      "faults": [],
+      "questions": ["What additional admission delay is introduced when navigation and software evidence are healthy?"],
+      "required_invariants": ["I1", "I2", "I6"],
+      "supporting_sources": ["dong2026", "rfc9334"]
+    },
+    {
+      "id": "S02",
+      "name": "Temporary GNSS loss during reconnect",
+      "family": "navigation",
+      "faults": ["gnss_unavailable"],
+      "questions": ["How does growing navigation uncertainty change permitted roles and time to useful service?"],
+      "required_invariants": ["I6", "I7", "I8"],
+      "supporting_sources": ["tanil2016"]
+    },
+    {
+      "id": "S03",
+      "name": "Step-biased GNSS observations",
+      "family": "navigation",
+      "faults": ["gnss_position_step"],
+      "questions": ["What are monitor misses, false exclusions, and unsafe role grants against independent position truth?"],
+      "required_invariants": ["I6", "I7"],
+      "supporting_sources": ["tanil2016"]
+    },
+    {
+      "id": "S04",
+      "name": "Slow GNSS position drift",
+      "family": "navigation",
+      "faults": ["gnss_position_ramp"],
+      "questions": ["When can slowly changing bias evade a selected monitor and invalidate a role assignment?"],
+      "required_invariants": ["I6", "I7"],
+      "supporting_sources": ["tanil2016"]
+    },
+    {
+      "id": "S05",
+      "name": "Benign IMU drift with noisy GNSS",
+      "family": "navigation",
+      "faults": ["imu_bias_drift", "gnss_noise_increase"],
+      "questions": ["How often does benign degradation cause false exclusion or unnecessary update deferral?"],
+      "required_invariants": ["I6", "I8"],
+      "supporting_sources": ["tanil2016"]
+    },
+    {
+      "id": "S06",
+      "name": "Stale or replayed rejoining evidence",
+      "family": "evidence",
+      "faults": ["evidence_replay", "delayed_observations"],
+      "questions": ["Do challenge binding and evidence-age checks withdraw inappropriate role permissions?"],
+      "required_invariants": ["I1", "I6", "I8"],
+      "supporting_sources": ["rfc9334", "uptane-standard"]
+    },
+    {
+      "id": "S07",
+      "name": "Authorized but role-incompatible release",
+      "family": "compatibility",
+      "faults": ["role_protocol_mismatch"],
+      "questions": ["Can an independently safe restricted role supply useful service before an update?"],
+      "required_invariants": ["I2", "I7"],
+      "supporting_sources": ["uptane-standard", "rfc9124"]
+    },
+    {
+      "id": "S08",
+      "name": "Artifact or manifest tampering",
+      "family": "update_security",
+      "faults": ["modified_artifact", "modified_signed_metadata"],
+      "questions": ["Does actual verification fail before activation and admission?"],
+      "required_invariants": ["I2", "I7"],
+      "supporting_sources": ["tuf-spec", "rfc9124"]
+    },
+    {
+      "id": "S09",
+      "name": "Replay of obsolete authorized metadata",
+      "family": "update_security",
+      "faults": ["obsolete_metadata_replay", "below_security_floor_image"],
+      "questions": ["Do persistent-state and freshness rules reject prohibited images even when signatures are valid?"],
+      "required_invariants": ["I2", "I3", "I7"],
+      "supporting_sources": ["tuf-spec", "uptane-standard"]
+    },
+    {
+      "id": "S10",
+      "name": "Interrupted download",
+      "family": "update_recovery",
+      "faults": ["link_loss_during_download"],
+      "questions": ["Does the active image remain usable and how long does verified resumable delivery take?"],
+      "required_invariants": ["I2", "I4"],
+      "supporting_sources": ["rfc9019"]
+    },
+    {
+      "id": "S11",
+      "name": "Failed activation with a permitted fallback",
+      "family": "update_recovery",
+      "faults": ["activation_failure"],
+      "questions": ["Does recovery restore an authorized healthy state and trigger new navigation/software appraisal?"],
+      "required_invariants": ["I2", "I3", "I4", "I5", "I6"],
+      "supporting_sources": ["nist193", "usman2026"]
+    },
+    {
+      "id": "S12",
+      "name": "Failed activation without a usable authorized fallback",
+      "family": "update_recovery",
+      "faults": ["activation_failure", "fallback_corruption_or_revocation"],
+      "questions": ["Does the system preserve isolation and report service loss rather than a false recovery success?"],
+      "required_invariants": ["I2", "I3", "I5", "I7", "I8"],
+      "supporting_sources": ["nist193", "uptane-standard"]
+    },
+    {
+      "id": "S13",
+      "name": "Untrusted GNSS-derived time",
+      "family": "time_freshness",
+      "faults": ["gnss_time_bias"],
+      "questions": ["How does independent time availability or bounded clock uncertainty affect update freshness and legitimate rejoining?"],
+      "required_invariants": ["I2", "I6", "I8"],
+      "supporting_sources": ["tuf-spec", "uptane-standard"]
+    },
+    {
+      "id": "S14",
+      "name": "Joint navigation fault and failed software update",
+      "family": "combined",
+      "faults": ["gnss_position_ramp", "intermittent_link", "activation_failure"],
+      "questions": ["Does joint control add value beyond independent navigation gates and static secure update rules?"],
+      "required_invariants": ["I1", "I2", "I3", "I4", "I5", "I6", "I7", "I8"],
+      "supporting_sources": ["tanil2016", "usman2026", "dong2026"]
+    },
+    {
+      "id": "S15",
+      "name": "No feasible swarm capacity",
+      "family": "negative_control",
+      "faults": ["multiple_agents_unavailable", "no_safe_role_assignment"],
+      "questions": ["Is the mission capability shortfall reported without relaxing hard security conditions?"],
+      "required_invariants": ["I7", "I8"],
+      "supporting_sources": []
+    }
+  ]
+}
