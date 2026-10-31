@@ -8,7 +8,7 @@ The live research issues were created on **2026-10-24**. Leads below are propose
 | --- | --- | --- | --- |
 | R01 | [#1 — Closest reconnection, attestation, and update studies](https://github.com/mathissdupont/swarm-rejoin/issues/1) | All | Three section-cited, cross-reviewed notes |
 | R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | Mechanism/threat table and two failure traces |
-| R03 | [#3 — GNSS/IMU integrity evidence](https://github.com/mathissdupont/swarm-rejoin/issues/3) | Ceren | Navigation evidence contract and validation plan |
+| R03 | [#3 — GNSS/IMU integrity evidence](https://github.com/mathissdupont/swarm-rejoin/issues/3) | Ceren | [Consolidated draft report](../research/reports/R03_GNSS_IMU_Integrity_Research_Report.md); source verification and sensor calibration pending |
 | R04 | [#4 — Swarm, localization, and update literature](https://github.com/mathissdupont/swarm-rejoin/issues/4) | Halil | Search log, reading notes, and comparator table |
 | R07 | [#5 — T2: update freshness under GNSS time faults](https://github.com/mathissdupont/swarm-rejoin/issues/5) | Ceren + Samet | One candidate assessment and refutation criterion |
 | R08 | [#6 — T3: signed navigation configuration rollout](https://github.com/mathissdupont/swarm-rejoin/issues/6) | Samet + Ceren | One candidate assessment and minimal study |
