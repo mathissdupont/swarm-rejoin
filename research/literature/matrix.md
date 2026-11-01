@@ -1,6 +1,6 @@
-# Seed literature matrix
+# Literature matrix
 
-Checked on 2026-10-24. These are **16 starting references**, not 16 fully reviewed papers or a completed systematic review. No completed team full-text review is recorded in this workspace. `Unknown` means unexamined, not absent.
+Updated on 2026-11-01. The registry contains **20 references**: the initial 16 plus four sources checked during the R03 follow-up. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
 
 Metadata, access details, and proposed leads are in [sources.json](sources.json); citation records are in [references.bib](references.bib).
 
@@ -22,6 +22,12 @@ Metadata, access details, and proposed leads are in [sources.json](sources.json)
 | `uptane-deployment` | Official versioned guide; section 3.1 | Discusses secure-time requirements, ahead/behind clocks, and risks of civilian GPS time | Applicability to bounded swarm disconnections and exact policy comparison |
 | `yan2020` | Journal; institutional indexed abstract | Cooperative-localization measurement scheduling under resource constraints | Full algorithm, estimator assumptions, and relevance to software-update scheduling; direct open was rate-limited |
 | `galileo-faq` | Official FAQ; selected passages | Distinguishes OSNMA navigation-data authentication from full PVT authentication | Receiver requirements and feasibility; no receiver implementation is implied |
+| `maharmeh2025` | Survey; selected supplied-PDF passages and metadata | Supports R03's error taxonomy and separation of monitoring from error bounds | Full review and original-method follow-up remain pending |
+| `boguspayev2023` | Survey; selected supplied-PDF integration passages | Supports loose/tight measurement-interface background; detailed deep-coupling treatment is excluded | No demonstrated optimality of the proposed UAV estimator |
+| `alipour2026` | Survey; selected publisher/PDF passages | Supports the estimator/map/sensor taxonomy | No validation of a secure-update or swarm-rejoining policy |
+| `tanil2018` | Original journal method; metadata and indexed abstract | Tightly coupled innovation monitoring in an aircraft example | Exact detector/window parameters and original equations remain unverified; candidate PDF fetch failed |
+
+The [R03 review](../reviews/2026-11-01-r03-review.md) records what was checked and what still blocks scientific acceptance. Survey availability and automatic transcription do not complete the primary-method reading requirement.
 
 ## Current interpretation
 
