@@ -23,7 +23,8 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
 ## What exists today
 
 - An evidence-based topic assessment, six candidate thesis topics, and a keep/pivot gate.
-- Sixteen seed references with access and reading status, BibTeX, search records, and review templates.
+- Twenty tracked references with access and reading status, BibTeX, search records, and review templates.
+- Ceren's [R03 navigation research draft](research/reports/R03_GNSS_IMU_Integrity_Research_Report.md) and an [independent review dated 2026-11-01](research/reviews/2026-11-01-r03-review.md), with remaining work stated explicitly.
 - A proposed architecture, explicit trust assumptions, baseline comparisons, and a fault scenario catalog.
 - A two-semester plan and proposed responsibilities for all three authors.
 - A dependency-free repository checker and a GitHub Actions workflow.
