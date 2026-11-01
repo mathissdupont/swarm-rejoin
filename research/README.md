@@ -9,3 +9,7 @@ Store downloaded papers outside Git unless redistribution is permitted. Link to 
 ## R03 navigation evidence report
 
 See the [GNSS/IMU integrity research report](reports/R03_GNSS_IMU_Integrity_Research_Report.md) for the proposed monitor, navigation evidence contract, primary-source note drafts, and calibration/fault plan. Imported on 2026-10-31; full-text confirmation and sensor-specific parameter justification remain pending. No experimental results are claimed.
+
+## Supplied survey texts
+
+[Ceren Tolunay's literature folder](literature/cerentolunay/README.md) contains three original PDFs and their full-document Markdown transcriptions. These imports are reading material, not completed scientific reviews.
