@@ -8,6 +8,8 @@ Protect update authorization, release artifact integrity, persisted security sta
 
 The initial model trusts the release authority, coordinator, provisioning process, and evidence measurement agent. Signer keys and the appraiser are not compromised. Persistent security state is assumed protected in simulation. These are explicit assumptions; Python objects on a laptop do not establish hardware protection.
 
+[ADR 0002](decisions/0002-update-mvp-requirements.md) records Samet's acceptance of the ground-station release authority and preprovisioned verification key. The authority is a role; the device's pinned key is a trust anchor. Verifier and trust-state protection remain model assumptions, not evidence of a hardware root of trust.
+
 RATS distinguishes evidence production, verification, and relying-party decisions; use that distinction to avoid confusing an authenticated message with a trustworthy measurement. [RFC 9334](https://datatracker.ietf.org/doc/html/rfc9334) supplies the architectural vocabulary, not a ready-made hardware attestation implementation.
 
 ## Adversary and fault capabilities

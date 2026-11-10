@@ -4,6 +4,7 @@
 - Date: 2026-11-10
 - Preparation: source-based assisted draft for Samet Ünsal's research work. Handwritten notes were not supplied for transcription.
 - Reading depth: the cited architecture, manifest, verification, recovery, and time passages were checked. This is not a claim of complete standards conformance, completed independent cross-review, or experimental validation.
+- Prototype requirements: Samet approved the six choices recorded in [ADR 0002](../../docs/decisions/0002-update-mvp-requirements.md) on 2026-11-10. The target is the mission/coordination application, with staged verification, permitted fallback, and deferral when freshness evidence is insufficient.
 
 ## 1. Who prepares, authorizes, delivers, and verifies an update?
 
@@ -93,7 +94,7 @@ A nonce does not resolve release freshness during indefinite isolation. The exac
 
 ## 9. What remains open for R02?
 
-- Choose the exact update target and maintained verification implementation; no signature-verification code exists yet.
+- The mission/coordination application target and six prototype behaviors are accepted in ADR 0002. Evaluate a maintained verification implementation; no signature-verification code exists yet.
 - Specify provisioning, persistence, freshness/time bounds, role compatibility, and permitted recovery in an executable contract.
 - Match the navigation evidence described in [R03](R03_GNSS_IMU_Integrity_Research_Report.md) to activation and re-admission events.
 - Cross-review the source interpretations and both traces with Ceren/Halil.
