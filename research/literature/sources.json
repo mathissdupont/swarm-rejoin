@@ -204,5 +204,63 @@
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
     "proposed_lead": "Ceren Tolunay"
+  },
+  {
+    "id": "maharmeh2025",
+    "title": "A Comprehensive Survey on the Integrity of Localization Systems",
+    "year": 2025,
+    "kind": "journal_article",
+    "article_subtype": "survey",
+    "url": "https://doi.org/10.3390/s25020358",
+    "doi": "10.3390/s25020358",
+    "verified_on": "2026-11-01",
+    "accessed_material": "Crossref metadata and selected supplied-PDF passages: section 2.1 and integrity/protection-level discussion on pages 4-11. Publisher browsing was rate-limited. This is not a full-text review.",
+    "local_pdf_path": "research/literature/cerentolunay/sensors-25-00358-v2.pdf",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "proposed_lead": "Ceren Tolunay"
+  },
+  {
+    "id": "boguspayev2023",
+    "title": "A Comprehensive Review of GNSS/INS Integration Techniques for Land and Air Vehicle Applications",
+    "year": 2023,
+    "kind": "journal_article",
+    "article_subtype": "survey",
+    "url": "https://doi.org/10.3390/app13084819",
+    "doi": "10.3390/app13084819",
+    "verified_on": "2026-11-01",
+    "accessed_material": "Crossref metadata and supplied PDF pages 2-3 and 5-7, covering integration interfaces and scope. Publisher browsing was rate-limited. Full review pending.",
+    "local_pdf_path": "research/literature/cerentolunay/applsci-13-04819.pdf",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "proposed_lead": "Ceren Tolunay"
+  },
+  {
+    "id": "alipour2026",
+    "title": "Robot localization: a comprehensive survey from classical methods to intelligent autonomy",
+    "year": 2026,
+    "kind": "journal_article",
+    "article_subtype": "survey",
+    "url": "https://link.springer.com/article/10.1007/s41315-026-00528-9",
+    "doi": "10.1007/s41315-026-00528-9",
+    "verified_on": "2026-11-01",
+    "accessed_material": "Crossref metadata, publisher abstract/introduction and taxonomy, and corresponding supplied PDF material. Selected passages only; full review pending.",
+    "local_pdf_path": "research/literature/cerentolunay/s41315-026-00528-9.pdf",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "proposed_lead": "Ceren Tolunay"
+  },
+  {
+    "id": "tanil2018",
+    "title": "An INS Monitor to Detect GNSS Spoofers Capable of Tracking Vehicle Position",
+    "year": 2018,
+    "kind": "journal_article",
+    "url": "https://doi.org/10.1109/TAES.2017.2739924",
+    "doi": "10.1109/TAES.2017.2739924",
+    "verified_on": "2026-11-01",
+    "accessed_material": "Crossref metadata and author-hosted indexed abstract. Direct candidate PDF fetch returned 404. Original equations, detector windows, and parameters have not been independently reviewed.",
+    "review_status": "seed_abstract",
+    "full_text_review_complete": false,
+    "proposed_lead": "Ceren Tolunay"
   }
 ]

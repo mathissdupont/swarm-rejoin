@@ -1,0 +1,624 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "source_id": "dong2026",
+      "canonical_url": "https://doi.org/10.1016/j.bcra.2026.100439",
+      "retrieved_on": "2026-11-10",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "access_blocked",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://api.crossref.org/works/10.1016/j.bcra.2026.100439",
+        "redistribution": "permitted"
+      },
+      "reason": "Crossref records CC BY 4.0 for the version of record. Publisher article requests returned HTTP 403; the official API supplied metadata rather than complete article text, and its PDF request returned 406. No full text is claimed.",
+      "artifacts": [],
+      "record_path": "research/library/dong2026/README.md",
+      "record_sha256": "cadf1fc2dfc1a5480db7d14e414d179d3be3756fc1863e7982d5f537c1f80ac6"
+    },
+    {
+      "source_id": "usman2026",
+      "canonical_url": "https://link.springer.com/article/10.1007/s10207-026-01233-1",
+      "retrieved_on": "2026-11-10",
+      "version": "Version of record, 28 March 2026",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://link.springer.com/article/10.1007/s10207-026-01233-1",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/usman2026/source.pdf",
+          "sha256": "5e0f4a21d0b31b864dadb8410ba52e3d4759144acc8d984c0ea774aee17abf14",
+          "origin_url": "https://link.springer.com/content/pdf/10.1007/s10207-026-01233-1.pdf",
+          "pages": 18,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/usman2026/full-text.md",
+          "sha256": "7ead5770ad1e0fed9cc01acd51d7141dd8bca636163fbea6111feee5c445fec0",
+          "origin_url": "https://link.springer.com/content/pdf/10.1007/s10207-026-01233-1.pdf",
+          "pages": 18,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        }
+      ],
+      "record_path": "research/library/usman2026/README.md",
+      "record_sha256": "0b4bc20198eccf408c8e0b19724f1ada38428b3b4228e6edfe2239517f844a58"
+    },
+    {
+      "source_id": "yaacoub2023",
+      "canonical_url": "https://epub.uni-regensburg.de/55328/",
+      "retrieved_on": "2026-11-10",
+      "version": "Published version, ACM TECS 22(6), Article 99",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://epub.uni-regensburg.de/55328/",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/yaacoub2023/source.pdf",
+          "sha256": "26e43ecc9dfee2caf969ad1e7f4fdac76c8cc426d467369ca7fb9b36114d4ce6",
+          "origin_url": "https://epub.uni-regensburg.de/55328/1/3623676.pdf",
+          "pages": 27,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/yaacoub2023/full-text.md",
+          "sha256": "c693a0ad7b6575f06317e33381952ab2944d3b81d063d223ac4dfbcc5e935079",
+          "origin_url": "https://epub.uni-regensburg.de/55328/1/3623676.pdf",
+          "pages": 27,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        }
+      ],
+      "record_path": "research/library/yaacoub2023/README.md",
+      "record_sha256": "d585667e5d735391118c957d8487b17fb37f340bb6cce9716a671c9e333b6770"
+    },
+    {
+      "source_id": "kuppusamy2018",
+      "canonical_url": "https://doi.org/10.1109/MVT.2017.2778751",
+      "retrieved_on": "2026-11-10",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "unconfirmed",
+        "license_url": "",
+        "evidence_url": "",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Publisher metadata carries IEEE terms; a license permitting republication of the complete article has not been established. A public-access link alone is not a redistribution grant.",
+      "artifacts": [],
+      "record_path": "research/library/kuppusamy2018/README.md",
+      "record_sha256": "aa30951fc0053e64ef6c5285cfcf9f93955e0ea4f301c5d2a8eea53d97cd0d67"
+    },
+    {
+      "source_id": "tuf-spec",
+      "canonical_url": "https://theupdateframework.github.io/specification/latest/",
+      "retrieved_on": "2026-11-10",
+      "version": "e2bc7d83d0740aaae8dd7133dd4f237ce3d86b16",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "Community-Specification-License-1.0",
+        "license_url": "https://github.com/theupdateframework/specification/blob/e2bc7d83d0740aaae8dd7133dd4f237ce3d86b16/LICENSE.md",
+        "evidence_url": "https://github.com/theupdateframework/specification/blob/e2bc7d83d0740aaae8dd7133dd4f237ce3d86b16/LICENSE.md",
+        "redistribution": "permitted"
+      },
+      "reason": "Original Markdown captured. No separate official PDF was located on the inspected source.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/tuf-spec/full-text.md",
+          "sha256": "87c7136231b8cb3355736d8e7cfe88380d030cb2994ea283a19e78e03fb171ff",
+          "origin_url": "https://raw.githubusercontent.com/theupdateframework/specification/e2bc7d83d0740aaae8dd7133dd4f237ce3d86b16/tuf-spec.md",
+          "transformation": "Original Markdown snapshot with relative links resolved to source URLs"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/tuf-spec/LICENSE.txt",
+          "sha256": "f40b1d00369c21b963293189b4617b5de439a11858541c07c620984634fb63b7",
+          "origin_url": "https://raw.githubusercontent.com/theupdateframework/specification/e2bc7d83d0740aaae8dd7133dd4f237ce3d86b16/LICENSE.md",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/tuf-spec/README.md",
+      "record_sha256": "23a8ac524261c728f9b754c235accff04c45308b7379be6adefba4fc45c7df6b"
+    },
+    {
+      "source_id": "uptane-standard",
+      "canonical_url": "https://uptane.org/docs/2.1.0/standard/uptane-standard",
+      "retrieved_on": "2026-11-10",
+      "version": "2.1.0",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "Apache-2.0",
+        "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "evidence_url": "https://github.com/uptane/uptane.github.io/blob/main/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/uptane-standard/source.pdf",
+          "sha256": "1bfced98ea77087370528b4f302ad6b26db1c4f539317ad2d02e8a42497ef937",
+          "origin_url": "https://uptane.org/papers/uptane-standard.2.1.0.pdf",
+          "pages": 35,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/uptane-standard/full-text.md",
+          "sha256": "1464973494b3beadb39be50549d6270d0b4d119f03b222ebc1662bbc52f340df",
+          "origin_url": "https://uptane.org/papers/uptane-standard.2.1.0.pdf",
+          "pages": 35,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/uptane-standard/LICENSE.txt",
+          "sha256": "d3174ad63e721d4c9dccb8ad4320848992d314369bc46319720b5802c9153fe9",
+          "origin_url": "https://raw.githubusercontent.com/uptane/uptane.github.io/main/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/uptane-standard/README.md",
+      "record_sha256": "7cd7a89d01f0a429de9975bcb9c2e832f96b18ab02686a045e36925682a91b4a"
+    },
+    {
+      "source_id": "rfc9019",
+      "canonical_url": "https://datatracker.ietf.org/doc/html/rfc9019",
+      "retrieved_on": "2026-11-10",
+      "version": "RFC 9019, April 2021",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "IETF-Trust-Legal-Provisions",
+        "license_url": "https://trustee.ietf.org/documents/trust-legal-provisions/",
+        "evidence_url": "https://www.rfc-editor.org/rfc/rfc9019.html",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/rfc9019/source.pdf",
+          "sha256": "d67a1ec4c1f60a6ce516fa6a739a56504b22220c4504286d9d2ce7f4bb264229",
+          "origin_url": "https://www.rfc-editor.org/rfc/rfc9019.pdf",
+          "pages": 24,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/rfc9019/full-text.md",
+          "sha256": "6f22cd70947fab20824ac107f02361028db5d4f246b35212557ab4f547f42199",
+          "origin_url": "https://www.rfc-editor.org/rfc/rfc9019.pdf",
+          "pages": 24,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        }
+      ],
+      "record_path": "research/library/rfc9019/README.md",
+      "record_sha256": "d6e9c25fa4e7e20f33f0e425949e7a7167442e0b957edc653427436d01a03f71"
+    },
+    {
+      "source_id": "rfc9124",
+      "canonical_url": "https://datatracker.ietf.org/doc/html/rfc9124",
+      "retrieved_on": "2026-11-10",
+      "version": "RFC 9124",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "IETF-Trust-Legal-Provisions",
+        "license_url": "https://trustee.ietf.org/documents/trust-legal-provisions/",
+        "evidence_url": "https://trustee.ietf.org/about/faq/",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/rfc9124/source.pdf",
+          "sha256": "c100e122cc3676b18a4d5e87bce3cca6aeae2732fc4ad0d248d17234712b5e9e",
+          "origin_url": "https://www.rfc-editor.org/rfc/rfc9124.pdf",
+          "pages": 40,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/rfc9124/full-text.md",
+          "sha256": "74487a3d7fda705c4afe5f6197aaef6cc9f8e98030a02c74765c1cc4a90e24e6",
+          "origin_url": "https://www.rfc-editor.org/rfc/rfc9124.pdf",
+          "pages": 40,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        }
+      ],
+      "record_path": "research/library/rfc9124/README.md",
+      "record_sha256": "483fa16cdf36914d8b8f7ab7fca9691f1b8be7ad9a7dffaf97e84a83d4269d37"
+    },
+    {
+      "source_id": "rfc9334",
+      "canonical_url": "https://datatracker.ietf.org/doc/html/rfc9334",
+      "retrieved_on": "2026-11-10",
+      "version": "RFC 9334",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "IETF-Trust-Legal-Provisions",
+        "license_url": "https://trustee.ietf.org/documents/trust-legal-provisions/",
+        "evidence_url": "https://trustee.ietf.org/about/faq/",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/rfc9334/source.pdf",
+          "sha256": "e8f5658dbcbef7b01bb10553adcf4d0359ae2873886abb8e4606dd93ab82e71f",
+          "origin_url": "https://www.rfc-editor.org/rfc/rfc9334.pdf",
+          "pages": 46,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/rfc9334/full-text.md",
+          "sha256": "80bdee89042ddfd4216bb7d3500eded5adc6a8dccbb63fadf3b6fdefe3c509bc",
+          "origin_url": "https://www.rfc-editor.org/rfc/rfc9334.pdf",
+          "pages": 46,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        }
+      ],
+      "record_path": "research/library/rfc9334/README.md",
+      "record_sha256": "deba78889cd431c86ebb51269f6d0e1312e3ad396d2a080402164590dcc666f6"
+    },
+    {
+      "source_id": "nist193",
+      "canonical_url": "https://csrc.nist.gov/pubs/sp/800/193/final",
+      "retrieved_on": "2026-11-10",
+      "version": "NIST SP 800-193, May 2018",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "NIST-SP800-US-public-domain",
+        "license_url": "https://www.nist.gov/itl/publications-0/nist-special-publication-800-series-general-information",
+        "evidence_url": "https://www.nist.gov/itl/publications-0/nist-special-publication-800-series-general-information",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/nist193/source.pdf",
+          "sha256": "a07a759fe0e58f91c92d466afc9c582d1e1ff3a7cd4a04600ec7f7ff61d5bb06",
+          "origin_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-193.pdf",
+          "pages": 45,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/nist193/full-text.md",
+          "sha256": "8b841628325fe75be08ee94e31ea400e4536c73cdbcb643fcbc867d71d819004",
+          "origin_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-193.pdf",
+          "pages": 45,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        }
+      ],
+      "record_path": "research/library/nist193/README.md",
+      "record_sha256": "d9c8f088725bec7a3b0a9336c60207471073139ec0474814da5440f22cc0c4f4"
+    },
+    {
+      "source_id": "tanil2016",
+      "canonical_url": "https://www.ion.org/publications/abstract.cfm?articleID=14779",
+      "retrieved_on": "2026-11-10",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "unconfirmed",
+        "license_url": "",
+        "evidence_url": "",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Publisher full text requires download access; no redistributable full-text copy is recorded. Publisher abstract and bibliographic notes remain available in this repository.",
+      "artifacts": [],
+      "record_path": "research/library/tanil2016/README.md",
+      "record_sha256": "978c9ce895dbf185b044274de5a49b9aa71a4b297015235e2bb472e7f5d359b2"
+    },
+    {
+      "source_id": "px4-multi",
+      "canonical_url": "https://docs.px4.io/main/en/sim_gazebo_gz/multi_vehicle_simulation",
+      "retrieved_on": "2026-11-10",
+      "version": "2fa62338099f18fc3092197e856615eca94d2975",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://github.com/PX4/PX4-user_guide/blob/2fa62338099f18fc3092197e856615eca94d2975/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Original Markdown captured. No separate official PDF was located on the inspected source.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/px4-multi/full-text.md",
+          "sha256": "6726d6d65021414a96ae1eaa380075ef3b7f2a2e7688ccd71016799065cd8c1c",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/en/sim_gazebo_gz/multi_vehicle_simulation.md",
+          "transformation": "Original Markdown snapshot with relative links resolved to source URLs"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/px4-multi/LICENSE.txt",
+          "sha256": "58b391b218f10970eb9e239bfe3c6a7df57104bbaa3c67335b4666be3ab4686a",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/px4-multi/README.md",
+      "record_sha256": "1d16b4394ac31fd908526be92db7ddc3bc31f337817ba41fac1baf171784f378"
+    },
+    {
+      "source_id": "mavlink-signing",
+      "canonical_url": "https://mavlink.io/en/guide/message_signing.html",
+      "retrieved_on": "2026-11-10",
+      "version": "337a501eedac26c1811a5a57adc88a132d4c2cc7",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://github.com/mavlink/mavlink-devguide/blob/337a501eedac26c1811a5a57adc88a132d4c2cc7/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Original Markdown captured. No separate official PDF was located on the inspected source.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/mavlink-signing/full-text.md",
+          "sha256": "86709040c350e9a68ad22a9bb92794ca1a30d3d47d10f1a83841c1b99441e4c0",
+          "origin_url": "https://raw.githubusercontent.com/mavlink/mavlink-devguide/337a501eedac26c1811a5a57adc88a132d4c2cc7/en/guide/message_signing.md",
+          "transformation": "Original Markdown snapshot with relative links resolved to source URLs"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/mavlink-signing/LICENSE.txt",
+          "sha256": "58b391b218f10970eb9e239bfe3c6a7df57104bbaa3c67335b4666be3ab4686a",
+          "origin_url": "https://raw.githubusercontent.com/mavlink/mavlink-devguide/337a501eedac26c1811a5a57adc88a132d4c2cc7/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/mavlink-signing/README.md",
+      "record_sha256": "d8709b4263b4498bcf210cf820b6983798a3099a747956c5fa6f26102c39f901"
+    },
+    {
+      "source_id": "uptane-deployment",
+      "canonical_url": "https://uptane.org/docs/2.1.0/deployment/best-practices",
+      "retrieved_on": "2026-11-10",
+      "version": "2.1.0",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "Apache-2.0",
+        "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "evidence_url": "https://github.com/uptane/uptane.github.io/blob/main/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/uptane-deployment/source.pdf",
+          "sha256": "bebc4b6f761c95bc5572a74d21fdb1abe044b55d0ef9ad96a92326d13df1e1e1",
+          "origin_url": "https://uptane.org/papers/V2.1.0_uptane_deploy.pdf",
+          "pages": 60,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/uptane-deployment/full-text.md",
+          "sha256": "2462b01ea1e5ca3407b637e15718c82922da37466f192b2203be485cde583e96",
+          "origin_url": "https://uptane.org/papers/V2.1.0_uptane_deploy.pdf",
+          "pages": 60,
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review",
+          "converter": "pypdf",
+          "converter_version": "6.11.0"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/uptane-deployment/LICENSE.txt",
+          "sha256": "d3174ad63e721d4c9dccb8ad4320848992d314369bc46319720b5802c9153fe9",
+          "origin_url": "https://raw.githubusercontent.com/uptane/uptane.github.io/main/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/uptane-deployment/README.md",
+      "record_sha256": "736376db0c2689be75f644ad86a50fac29ffc94dc1aae00658b3024c1456a50f"
+    },
+    {
+      "source_id": "yan2020",
+      "canonical_url": "https://escholarship.org/uc/item/0b158460",
+      "retrieved_on": "2026-11-10",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "unconfirmed",
+        "license_url": "",
+        "evidence_url": "",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Institutional page/PDF requests returned HTTP 202 without article content. Crossref lists IEEE terms rather than an established public-republication license.",
+      "artifacts": [],
+      "record_path": "research/library/yan2020/README.md",
+      "record_sha256": "42782782493ad9becb2477ff7e69fd5a6a1ff76072d10ef9719b081636acfe88"
+    },
+    {
+      "source_id": "galileo-faq",
+      "canonical_url": "https://www.gsc-europa.eu/galileo/faq",
+      "retrieved_on": "2026-11-10",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "access_blocked",
+      "rights": {
+        "license_id": "unconfirmed",
+        "license_url": "",
+        "evidence_url": "",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Official page retrieval returned HTTP 403. No complete local capture or source-specific redistribution evidence was obtained.",
+      "artifacts": [],
+      "record_path": "research/library/galileo-faq/README.md",
+      "record_sha256": "925b4dff782e68da40023d41a756a1152c7ca12eaa850faeab6febe5e0e62c1d"
+    },
+    {
+      "source_id": "maharmeh2025",
+      "canonical_url": "https://doi.org/10.3390/s25020358",
+      "retrieved_on": "2026-11-10",
+      "version": "Supplied original PDF and Markdown imported 2026-11-01",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://doi.org/10.3390/s25020358",
+        "redistribution": "permitted"
+      },
+      "reason": "Existing full PDF/Markdown indexed in place; original author, license, and conversion notices retained.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/literature/cerentolunay/sensors-25-00358-v2.pdf",
+          "sha256": "de71965d22c28efe8f58adc6d229d5859802942be7562e505743db42e04f5bef",
+          "origin_url": "https://doi.org/10.3390/s25020358",
+          "pages": 41,
+          "transformation": "Unchanged supplied PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/literature/cerentolunay/sensors-25-00358-v2.md",
+          "sha256": "a3fb8b0e769619ea0cd7362d498dd186b0bedc84dcf35e7971698bb978d29d87",
+          "origin_url": "https://doi.org/10.3390/s25020358",
+          "transformation": "Existing supplied automatic transcription; retained in place"
+        }
+      ],
+      "record_path": "research/library/maharmeh2025/README.md",
+      "record_sha256": "9ee285d5568d36afd2ece80c023459068f86631cc8af7ee487a8174e10a4fb05"
+    },
+    {
+      "source_id": "boguspayev2023",
+      "canonical_url": "https://doi.org/10.3390/app13084819",
+      "retrieved_on": "2026-11-10",
+      "version": "Supplied original PDF and Markdown imported 2026-11-01",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://doi.org/10.3390/app13084819",
+        "redistribution": "permitted"
+      },
+      "reason": "Existing full PDF/Markdown indexed in place; original author, license, and conversion notices retained.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/literature/cerentolunay/applsci-13-04819.pdf",
+          "sha256": "0a22a0e710e5ff3fcf4eda260206f143f087812ae7f9596a7b5e23ea3dee1cc4",
+          "origin_url": "https://doi.org/10.3390/app13084819",
+          "pages": 25,
+          "transformation": "Unchanged supplied PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/literature/cerentolunay/applsci-13-04819.md",
+          "sha256": "11316d8656119734de5b07e7a6452ae76c1f69b8e271e73bfd400b22c942f7a9",
+          "origin_url": "https://doi.org/10.3390/app13084819",
+          "transformation": "Existing supplied automatic transcription; retained in place"
+        }
+      ],
+      "record_path": "research/library/boguspayev2023/README.md",
+      "record_sha256": "777607d3c636cc4acb1d79a6bae5e0213b9ec6c5c5932f523e3e22ccd7a449e8"
+    },
+    {
+      "source_id": "alipour2026",
+      "canonical_url": "https://link.springer.com/article/10.1007/s41315-026-00528-9",
+      "retrieved_on": "2026-11-10",
+      "version": "Supplied original PDF and Markdown imported 2026-11-01",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://link.springer.com/article/10.1007/s41315-026-00528-9",
+        "redistribution": "permitted"
+      },
+      "reason": "Existing full PDF/Markdown indexed in place; original author, license, and conversion notices retained.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/literature/cerentolunay/s41315-026-00528-9.pdf",
+          "sha256": "e563af748c3cf078d02e8da534441d9089cbb0bdf891d25a472bcaa2e45a653c",
+          "origin_url": "https://link.springer.com/article/10.1007/s41315-026-00528-9",
+          "pages": 23,
+          "transformation": "Unchanged supplied PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/literature/cerentolunay/s41315-026-00528-9.md",
+          "sha256": "c677c8d187543ab5eaf2a6cb424e7963491424ba9f246707bc7d72b3103975fb",
+          "origin_url": "https://link.springer.com/article/10.1007/s41315-026-00528-9",
+          "transformation": "Existing supplied automatic transcription; retained in place"
+        }
+      ],
+      "record_path": "research/library/alipour2026/README.md",
+      "record_sha256": "d832fca0922eb1ca1d73d3f63cf959fb871754803fa162d5c775a44fd3cb9213"
+    },
+    {
+      "source_id": "tanil2018",
+      "canonical_url": "https://doi.org/10.1109/TAES.2017.2739924",
+      "retrieved_on": "2026-11-10",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "unconfirmed",
+        "license_url": "",
+        "evidence_url": "",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Inherited author-hosted PDF URL returned 404 during the review. Full-text redistribution permission is not established; indexed abstract and original-method access limits are recorded.",
+      "artifacts": [],
+      "record_path": "research/library/tanil2018/README.md",
+      "record_sha256": "fd93070ec057aed2acdabf8674da91645ba9e012a083610a0f7dad56451eb9dc"
+    }
+  ]
+}

@@ -4,6 +4,8 @@
 **Proposed lead:** Ceren Tolunay (@cerentolunay)  
 **Imported:** 2026-10-31. Consolidated research draft; no experimental results.
 
+**Independent follow-up:** See the [2026-11-01 review](../reviews/2026-11-01-r03-review.md) for selected-source checks, a numerical threshold check, and remaining acceptance work. The imported account below is preserved; later source access does not imply that it was available during the original import.
+
 ## Provenance and evidence status
 
 English repository edition of the supplied `R03_GNSS_IMU_Integrity_Research_Report.md`. The English technical core is retained; the Turkish introduction and appendices are rendered in English below. The supplied report describes three survey readings and four pages of handwritten notes. Those PDFs, photographs, and previous conversations were not available for independent verification during this import. Statements about their contents are inherited from the supplied report, not newly completed literature reviews. No paper access date or full-text review is implied by the import date.

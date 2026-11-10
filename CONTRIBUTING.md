@@ -6,7 +6,7 @@ Samet Ünsal, Ceren Tolunay, and Halil Abacı are joint thesis contributors. Tec
 
 Use small branches such as `research/nearest-work`, `update/recovery-model`, or `gnss/innovation-monitor`. Open a pull request with the question, evidence or behavior changed, validation, and unresolved limits. At least one other author should review changes to the threat model, metrics, or security decisions.
 
-Keep bibliography identifiers stable. Add each retained source to the source registry, bibliography, and matrix. Use a paper note to distinguish the authors' claims from your assessment. Search discoveries do not automatically count as included studies.
+Keep bibliography identifiers stable. Add each retained source to the source registry, bibliography, matrix, and [source library](research/library/README.md). Archive permitted full Markdown and original PDFs with attribution, retrieval date, license evidence, and file checksums. For an inaccessible or restricted item, keep a source record with the exact limitation. Use a paper note to distinguish the authors' claims from your assessment. Search discoveries do not automatically count as included studies.
 
 ## Reproducibility
 
@@ -16,7 +16,7 @@ For future implementation, require tests for tampering, replay, obsolete securit
 
 ## Sharing and licensing
 
-The repository owner has authorized public publication at [mathissdupont/swarm-rejoin](https://github.com/mathissdupont/swarm-rejoin). No open-source license is selected by this scaffold; agree on a code/documentation license separately. Do not add third-party PDFs unless redistribution is permitted. Keep private keys, credentials, identifying flight data, and machine-specific paths out of commits.
+The repository owner has authorized public publication at [mathissdupont/swarm-rejoin](https://github.com/mathissdupont/swarm-rejoin) and centralized research/source archiving here. Third-party materials retain their original licenses; preserve attribution and any third-party notices. No blanket project license is selected by this scaffold. Keep private keys, credentials, identifying flight data, and machine-specific paths out of commits.
 
 For subsequent contributions:
 

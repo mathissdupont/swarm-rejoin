@@ -53,6 +53,37 @@ Crossref title, author, and publication metadata was additionally checked for Ya
 
 No database exports, full review counts, or novelty scores were produced in this pass.
 
+## R03 verification pass - 2026-11-01
+
+Purpose: inspect the research added in PR #14 and commit `5b63595`, rather than infer completion from issue closure. This was a targeted verification pass, not a new systematic search or completed full-text review.
+
+Sources: three supplied PDFs, their provenance records, primary publisher/author pages, the ION 2016 abstract, and Crossref records for `10.3390/s25020358`, `10.3390/app13084819`, `10.1007/s41315-026-00528-9`, and `10.1109/TAES.2017.2739924`.
+
+Representative exact queries:
+
+```text
+"A Comprehensive Survey on the Integrity of Localization Systems" 358
+"An INS Monitor to Detect GNSS Spoofers" pdf
+"A Comprehensive Review of GNSS/INS Integration Techniques" loosely coupled
+"Tanil" "2739924" filetype:pdf
+"An INS Monitor to Detect GNSS" site:illinoistech.edu
+"An INS Monitor to Detect GNSS" site:vt.edu
+```
+
+Selected local-PDF passages and publisher material were checked; recorded file hashes and page counts were confirmed. MDPI browsing was rate-limited. The inherited Tanil 2018 author-PDF fetch returned 404 while indexed abstract text remained discoverable. Access limitations were retained rather than upgraded to a full review.
+
+Four records and reading notes were added. No source was marked as a completed full-text review. See the [review record](../reviews/2026-11-01-r03-review.md) for source locations, independent arithmetic checks, and follow-up requirements. No database export or screened-study count was produced.
+
+## Source-library capture and R02 foundations - 2026-11-10
+
+Purpose: centralize all retained source records and capture permitted full text/PDFs, then prepare a source-based answer to the first R02 reading questions. This was not a new systematic review or a transcription of private handwritten notes.
+
+All 20 retained sources now have local records. Fourteen have complete textual captures and eleven have original PDFs; Ceren's three supplied PDF/Markdown pairs are indexed in place. The [library manifest](../library/manifest.json) records exact paths, retrieval dates/versions, rights evidence, transformations, and hashes. Six record-only items retain observed access or redistribution gaps instead of claiming missing full text.
+
+Checked official RFC Editor PDFs, NIST SP 800-series rights guidance, Uptane's official 2.1.0 PDFs and website license, permissive publisher/institutional article copies, and pinned upstream TUF/PX4/MAVLink Markdown/licenses. Ordinary HTTP retrieval produced access failures for some sources; no paywall or access-control bypass was used. Downloaded PDF bytes and page counts were verified. Conversion uses every PDF page and preserves original PDFs for layout-sensitive reading.
+
+R02 re-examined selected RFC 9019, RFC 9124, Uptane Standard 2.1.0, and Uptane Deployment 2.1.0 passages. Its [starting note](../reports/R02_Secure_Update_Foundations.md) distinguishes established mechanisms, project choices, and two designed failure traces. Uptane section 7.10 already covers location-based updates, so no broad novelty claim about location-aware updating is introduced. No source was promoted to a completed full-text review by the archive operation.
+
 ## Entry template
 
 Use this entry format:

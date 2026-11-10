@@ -8,7 +8,7 @@
 - Do not infer novelty from a search returning no results. Check the nearest work and document remaining uncertainty.
 - Authentication, update authorization, artifact integrity, running-state evidence, and mission fitness are separate properties.
 - Hard security failures must not be offset by a mission utility score.
-- Keep signing keys and raw third-party paper PDFs outside version control. Use references and permitted external storage.
+- Keep all research notes and source records in this repository. Archive redistributable full source text as Markdown and the original PDF when available, indexed under `research/library/` with provenance, license evidence, and checksums. Preserve existing source locations rather than duplicating files. For inaccessible or non-redistributable material, keep an explicit local source record and acquisition status; do not label it as archived full text. Keep signing keys and credentials outside version control.
 - Keep runs reproducible with configuration, seed, revision, environment, and independent ground truth.
 - Run `python tools/check_repo.py` after changing documentation, references, or scenarios.
 - Add behavioral tests when implementing security or recovery logic. Do not add fake security primitives or fabricate benchmark results.

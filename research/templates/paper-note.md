@@ -1,6 +1,7 @@
 # Paper review: <short title>
 
 - Source ID and persistent link:
+- Local archive record and exact file/version:
 - Reviewer / date / reviewed version:
 - Reading depth and access limits:
 - Inclusion decision and reason:

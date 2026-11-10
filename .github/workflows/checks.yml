@@ -17,3 +17,5 @@ jobs:
           python-version: '3.12'
       - name: Check references, local links, and scenario metadata
         run: python tools/check_repo.py
+      - name: Verify source-library integrity checks
+        run: python -m unittest discover -s tests -p 'test_source_library.py'

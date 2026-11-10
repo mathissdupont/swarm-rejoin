@@ -17,10 +17,10 @@ dist/
 *.key
 secrets/
 
-# Generated runs and downloaded literature
+# Generated runs; source PDFs/Markdown are intentionally version controlled
 experiments/results/*
 !experiments/results/README.md
-research/literature/pdfs/
+.source-import-cache/
 *.log
 
 # Editors and OS

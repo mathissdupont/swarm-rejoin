@@ -18,6 +18,8 @@ Other nearby work also restricts possible claims:
 
 These are preliminary source-level observations. They show that several building blocks exist; they do not settle the originality of the team's proposed intersection. Full comparative reading and a reproducible search are still needed. No absence claim about the sources' other features is established here.
 
+**Source follow-up, 2026-11-10:** [Uptane Deployment Best Practices 2.1.0](../research/library/uptane-deployment/README.md) already discusses secure time in section 3.1 and location-based updates in section 7.10 (PDF page 43). Using GPS/location to influence an update is therefore too broad an originality claim. This does not establish that the proposed navigation-integrity/swarm-recovery question is solved; it makes the required comparison more precise. See the [R02 foundations note](../research/reports/R02_Secure_Update_Foundations.md).
+
 ## Candidate directions
 
 The [six-topic shortlist](09-topic-shortlist.md) expands the three directions below with signed navigation-configuration rollout, cooperative-localization updates, and navigation-state recovery. These are proposals for investigation, not changes to the accepted thesis question.
