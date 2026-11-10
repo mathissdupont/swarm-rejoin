@@ -74,6 +74,16 @@ Selected local-PDF passages and publisher material were checked; recorded file h
 
 Four records and reading notes were added. No source was marked as a completed full-text review. See the [review record](../reviews/2026-11-01-r03-review.md) for source locations, independent arithmetic checks, and follow-up requirements. No database export or screened-study count was produced.
 
+## Source-library capture and R02 foundations - 2026-11-10
+
+Purpose: centralize all retained source records and capture permitted full text/PDFs, then prepare a source-based answer to the first R02 reading questions. This was not a new systematic review or a transcription of private handwritten notes.
+
+All 20 retained sources now have local records. Fourteen have complete textual captures and eleven have original PDFs; Ceren's three supplied PDF/Markdown pairs are indexed in place. The [library manifest](../library/manifest.json) records exact paths, retrieval dates/versions, rights evidence, transformations, and hashes. Six record-only items retain observed access or redistribution gaps instead of claiming missing full text.
+
+Checked official RFC Editor PDFs, NIST SP 800-series rights guidance, Uptane's official 2.1.0 PDFs and website license, permissive publisher/institutional article copies, and pinned upstream TUF/PX4/MAVLink Markdown/licenses. Ordinary HTTP retrieval produced access failures for some sources; no paywall or access-control bypass was used. Downloaded PDF bytes and page counts were verified. Conversion uses every PDF page and preserves original PDFs for layout-sensitive reading.
+
+R02 re-examined selected RFC 9019, RFC 9124, Uptane Standard 2.1.0, and Uptane Deployment 2.1.0 passages. Its [starting note](../reports/R02_Secure_Update_Foundations.md) distinguishes established mechanisms, project choices, and two designed failure traces. Uptane section 7.10 already covers location-based updates, so no broad novelty claim about location-aware updating is introduced. No source was promoted to a completed full-text review by the archive operation.
+
 ## Entry template
 
 Use this entry format:

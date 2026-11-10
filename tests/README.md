@@ -1,6 +1,6 @@
 # Behavioral test plan
 
-No simulator or security tests exist yet because those components are not implemented. The current workspace can be checked with `python tools/check_repo.py`.
+No simulator or security tests exist yet because those components are not implemented. The current workspace can be checked with `python tools/check_repo.py`. Source-library integrity tests exist in `test_source_library.py`; run them with `python -m unittest discover -s tests -p "test_source_library.py"`. They check archive metadata and file integrity, not UAV behavior.
 
 When implementation begins, add meaningful tests for:
 

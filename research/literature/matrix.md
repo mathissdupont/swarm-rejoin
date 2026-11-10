@@ -4,6 +4,8 @@ Updated on 2026-11-01. The registry contains **20 references**: the initial 16 p
 
 Metadata, access details, and proposed leads are in [sources.json](sources.json); citation records are in [references.bib](references.bib).
 
+Full-text/PDF storage and acquisition gaps are indexed separately in the [source library](../library/README.md), established 2026-11-10. A later capture does not retroactively change the reading depth recorded in this matrix.
+
 | ID | Type / reviewed material | Directly supported relevance | Still to check |
 | --- | --- | --- | --- |
 | `dong2026` | Journal; abstract and retrieved reconnection sections | Reconnection includes identity, program integrity, and task-behavior checks | GNSS confidence, update lifecycle/recovery, version dependencies, role decisions, exact trust assumptions |

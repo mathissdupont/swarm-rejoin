@@ -1,0 +1,3 @@
+# Optional import/conversion tools; offline repository checks use no third-party packages.
+pypdf==6.11.0
+requests==2.34.2

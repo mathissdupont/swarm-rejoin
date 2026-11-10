@@ -9,6 +9,8 @@ import re
 import sys
 from urllib.parse import unquote, urlsplit
 
+from source_library import validate_library
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED_KINDS = {
@@ -151,10 +153,14 @@ def check_scenarios(source_ids: set[str], errors: list[str]) -> int:
     return len(scenarios)
 
 
-def check_local_links(errors: list[str]) -> int:
+def check_local_links(errors: list[str], captured_paths: set[str]) -> int:
     checked = 0
     for path in ROOT.rglob("*.md"):
         if any(part.startswith(".") and part != ".github" for part in path.relative_to(ROOT).parts):
+            continue
+        # Captured upstream documents are not repository-authored links. Their file
+        # identity and provenance are checked by the source-library validator.
+        if path.relative_to(ROOT).as_posix() in captured_paths:
             continue
         content = path.read_text(encoding="utf-8")
         content = re.sub(r"```.*?```", "", content, flags=re.DOTALL)
@@ -178,12 +184,14 @@ def main() -> int:
     errors: list[str] = []
     source_ids = check_sources(errors)
     scenario_count = check_scenarios(source_ids, errors)
-    link_count = check_local_links(errors)
+    library_errors, captured_paths = validate_library(ROOT)
+    errors.extend(library_errors)
+    link_count = check_local_links(errors, captured_paths)
     if errors:
         for error in errors:
             print(f"ERROR: {error}", file=sys.stderr)
         return 1
-    print(f"OK: {len(source_ids)} sources, {scenario_count} planned scenarios, {link_count} local links.")
+    print(f"OK: {len(source_ids)} sources and library records, {scenario_count} planned scenarios, {link_count} local links.")
     print("Offline consistency only; no live source, scientific, cryptographic, or flight validation.")
     return 0
 

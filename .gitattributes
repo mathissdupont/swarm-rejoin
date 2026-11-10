@@ -4,3 +4,8 @@
 *.json text eol=lf
 *.bib text eol=lf
 *.yml text eol=lf
+*.pdf binary
+
+# Preserve upstream whitespace in captured documents and license copies.
+research/library/*/full-text.md -whitespace
+research/library/*/LICENSE.txt -whitespace
