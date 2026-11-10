@@ -67,5 +67,5 @@ Before committing to A:
 
 - Accept A, B, C, or a replacement after the decision gate.
 - Define the specific mission and role compatibility contract.
-- Decide whether an application/companion-service update is enough; do not assume in-flight autopilot flashing is required.
+- Define concrete activation, health, and evidence contracts for the mission/coordination application target accepted in [ADR 0002](decisions/0002-update-mvp-requirements.md); the first prototype excludes flight-control firmware replacement.
 - Confirm the official May deadline, thesis format, contribution expectations, and licensing/visibility choices.

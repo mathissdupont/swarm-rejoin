@@ -2,6 +2,8 @@
 
 Status: design candidate A, joining GNSS evidence, secure updates, and swarm rejoining; no implementation exists. Requirements here are project choices, not a claim of TUF, Uptane, SUIT, or RATS conformance.
 
+The six update requirements in [ADR 0002](decisions/0002-update-mvp-requirements.md) were accepted by Samet on 2026-11-10. They fix the companion mission/coordination application as the update target, the authority/trust-anchor model, mandatory verification, interrupted-transfer behavior, permitted fallback, and conservative handling of insufficient freshness evidence. Other interfaces and the final research question remain provisional.
+
 ## Component boundaries
 
 ```mermaid

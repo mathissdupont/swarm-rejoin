@@ -7,7 +7,7 @@ The live research issues were created on **2026-10-24**. Leads below are propose
 | ID | GitHub issue | Proposed lead | Completion artifact |
 | --- | --- | --- | --- |
 | R01 | [#1 — Closest reconnection, attestation, and update studies](https://github.com/mathissdupont/swarm-rejoin/issues/1) | All | Three section-cited, cross-reviewed notes |
-| R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | [Source-based starting note and two designed traces](../research/reports/R02_Secure_Update_Foundations.md); implementation choice and cross-review pending |
+| R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | [Source note and two designed traces](../research/reports/R02_Secure_Update_Foundations.md); [six MVP decisions accepted](decisions/0002-update-mvp-requirements.md); verification-library evaluation and source cross-review pending |
 | R03 | [#3 — GNSS/IMU integrity evidence](https://github.com/mathissdupont/swarm-rejoin/issues/3) | Ceren | [Consolidated draft report](../research/reports/R03_GNSS_IMU_Integrity_Research_Report.md), administratively closed; [2026-11-01 review](../research/reviews/2026-11-01-r03-review.md) records checks and remaining acceptance work |
 | R04 | [#4 — Swarm, localization, and update literature](https://github.com/mathissdupont/swarm-rejoin/issues/4) | Halil | Search log, reading notes, and comparator table |
 | R07 | [#5 — T2: update freshness under GNSS time faults](https://github.com/mathissdupont/swarm-rejoin/issues/5) | Ceren + Samet | One candidate assessment and refutation criterion |
