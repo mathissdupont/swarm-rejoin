@@ -7,7 +7,7 @@ The live research issues were created on **2026-10-24**. Leads below are propose
 | ID | GitHub issue | Proposed lead | Completion artifact |
 | --- | --- | --- | --- |
 | R01 | [#1 — Closest reconnection, attestation, and update studies](https://github.com/mathissdupont/swarm-rejoin/issues/1) | All | Three section-cited, cross-reviewed notes |
-| R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | [Source note and two designed traces](../research/reports/R02_Secure_Update_Foundations.md); [six MVP decisions accepted](decisions/0002-update-mvp-requirements.md); verification-library evaluation and source cross-review pending |
+| R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | [Mechanism/threat table and designed traces](../research/reports/R02_Secure_Update_Foundations.md); [six MVP decisions accepted](decisions/0002-update-mvp-requirements.md); [library desk assessment](../research/reports/R02_Verification_Library_Assessment.md) available; source cross-review pending |
 | R03 | [#3 — GNSS/IMU integrity evidence](https://github.com/mathissdupont/swarm-rejoin/issues/3) | Ceren | [Consolidated draft report](../research/reports/R03_GNSS_IMU_Integrity_Research_Report.md), administratively closed; [2026-11-01 review](../research/reviews/2026-11-01-r03-review.md) records checks and remaining acceptance work |
 | R04 | [#4 — Swarm, localization, and update literature](https://github.com/mathissdupont/swarm-rejoin/issues/4) | Halil | Search log, reading notes, and comparator table |
 | R07 | [#5 — T2: update freshness under GNSS time faults](https://github.com/mathissdupont/swarm-rejoin/issues/5) | Ceren + Samet | One candidate assessment and refutation criterion |
@@ -22,6 +22,8 @@ The live research issues were created on **2026-10-24**. Leads below are propose
 
 Start with [milestone 1: research scope and topic selection](https://github.com/mathissdupont/swarm-rejoin/milestone/1). Its 7 November date is a provisional review target. [Milestone 2](https://github.com/mathissdupont/swarm-rejoin/milestone/2) covers shared models after the topic decision; it has no fixed due date.
 
+The [2026-11-16 research closeout assessment](../research/reports/Research_Closeout_Assessment_2026-11-16.md) checks current acceptance gaps and proposes a bounded question. It does not mark the literature/topic gate complete or require implementation to pretend that research review has finished.
+
 ## Later implementation scope
 
 The table below keeps the larger scope visible. It is not a claim that every implementation task already has a GitHub issue. Do not mark work complete without an inspectable artifact.
@@ -34,8 +36,8 @@ The table below keeps the larger scope visible. It is not a claim that every imp
 | R04 | Now | Halil | Find team-level update/recovery and benchmark literature | Logged queries, candidate screening, and nearest comparator analysis |
 | R05 | Now | All | Compare the six candidate topics T1–T6 | Evidence-backed overlap assessment, feasible minimum study, and refutation criterion; no automatic novelty score |
 | R06 | Now | All | Decide topic with advisor | Decision record with accepted contribution type, chosen question, scope, and reasons |
-| D01 | Next | All | Freeze mission/role and evidence contracts | Versioned definitions consumed by all three workstreams |
-| D02 | Next | Samet | Design security floor and permitted fallback transitions | Failure traces including no-authorized-recovery and persistent-state crash points |
+| D01 | Next | All | Freeze mission/role and evidence contracts | Versioned definitions consumed by all three workstreams; resolve the [manifest discussion draft](11-update-manifest-draft.md), exact protocol compatibility, and runtime-evidence boundaries |
+| D02 | Next | Samet | Design security floor and permitted fallback transitions | Failure traces including no-authorized-recovery and persistent-state crash points; landed/disarmed evidence and maintained activation/recovery interlock under [ADR 0003](decisions/0003-companion-deployment-and-ground-activation.md) |
 | D03 | Next | Halil | Specify B3 and independent evaluator | Fixed priority rules; hidden truth cannot leak into policy inputs |
 | I01 | Later | Samet | Implement actual artifact/manifest verification | Invalid signature, digest, target, freshness, and epoch cases fail correctly |
 | I02 | Later | Ceren | Implement sensor/fault model and estimator validation | Calibration plots and false-alarm/missed-detection results with known truth |

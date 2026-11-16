@@ -4,6 +4,8 @@ Status: design candidate A, joining GNSS evidence, secure updates, and swarm rej
 
 The six update requirements in [ADR 0002](decisions/0002-update-mvp-requirements.md) were accepted by Samet on 2026-11-10. They fix the companion mission/coordination application as the update target, the authority/trust-anchor model, mandatory verification, interrupted-transfer behavior, permitted fallback, and conservative handling of insufficient freshness evidence. Other interfaces and the final research question remain provisional.
 
+[ADR 0003](decisions/0003-companion-deployment-and-ground-activation.md), also accepted by Samet on 2026-11-10, places the target application on an onboard Linux companion computer and restricts activation and application-restart recovery to confirmed landed/disarmed conditions. Hardware, language, and framework selection remain open; Python-TUF is only an evaluation candidate.
+
 ## Component boundaries
 
 ```mermaid
@@ -23,6 +25,8 @@ flowchart LR
 ```
 
 The MVP models a trusted coordinator and release authority. Separate the updater, evidence appraisal, and role permissions even if they initially run in one Python process. Policies consume appraised evidence; the simulation evaluator alone can read hidden ground truth.
+
+The single-process allowance concerns the initial abstract model. In the deployment design, keep the updater/recovery manager separate from the application being replaced, with explicit protection assumptions for keys and persistent security state. Neither a companion computer nor process separation alone establishes isolation or secure boot.
 
 ## Independent state dimensions
 
@@ -47,6 +51,8 @@ Do not compress all three dimensions into one numeric trust score. Recovery and 
 
 Navigation evidence enters role eligibility directly. It may also enter activation conditions if the defined mission maneuver or update target depends on reliable position. This second dependency must be modeled and tested explicitly; software updating does not inherently require GNSS.
 
+For the first prototype, the activation gate additionally requires current operational evidence of landed and disarmed state and an interlock maintained through activation, health checking, and application recovery. Unknown/stale operational evidence defers activation; GNSS confidence is not a substitute for landed/arming evidence. Withdraw cooperative mission permissions for the target vehicle during this transition. A staged candidate may wait for the gate. Airborne transfer budgets remain unspecified; airborne activation is outside this prototype. The same boundary applies to fallback that replaces or restarts the application.
+
 ```mermaid
 stateDiagram-v2
     [*] --> Idle
@@ -54,7 +60,7 @@ stateDiagram-v2
     Downloading --> Downloading: bounded resumable transfer
     Downloading --> Staged: complete artifact verified
     Downloading --> Idle: cancel or timeout
-    Staged --> Activating: activation conditions satisfied
+    Staged --> Activating: verified candidate and landed/disarmed interlock
     Activating --> HealthCheck: candidate starts
     Activating --> Recovering: activation failure
     HealthCheck --> Idle: verified health and commit
@@ -66,7 +72,11 @@ stateDiagram-v2
 
 Network loss during download must not alter the active image. An activation failure must not be recorded as success. A successful boot is insufficient for mission admission without post-activation checks. Whether these are atomic persistent operations must be verified when moving beyond simulation.
 
+The physical source of operational evidence, freshness bounds, arming/takeoff enforcement, and flight-controller response to companion loss are pending integration contracts. Successful activation on the ground does not itself permit takeoff or full-role admission. Reconnection without application replacement remains subject to role requirements and need not involve this activation gate.
+
 ## Metadata and evidence contract to implement
+
+The [manifest discussion draft](11-update-manifest-draft.md) expands the release side of this table and distinguishes it from runtime operational, software and navigation evidence. Its illustrative JSON is incomplete and unsigned; it is not a selected wire format or an implementation.
 
 | Object | Planned contents | Trust boundary |
 | --- | --- | --- |

@@ -14,6 +14,8 @@ Status: proposed; no experiments or outcomes exist. Finalize this plan after top
 
 B0/B1 intentionally lack controls and are not adequate evidence for the main contribution. For the P–B3 comparison, keep cryptography, release metadata, available observations, fault traces, update costs, role eligibility rules, and recovery mechanisms identical. Specify B3's fixed rules before final evaluation. Do not weaken B3 after observing P's performance.
 
+Apply the [ADR 0003 deployment boundary](decisions/0003-companion-deployment-and-ground-activation.md) equally to B3 and P: activate or restart into a fallback only while confirmed landed and disarmed, with an arming/takeoff interlock through the transition. Include waiting for a permitted activation opportunity in service-delay and mission metrics. This study does not compare airborne activation strategies. A policy may still decide roles for an airborne reconnect that requires no application replacement.
+
 Do not describe B2/B3 as implementations of published protocols unless their requirements are actually implemented. A comparison with Dong/RASUES/NeRTA needs careful assumption matching; otherwise use a feature/assumption comparison and label it accordingly.
 
 ## Staged experiments
@@ -67,3 +69,9 @@ Include cases where all vehicles are compatible and healthy, where updates alway
 - Freeze practical improvement margins and any tolerable risk criterion with the advisor before confirmatory testing. Do not invent those thresholds after seeing results.
 
 Avoid comparing abstract simulated seconds with measured cryptographic or PX4 timing as if they came from one calibrated system. Report the fidelity and limits of each experiment layer.
+
+## Deployment feasibility checks to plan
+
+Choose and record a representative Linux companion target before making hardware-feasibility claims. Measure candidate verification time, peak memory, application interruption, and contention with mission/communication workloads for stated artifact sizes and link conditions. Assess storage, power, weight, and cost against the intended vehicle. Acceptance budgets and the target board are not yet selected; no performance result exists.
+
+Include planned cases for airborne activation deferral, stale landed/arming evidence, interlock enforcement during activation/recovery, and successful installation followed by denied navigation-dependent admission. SITL may check integration logic, but does not establish physical interlock enforcement, electrical power-loss recovery, or target-board resource sufficiency.

@@ -1,6 +1,6 @@
 # Literature matrix
 
-Updated on 2026-11-01. The registry contains **20 references**: the initial 16 plus four sources checked during the R03 follow-up. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
+Updated on 2026-11-16. The registry contains **22 references**: the initial 16, four sources from the R03 follow-up, and two official library references for R02. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
 
 Metadata, access details, and proposed leads are in [sources.json](sources.json); citation records are in [references.bib](references.bib).
 
@@ -9,8 +9,8 @@ Full-text/PDF storage and acquisition gaps are indexed separately in the [source
 | ID | Type / reviewed material | Directly supported relevance | Still to check |
 | --- | --- | --- | --- |
 | `dong2026` | Journal; abstract and retrieved reconnection sections | Reconnection includes identity, program integrity, and task-behavior checks | GNSS confidence, update lifecycle/recovery, version dependencies, role decisions, exact trust assumptions |
-| `usman2026` | Journal; publisher abstract and introductory material | RASUES joins remote attestation and software updates with expected before/after states | Exact recovery protocol, clock assumptions, applicability to swarm missions and navigation evidence |
-| `yaacoub2023` | Journal; institutional abstract | NeRTA schedules low-level mobile robot updates using idle time | Security assumptions, team-level coordination, interruption model, and applicability to rejoining |
+| `usman2026` | Journal; selected full-text architecture, implementation and limitation passages | Attestation/update integration, A/B recovery and an explicit rollback-attack limitation | Full protocol/experiment review; exact navigation/team coverage and matched assurance assumptions |
+| `yaacoub2023` | Journal; selected full-text target/update-model/limitation passages | Scheduler-dependent idle-time scheduling; evaluation models update duration rather than applying an actual update | Full algorithm/proof/experiment review and matched comparison to ground-only companion updates |
 | `kuppusamy2018` | Journal; publisher abstract/metadata | Compromise-resilient vehicle update framework | Mechanisms and experiments in the full article; distinguish article from normative specification |
 | `tuf-spec` | Official specification; version and overview | Secure update reference, observed version 1.0.37 | Exact expiration, metadata consistency, rollback, and key-rotation requirements for any reused implementation |
 | `uptane-standard` | Official versioned specification; selected passages | Vehicle update procedures and secure time requirements | Target/role compatibility mapping, offline behavior, recovery details, and full conformance obligations |
@@ -28,6 +28,9 @@ Full-text/PDF storage and acquisition gaps are indexed separately in the [source
 | `boguspayev2023` | Survey; selected supplied-PDF integration passages | Supports loose/tight measurement-interface background; detailed deep-coupling treatment is excluded | No demonstrated optimality of the proposed UAV estimator |
 | `alipour2026` | Survey; selected publisher/PDF passages | Supports the estimator/map/sensor taxonomy | No validation of a secure-update or swarm-rejoining policy |
 | `tanil2018` | Original journal method; metadata and indexed abstract | Tightly coupled innovation monitoring in an aircraft example | Exact detector/window parameters and original equations remain unverified; candidate PDF fetch failed |
+
+| `python-tuf` | Official v7.0.1 README/API and selected source | Native TUF client workflow, bootstrap trust, metadata verification and verified target download | GNSS-independent time integration, installer/recovery behavior and target-board feasibility remain untested |
+| `cryptography-ed25519` | Official 50.0.2 sign/verify passages and upstream RST | Signature primitive API, not a complete updater | Authorization/freshness/persistence/installation policies would still need a separate design |
 
 The [R03 review](../reviews/2026-11-01-r03-review.md) records what was checked and what still blocks scientific acceptance. Survey availability and automatic transcription do not complete the primary-method reading requirement.
 
