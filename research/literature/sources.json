@@ -19,9 +19,9 @@
     "kind": "journal_article",
     "url": "https://link.springer.com/article/10.1007/s10207-026-01233-1",
     "doi": "10.1007/s10207-026-01233-1",
-    "verified_on": "2026-10-24",
-    "accessed_material": "Publisher page, abstract and introductory material; Crossref bibliographic metadata. Full comparative protocol review is pending.",
-    "review_status": "seed_partial_text",
+    "verified_on": "2026-11-16",
+    "accessed_material": "Selected full-text sections 3/3.1, 5.1-5.5, 6.1, 7 and 8-9 in the archived 18-page article checked on 2026-11-16: attestation/update/recovery architecture, evaluated target and stated limitations. Full comparative protocol/equation/figure review and independent team cross-review remain pending.",
+    "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
     "proposed_lead": "Samet Ünsal"
   },
@@ -32,9 +32,9 @@
     "kind": "journal_article",
     "url": "https://epub.uni-regensburg.de/55328/",
     "doi": "10.1145/3623676",
-    "verified_on": "2026-10-24",
-    "accessed_material": "Author institutional repository abstract and bibliographic record; Crossref metadata. Full method and experiment review is pending.",
-    "review_status": "seed_abstract",
+    "verified_on": "2026-11-16",
+    "accessed_material": "Selected archived full-text introduction, related work, sections 3.1-3.2 and 8-9 checked on 2026-11-16: scheduler assumptions, update model and explicit evaluation/generalization limits. Full algorithm/proof/experiment review and independent team cross-review remain pending.",
+    "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
     "proposed_lead": "Halil Abacı"
   },
@@ -262,5 +262,31 @@
     "review_status": "seed_abstract",
     "full_text_review_complete": false,
     "proposed_lead": "Ceren Tolunay"
+  },
+  {
+    "id": "python-tuf",
+    "title": "Python-TUF: Python reference implementation of The Update Framework",
+    "year": 2026,
+    "kind": "official_documentation",
+    "url": "https://github.com/theupdateframework/python-tuf",
+    "observed_version": "v7.0.1; commit 49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15",
+    "verified_on": "2026-11-16",
+    "accessed_material": "Versioned README, package metadata, ngclient Updater API and selected updater/config source at v7.0.1. Source inspection only; no application verifier or security experiment was implemented.",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet ?nsal"
+  },
+  {
+    "id": "cryptography-ed25519",
+    "title": "Ed25519 signing - cryptography documentation",
+    "year": 2026,
+    "kind": "official_documentation",
+    "url": "https://cryptography.io/en/stable/hazmat/primitives/asymmetric/ed25519/",
+    "observed_version": "50.0.2; matching documentation source",
+    "verified_on": "2026-11-16",
+    "accessed_material": "Selected rendered Ed25519 sign/verify API passages through browsing and complete upstream RST page source at tag 50.0.2. Direct versioned HTML retrieval returned HTTP 403; archived RST does not expand generated API docstrings.",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet ?nsal"
   }
 ]

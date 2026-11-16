@@ -16,6 +16,12 @@ The [2026-11-01 independent review](reviews/2026-11-01-r03-review.md) checks sel
 
 The [source-based R02 starting note](reports/R02_Secure_Update_Foundations.md), prepared 2026-11-10, answers the initial update-authority, manifest, verification, recovery, and GNSS-time questions and includes two designed failure traces. It is an assisted draft with explicit remaining work; no handwritten material, implementation results, or independent cross-review are claimed.
 
+The [2026-11-16 verification-library desk assessment](reports/R02_Verification_Library_Assessment.md) compares responsibility levels and recommends Python-TUF 7.0.1 as a first reference for later evaluation. R02 now also includes a mechanism/threat table and explicit fallback/downgrade examples. Another-author source review remains pending.
+
+## Research closeout
+
+The [2026-11-16 closeout assessment](reports/Research_Closeout_Assessment_2026-11-16.md) records checked issue/artifact status, a main-question/fallback recommendation, nearest-work evidence and exact remaining research acceptance gaps. It is not a completed team meeting, advisor decision or implementation report.
+
 ## Supplied survey texts
 
 [Ceren Tolunay's literature folder](literature/cerentolunay/README.md) contains three original PDFs and their full-document Markdown transcriptions. These imports are reading material, not completed scientific reviews.

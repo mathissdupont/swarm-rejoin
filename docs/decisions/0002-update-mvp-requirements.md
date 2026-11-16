@@ -43,7 +43,9 @@ These are tests to implement, not tests already executed.
 
 ## Remaining work
 
-- Evaluate a maintained signature/update-verification library or reference implementation and record its fit and limits for this MVP.
+The deployment boundary is refined by [ADR 0003](0003-companion-deployment-and-ground-activation.md): an onboard Linux companion target, separate staging and activation, and ground-only activation/recovery. Python-TUF is an evaluation candidate, not an adopted dependency.
+
+- The [2026-11-16 library desk assessment](../../research/reports/R02_Verification_Library_Assessment.md) records Python-TUF 7.0.1 as the recommended reference, with native metadata coverage and unresolved time/lifecycle limits. No repository verifier, deployment fit test or final dependency adoption is claimed.
 - Specify manifest encoding, time bounds, persistent-state behavior, compatibility contracts, health criteria, and evidence expiration under D01/D02.
 - Obtain Ceren's or Halil's source cross-review required by R02. Samet's approval of these requirements is distinct from that independent review.
 - Implement and validate the failure cases before claiming update safety or mission benefits.
