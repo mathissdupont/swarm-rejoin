@@ -1,6 +1,6 @@
 # Research source library
 
-33 source records; 21 full-text Markdown captures; 13 original PDFs. Counts describe stored material, not completed reviews.
+35 source records; 23 full-text Markdown captures; 13 original PDFs. Counts describe stored material, not completed reviews.
 
 Every retained source has a local record. Full text is stored only when retrieval and redistribution are supported. A record-only item is explicitly incomplete; it is not a substitute for the full paper.
 
@@ -41,6 +41,8 @@ Existing material in Ceren's literature folder is indexed in place to avoid dupl
 | [shagor2026](shagor2026/README.md) | Record only | redistribution unconfirmed | Publisher PDF retrieved for selected reading. NC/ND terms do not establish permission for this repository full-text conversion/publication workflow; retain a source record and official link, not an archived full-text claim. |
 | [notomista2021](notomista2021/README.md) | Record only | redistribution unconfirmed | Public preprint uses an arXiv-specific nonexclusive distribution license; repository redistribution permission is unconfirmed. Retain abstract-level note and metadata; no full text or PDF archived. |
 | [swarmada-rollouts](swarmada-rollouts/README.md) | [Full text](../../research/library/swarmada-rollouts/full-text.md) | not located | Complete pinned API and two controller files wrapped as Markdown, plus unchanged Apache license. This is a three-file source snapshot, not the whole project or executed validation. No separate official PDF located. |
+| [px4-ubuntu-setup](px4-ubuntu-setup/README.md) | [Full text](../../research/library/px4-ubuntu-setup/full-text.md) | not located | Complete pinned Markdown captured; existing same-commit PX4 license indexed in place. Captured setup version may differ from current rendered guidance; no setup executed. No official PDF located. |
+| [px4-wsl-setup](px4-wsl-setup/README.md) | [Full text](../../research/library/px4-wsl-setup/full-text.md) | not located | Complete pinned Markdown captured; existing same-commit PX4 license indexed in place. Captured setup version may differ from current rendered guidance; no setup executed. No official PDF located. |
 
 ## Add or update a source
 

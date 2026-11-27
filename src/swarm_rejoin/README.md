@@ -2,6 +2,8 @@
 
 This directory intentionally contains no executable simulator or security implementation yet. Start after the team selects a concrete question within GNSS, secure updates, and UAV swarms.
 
+The [implementation handoff](../../docs/15-implementation-handoff.md) now distinguishes reusable infrastructure/verification tests that can start immediately from integration dependent on the 2 December working contract/model gate. This remains a module plan, not implemented behavior.
+
 Proposed modules:
 
 | Module | Responsibility | Boundary |

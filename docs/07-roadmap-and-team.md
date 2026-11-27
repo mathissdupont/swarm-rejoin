@@ -62,6 +62,8 @@ Bars end on the day after each planned work period. Milestones are targets; no o
 
 ## Next three working days: 30 November-2 December
 
+The [implementation handoff](15-implementation-handoff.md) separates work that can start now from joint integration after the shared-model gate, and specifies the three simulation layers and Windows/WSL2 path.
+
 | Owner | Next inspectable artifact | Tracking |
 | --- | --- | --- |
 | Samet | Check the authored D01 dependency/recovery table and traces against actual installer paths, retained images, schema compatibility and authority changes | [R01 #1](https://github.com/mathissdupont/swarm-rejoin/issues/1), [R02 #2](https://github.com/mathissdupont/swarm-rejoin/issues/2), [D01 #12](https://github.com/mathissdupont/swarm-rejoin/issues/12) |

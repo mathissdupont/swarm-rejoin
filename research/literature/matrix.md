@@ -1,6 +1,6 @@
 # Literature matrix
 
-Updated on 2026-11-27. The registry contains **33 references**: the initial 16, four sources from the R03 follow-up, two R02 library references, five retained candidate-assessment sources, four originality-follow-up sources, and two recovery-planning comparators. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
+Updated on 2026-11-27. The registry contains **35 references**: the initial 16, four sources from the R03 follow-up, two R02 library references, five retained candidate-assessment sources, four originality-follow-up sources, two recovery-planning comparators and two PX4 setup guides. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
 
 Metadata, access details, and proposed leads are in [sources.json](sources.json); citation records are in [references.bib](references.bib).
 
@@ -46,6 +46,8 @@ Full-text/PDF storage and acquisition gaps are indexed separately in the [source
 | `swarmada-rollouts` | Three complete pinned source files archived; selected API/batch/recovery inspection | Robot rollout limits, failure pauses and model-recovery/capability context | No build/tests/full audit; firmware rollback field explicitly differs from implemented model recovery |
 
 The [R03 review](../reviews/2026-11-01-r03-review.md) records what was checked and what still blocks scientific acceptance. Survey availability and automatic transcription do not complete the primary-method reading requirement.
+
+Additional setup records: `px4-ubuntu-setup` and `px4-wsl-setup`. Official platform overviews were inspected and complete pinned Markdown retained; see the [setup note](notes/px4-setup.md) for rendered/captured-version differences. No toolchain or simulator execution is claimed.
 
 ## Current interpretation
 
