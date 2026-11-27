@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swarm-rejoin"
+version = "0.1.0.dev1"
+description = "Research fixture for verified updates and navigation-bound role admission"
+requires-python = ">=3.12"
+dependencies = [
+  "tuf==7.0.1",
+  "securesystemslib==1.6.0",
+  "cryptography==50.0.2",
+]
+
+[project.scripts]
+swarm-rejoin-smoke = "swarm_rejoin.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+swarm_rejoin = ["fixtures/*.json"]

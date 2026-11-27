@@ -5,6 +5,8 @@
 - Scope: The mission/coordination application under [ADR 0002](decisions/0002-update-mvp-requirements.md) and the Linux companion/ground-only activation boundary in [ADR 0003](decisions/0003-companion-deployment-and-ground-activation.md)
 - Reading depth: Selected RFC 9124, TUF specification and Uptane Standard passages listed below; no complete conformance review or implementation test
 
+**Implementation follow-up, 2026-11-27:** The [first fixture](16-prototype-quickstart.md) uses Python-TUF 7.0.1 and a narrow v1 `custom` profile for opaque single-file packages, with real signature/payload verification. It does not implement this full information model, installer/data migration, persistent transactions or a production wire schema. The profile rejects unknown fields; this is a narrow application rule rather than a general TUF rule.
+
 ## 1. What this manifest describes
 
 The update manifest binds an authorized release description to the exact application artifact and its applicability conditions. It is separate from [research/library/manifest.json](../research/library/manifest.json), which catalogs archived research sources and is not an update authorization object.

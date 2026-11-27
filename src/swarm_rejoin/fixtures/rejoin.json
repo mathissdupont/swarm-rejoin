@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "kind": "authored_evidence_fixture",
+  "seed": 0,
+  "vehicles": ["U1", "U2", "U3", "U4", "U5", "U6"],
+  "subject": "U1",
+  "events": [
+    {"time": 1, "action": "initial_evidence"},
+    {"time": 2, "action": "interrupted_stage"},
+    {"time": 3, "action": "complete_stage"},
+    {"time": 4, "action": "activate"},
+    {"time": 5, "action": "candidate_health_fails"},
+    {"time": 6, "action": "fallback_health_passes"},
+    {"time": 7, "action": "fresh_navigation"},
+    {"time": 8, "action": "modeled_departure_and_role"},
+    {"time": 12, "action": "permission_expiry"}
+  ]
+}

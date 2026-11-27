@@ -270,8 +270,8 @@
     "kind": "official_documentation",
     "url": "https://github.com/theupdateframework/python-tuf",
     "observed_version": "v7.0.1; commit 49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15",
-    "verified_on": "2026-11-16",
-    "accessed_material": "Versioned README, package metadata, ngclient Updater API and selected updater/config source at v7.0.1. Source inspection only; no application verifier or security experiment was implemented.",
+    "verified_on": "2026-11-27",
+    "accessed_material": "Versioned README and selected v7.0.1 Updater, FetcherInterface, metadata/signing API and local installed API declarations inspected. Exploratory fixture now exercises actual refresh/target-download verification, metadata expiry/replay and payload tampering in behavioral tests. No complete conformance/security audit, GNSS-clock adapter or production installer validation. Archived README remains a source capture, not the complete API manual.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
     "proposed_lead": "Samet Ünsal"
