@@ -220,3 +220,15 @@ Kubernetes' official disruption guide was inspected as context for existing coun
 Delivered the [D01 contract draft](../../docs/14-recovery-and-role-contract.md) and [originality/decision analysis](../reports/Originality_Assessment_2026-11-27.md). The worked table is an explicitly designed projected-capability fixture, not sensor simulation or measured performance. It distinguishes nominal from branch-aware choices and explicitly records that a generic contingency-aware planner can equal P. Navigation-readiness calibration and full adjacent-method review remain scientific blockers; no new-algorithm claim follows.
 
 Storage totals: 33 source/library records, 21 complete named-source Markdown captures, 13 original PDFs. No new PDF was archived in this pass. The accelerated dates remain targets; no source review, model check, experiment, meeting or issue closure is fabricated.
+
+## Implementation handoff and platform verification - 2026-11-27
+
+At Samet's explicit request, merged PR #20 after checking its current head, passing CI, review submissions and inline threads. The only submitted review was a Copilot quota-failure notice; merge does not establish substantive peer approval or scientific acceptance. Merge revision: `807731f044472942e95d32fe3b9c11581d338439`.
+
+Prepared [owners, implementation entry conditions and three simulation layers](../../docs/15-implementation-handoff.md). Platform verification used direct official PX4 Ubuntu, WSL2 and multi-vehicle guide URLs, not a new literature database search. Retained two setup records, with complete native Markdown at PX4-user_guide commit `2fa62338099f18fc3092197e856615eca94d2975`. Indexed the unchanged existing same-commit PX4 license in place; no duplicate license or old multi-vehicle capture was substituted.
+
+The currently rendered Ubuntu guide and captured source differ in their listed Ubuntu versions. This discrepancy is explicit in the registry, source records and [selected-source note](notes/px4-setup.md); no unified tested toolchain is inferred. Choose and pin a matching toolchain at SITL entry. No official standalone setup PDFs were located.
+
+Read-only local checks found Python 3.14.2 on Windows and registered Ubuntu/docker-desktop WSL2 distributions, both stopped. Their presence does not validate the Ubuntu release, packages, graphics, networking or SITL execution. No distribution, simulator or project runtime was installed or launched for this handoff.
+
+Storage totals: 35 records, 23 complete named-source Markdown captures, 13 original PDFs. No new completed paper review, experiment, prototype or performance result is claimed. Reusable infrastructure may start now; integrated-model work targets 3 December after the shared 2 December contract/model decision. The existing novelty and independent-review gaps remain explicit.

@@ -963,6 +963,72 @@
       ],
       "record_path": "research/library/swarmada-rollouts/README.md",
       "record_sha256": "15857c8aa26785a5b6607fb0ef63b34e4f8547ad3a924195b74fe4c61111ae9f"
+    },
+    {
+      "source_id": "px4-ubuntu-setup",
+      "canonical_url": "https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu",
+      "retrieved_on": "2026-11-27",
+      "version": "PX4-user_guide commit 2fa62338099f18fc3092197e856615eca94d2975",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete pinned Markdown captured; existing same-commit PX4 license indexed in place. Captured setup version may differ from current rendered guidance; no setup executed. No official PDF located.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/px4-ubuntu-setup/full-text.md",
+          "sha256": "e8ac0ca84a44124bc7fa352a67fc288d0cc949c1a4f9c95de165b23c4743daf3",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/en/dev_setup/dev_env_linux_ubuntu.md",
+          "transformation": "Original Markdown snapshot with relative links resolved to source URLs"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/px4-multi/LICENSE.txt",
+          "sha256": "58b391b218f10970eb9e239bfe3c6a7df57104bbaa3c67335b4666be3ab4686a",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/px4-ubuntu-setup/README.md",
+      "record_sha256": "13f1ae60d9163cc546a1870142db2ffee3bc816ed8321b2e7f58480b1805da66"
+    },
+    {
+      "source_id": "px4-wsl-setup",
+      "canonical_url": "https://docs.px4.io/main/en/dev_setup/dev_env_windows_wsl",
+      "retrieved_on": "2026-11-27",
+      "version": "PX4-user_guide commit 2fa62338099f18fc3092197e856615eca94d2975",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete pinned Markdown captured; existing same-commit PX4 license indexed in place. Captured setup version may differ from current rendered guidance; no setup executed. No official PDF located.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/px4-wsl-setup/full-text.md",
+          "sha256": "bfd93f37da468035688865ed97000851e88944c32839639a19fcbb4dc45fea08",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/en/dev_setup/dev_env_windows_wsl.md",
+          "transformation": "Original Markdown snapshot with relative links resolved to source URLs"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/px4-multi/LICENSE.txt",
+          "sha256": "58b391b218f10970eb9e239bfe3c6a7df57104bbaa3c67335b4666be3ab4686a",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-user_guide/2fa62338099f18fc3092197e856615eca94d2975/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/px4-wsl-setup/README.md",
+      "record_sha256": "e27a43a0c1ce221a6a6d46bf117b55ad9783897077b5fba84fd1bd0225aba347"
     }
   ]
 }

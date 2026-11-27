@@ -15,6 +15,7 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
 ## Start here
 
 For the team discussion, begin with the [plain-language idea and originality test](docs/13-team-brief.md).
+For the next work assignments, coding entry criteria and Windows/Linux simulation setup, use the [implementation handoff](docs/15-implementation-handoff.md).
 
 1. Read the [topic assessment and alternatives](docs/01-topic-decision.md).
    Compare the [six candidate thesis topics](docs/09-topic-shortlist.md) before committing to a final question.
@@ -26,7 +27,7 @@ For the team discussion, begin with the [plain-language idea and originality tes
 ## What exists today
 
 - An evidence-based topic assessment, six candidate thesis topics, and a keep/pivot gate.
-- Thirty-three tracked references with access and reading status, BibTeX, search records, and review templates.
+- Thirty-five tracked references with access and reading status, BibTeX, search records, and review templates.
 - An [originality assessment with a worked decision example](research/reports/Originality_Assessment_2026-11-27.md) and [D01 recovery/navigation/role contract draft](docs/14-recovery-and-role-contract.md). The candidate now checks navigation readiness after authorized recovery before activation; ordinary stale-evidence handling is shared baseline behavior, and a generic contingency-aware comparator may match the proposal.
 - A [central source library](research/library/README.md) with full Markdown/original PDFs where obtainable and redistributable, plus explicit records for missing material. Follow the [archive workflow](docs/10-source-archive.md) for future research.
 - Ceren's [R03 navigation research draft](research/reports/R03_GNSS_IMU_Integrity_Research_Report.md) and an [independent review dated 2026-11-01](research/reviews/2026-11-01-r03-review.md), with remaining work stated explicitly.

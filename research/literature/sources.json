@@ -436,5 +436,31 @@
     "full_text_review_complete": false,
     "verified_on": "2026-11-27",
     "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "px4-ubuntu-setup",
+    "title": "Ubuntu Development Environment",
+    "year": null,
+    "kind": "official_documentation",
+    "url": "https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu",
+    "observed_version": "PX4-user_guide commit 2fa62338099f18fc3092197e856615eca94d2975",
+    "verified_on": "2026-11-27",
+    "accessed_material": "Current rendered setup overview and older complete pinned Markdown source examined. Rendered guide lists Ubuntu 24.04/22.04; captured source lists 22.04/20.04/18.04. Versions differ; commands were not executed or validated as one version-matched toolchain.",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "px4-wsl-setup",
+    "title": "Windows Development Environment (WSL2-Based)",
+    "year": null,
+    "kind": "official_documentation",
+    "url": "https://docs.px4.io/main/en/dev_setup/dev_env_windows_wsl",
+    "observed_version": "PX4-user_guide commit 2fa62338099f18fc3092197e856615eca94d2975",
+    "verified_on": "2026-11-27",
+    "accessed_material": "Rendered official WSL2 overview and complete pinned Markdown source examined. Captured source defaults to Ubuntu 22.04 and is not asserted to match every current rendered command. WSL distributions were listed locally; no PX4/Gazebo build, graphics or network validation performed.",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet Ünsal"
   }
 ]
