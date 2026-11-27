@@ -20,6 +20,8 @@ These are preliminary source-level observations. They show that several building
 
 **Source follow-up, 2026-11-10:** [Uptane Deployment Best Practices 2.1.0](../research/library/uptane-deployment/README.md) already discusses secure time in section 3.1 and location-based updates in section 7.10 (PDF page 43). Using GPS/location to influence an update is therefore too broad an originality claim. This does not establish that the proposed navigation-integrity/swarm-recovery question is solved; it makes the required comparison more precise. See the [R02 foundations note](../research/reports/R02_Secure_Update_Foundations.md).
 
+**Research follow-up, 2026-11-27:** The [T1-T6 comparison](../research/reports/R05_Topic_Comparison.md) recommends retaining T1 with T5's application-recovery/evidence-continuity question and T6 as an empirical fallback. This is a proposal, not a final topic decision. Newly checked [navigation-reintegration passages](../research/literature/notes/aljaafreh2026.md) show that generic source quarantine/re-entry also has prior work; sensor-source reintegration is not the same operation as swarm-role re-admission. The [T5 assessment](../research/reports/R10_T5_Navigation_Recovery_Assessment.md) distinguishes a companion-only restart from an actual estimator reset. No new mechanism or absence claim is established by this follow-up.
+
 ## Candidate directions
 
 The [six-topic shortlist](09-topic-shortlist.md) expands the three directions below with signed navigation-configuration rollout, cooperative-localization updates, and navigation-state recovery. These are proposals for investigation, not changes to the accepted thesis question.

@@ -685,6 +685,145 @@
       ],
       "record_path": "research/library/cryptography-ed25519/README.md",
       "record_sha256": "e27b176886deeb32b1a19c8ab67fd6bb38e0b9f43cf550b2bc97e95e0aa2be65"
+    },
+    {
+      "source_id": "aljaafreh2026",
+      "canonical_url": "https://doi.org/10.3390/drones10100738",
+      "retrieved_on": "2026-11-27",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "access_blocked",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://api.crossref.org/works/10.3390/drones10100738",
+        "redistribution": "permitted"
+      },
+      "reason": "Publisher/Crossref confirm CC BY 4.0. Publisher HTML selected passages were accessible through browsing; direct publisher and official CDN PDF requests returned HTTP 403. No complete Markdown or PDF capture is claimed.",
+      "artifacts": [],
+      "record_path": "research/library/aljaafreh2026/README.md",
+      "record_sha256": "a4a68236e8a26885ae0f60436199c2dbbc883c0e2c350618dd136ec37b8b2e96"
+    },
+    {
+      "source_id": "rodriguez2025",
+      "canonical_url": "https://doi.org/10.3390/drones9020133",
+      "retrieved_on": "2026-11-27",
+      "version": "",
+      "status": "record_only",
+      "pdf_status": "access_blocked",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://api.crossref.org/works/10.3390/drones9020133",
+        "redistribution": "permitted"
+      },
+      "reason": "Publisher/Crossref confirm CC BY 4.0. Publisher HTML selected passages were accessible through browsing; direct publisher and official CDN PDF requests returned HTTP 403. No complete Markdown or PDF capture is claimed.",
+      "artifacts": [],
+      "record_path": "research/library/rodriguez2025/README.md",
+      "record_sha256": "fdafd82a8b4c0a5512546b1650d5a716116430c07e60c757bf0d7c1c0229d37e"
+    },
+    {
+      "source_id": "pant2024",
+      "canonical_url": "https://arxiv.org/abs/2407.09342",
+      "retrieved_on": "2026-11-27",
+      "version": "arXiv-2407.09342v1",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://arxiv.org/abs/2407.09342v1",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete PDF and automatic text capture; reading status is unchanged.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/pant2024/source.pdf",
+          "sha256": "a7b12d462b244205e77decfdce42f444d1b6a177260bbf3385f0f51b7c956f11",
+          "origin_url": "https://arxiv.org/pdf/2407.09342v1",
+          "pages": 7,
+          "transformation": "Unchanged original PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/pant2024/full-text.md",
+          "sha256": "33344b84d39f7d577f0e3e2eb8bc6a977184458df9c4248592abe8572c4eddd7",
+          "origin_url": "https://arxiv.org/pdf/2407.09342v1",
+          "pages": 7,
+          "converter": "pypdf",
+          "converter_version": "6.11.0",
+          "transformation": "pypdf plain-mode text extraction including rotated text; page headings and preformatted text; no scientific review"
+        }
+      ],
+      "record_path": "research/library/pant2024/README.md",
+      "record_sha256": "be560bff0720a178b70ea1af6666b28ab37bd83fd47aac5c72e2433f44e719b5"
+    },
+    {
+      "source_id": "flagger-canary",
+      "canonical_url": "https://docs.flagger.app/main/usage/how-it-works",
+      "retrieved_on": "2026-11-27",
+      "version": "2a102257913e7267b229e3d8fd36c1a77dc96f6e",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "Apache-2.0",
+        "license_url": "https://github.com/fluxcd/flagger/blob/2a102257913e7267b229e3d8fd36c1a77dc96f6e/LICENSE",
+        "evidence_url": "https://github.com/fluxcd/flagger/blob/2a102257913e7267b229e3d8fd36c1a77dc96f6e/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Original Markdown captured. No separate official PDF was located on the inspected source.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/flagger-canary/full-text.md",
+          "sha256": "f453409345b545596e8b6cda92627cba9eb623a1d561958d1d1fa598872e5fec",
+          "origin_url": "https://raw.githubusercontent.com/fluxcd/flagger/2a102257913e7267b229e3d8fd36c1a77dc96f6e/docs/gitbook/usage/how-it-works.md",
+          "transformation": "Original Markdown snapshot with relative links resolved to source URLs"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/flagger-canary/LICENSE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "origin_url": "https://raw.githubusercontent.com/fluxcd/flagger/2a102257913e7267b229e3d8fd36c1a77dc96f6e/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/flagger-canary/README.md",
+      "record_sha256": "834ca682e68f46895d8b87be81638e1f971de8f571af9f9bd61a535b0bab9bb6"
+    },
+    {
+      "source_id": "px4-local-position",
+      "canonical_url": "https://github.com/PX4/PX4-Autopilot/blob/5819a3e0d748bb8631d8f528e1283ac20da9915d/msg/versioned/VehicleLocalPosition.msg",
+      "retrieved_on": "2026-11-27",
+      "version": "5819a3e0d748bb8631d8f528e1283ac20da9915d",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "BSD-3-Clause",
+        "license_url": "https://github.com/PX4/PX4-Autopilot/blob/5819a3e0d748bb8631d8f528e1283ac20da9915d/LICENSE",
+        "evidence_url": "https://github.com/PX4/PX4-Autopilot/blob/5819a3e0d748bb8631d8f528e1283ac20da9915d/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete native message-definition source wrapped as Markdown, not the complete generated documentation. No official standalone PDF located.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/px4-local-position/full-text.md",
+          "sha256": "ad8c344d52d87d793d2d71c9295703ea840e25c2c44465cc6b7a16839891e605",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/5819a3e0d748bb8631d8f528e1283ac20da9915d/msg/versioned/VehicleLocalPosition.msg",
+          "transformation": "Complete native .msg definition wrapped verbatim as Markdown; not a generated API manual"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/px4-local-position/LICENSE.txt",
+          "sha256": "0e31cba0e521c572e59a350286c6d1272abff7a7b6ebecb0e7d9eee6547a2106",
+          "origin_url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/5819a3e0d748bb8631d8f528e1283ac20da9915d/LICENSE",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/px4-local-position/README.md",
+      "record_sha256": "28e23bda0054c2cff903bdb480918e8598ed0f41cc2a63adae8680d5d488846f"
     }
   ]
 }

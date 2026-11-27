@@ -1,6 +1,6 @@
 # Literature matrix
 
-Updated on 2026-11-16. The registry contains **22 references**: the initial 16, four sources from the R03 follow-up, and two official library references for R02. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
+Updated on 2026-11-27. The registry contains **27 references**: the initial 16, four sources from the R03 follow-up, two R02 library references, and five retained primary/official sources for the candidate assessments. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
 
 Metadata, access details, and proposed leads are in [sources.json](sources.json); citation records are in [references.bib](references.bib).
 
@@ -9,7 +9,7 @@ Full-text/PDF storage and acquisition gaps are indexed separately in the [source
 | ID | Type / reviewed material | Directly supported relevance | Still to check |
 | --- | --- | --- | --- |
 | `dong2026` | Journal; abstract and retrieved reconnection sections | Reconnection includes identity, program integrity, and task-behavior checks | GNSS confidence, update lifecycle/recovery, version dependencies, role decisions, exact trust assumptions |
-| `usman2026` | Journal; selected full-text architecture, implementation and limitation passages | Attestation/update integration, A/B recovery and an explicit rollback-attack limitation | Full protocol/experiment review; exact navigation/team coverage and matched assurance assumptions |
+| `usman2026` | Journal; comparative author-stage desk review of main text/appendix, selected original figures inspected | Update/attestation phases, A/B recovery, measured protocol-operation context and explicit security limits | No result/proof reproduction or independent cross-review; matched trust/navigation/mission assumptions still needed |
 | `yaacoub2023` | Journal; selected full-text target/update-model/limitation passages | Scheduler-dependent idle-time scheduling; evaluation models update duration rather than applying an actual update | Full algorithm/proof/experiment review and matched comparison to ground-only companion updates |
 | `kuppusamy2018` | Journal; publisher abstract/metadata | Compromise-resilient vehicle update framework | Mechanisms and experiments in the full article; distinguish article from normative specification |
 | `tuf-spec` | Official specification; version and overview | Secure update reference, observed version 1.0.37 | Exact expiration, metadata consistency, rollback, and key-rotation requirements for any reused implementation |
@@ -31,6 +31,11 @@ Full-text/PDF storage and acquisition gaps are indexed separately in the [source
 
 | `python-tuf` | Official v7.0.1 README/API and selected source | Native TUF client workflow, bootstrap trust, metadata verification and verified target download | GNSS-independent time integration, installer/recovery behavior and target-board feasibility remain untested |
 | `cryptography-ed25519` | Official 50.0.2 sign/verify passages and upstream RST | Signature primitive API, not a complete updater | Authorization/freshness/persistence/installation policies would still need a separate design |
+| `pant2024` | Author preprint; comparative main-text desk review and selected original figures | Mixed-reality sensor-fault framework, timing assumptions and single-real-UAV demonstration | Future swarm use is distinct from demonstrated scope; update-security coverage unconfirmed; no replication or independent review |
+| `flagger-canary` | Pinned official guide; canary-analysis section | Metric/webhook-based promotion and rollback are existing deployment practice | Kubernetes traffic gating does not establish navigation-specific validation |
+| `px4-local-position` | Pinned native message definition | Producer timestamps, validity/reset indicators and error estimates | No automatic trusted boot/session binding, authentication or calibration guarantee |
+| `aljaafreh2026` | Selected publisher mode-management/discussion passages; original PDF blocked | Navigation source quarantine and reintegration already have related work | Full method/claims not reviewed; software-update/swarm-role coverage unknown |
+| `rodriguez2025` | Abstract and selected CoFI/ConOps passages; original PDF blocked | Formation-state/fault modeling involving navigation, link and energy faults | Exact reproducibility and update-security coverage not confirmed |
 
 The [R03 review](../reviews/2026-11-01-r03-review.md) records what was checked and what still blocks scientific acceptance. Survey availability and automatic transcription do not complete the primary-method reading requirement.
 
