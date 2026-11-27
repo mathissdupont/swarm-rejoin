@@ -175,3 +175,20 @@ The [bounded contribution gate](../../docs/12-contribution-and-decision-gate.md)
 ## Schedule acceleration requested on 2026-11-27
 
 Samet requested a faster schedule after reviewing the initial roadmap. The working contribution/contract gate moves from 11 December to **2 December 2026**, using existing notes and designed traces rather than restarting research. The revised [roadmap](../../docs/07-roadmap-and-team.md) targets the first vertical prototype on 11 December and the core technical report/reproducibility package on **22 January 2027**. Later SITL is optional; the complete first thesis draft target is 26 February, with revisions before the provisional May deadline. This is a planning change, not additional research, a confirmed team-capacity estimate, advisor approval or completed work. The preceding search entry preserves the original target as history.
+
+## Team explanation and originality challenge - 2026-11-27
+
+Samet requested an explanation for the other authors and explicitly emphasized originality. Prepared the [team briefing](../../docs/13-team-brief.md), distinguishing routine engineering from a possible method or empirical contribution. No message was sent, meeting held or approval inferred. The 2 December working gate and accelerated roadmap are unchanged.
+
+Targeted web searches used default ordering and no date/domain filters:
+
+```text
+"swarm" "software update" "navigation" "rejoining"
+robot software update localization state continuity revalidation evidence
+"Over-the-Air Updates for Robotic Swarms" rollback
+"RobOTAP" "Over-the-Air Programming"
+```
+
+Reused the existing swarm-OTA, RobOTAP and RASUES records. The [institutional OTA publication page](https://pure.etsmtl.ca/en/publications/over-the-air-updates-for-robotic-swarms/) and Inria's official activity report corroborated the established swarm-update context; they were discovery/corroboration locations for existing studies, not additional retained papers. ROSBuzz remains a citation-chasing lead. An Internet-Draft, an evolving teaching page, commercial revalidation guidance and community posts appeared in the broad search; their original claims, status and dependencies were not reviewed and they were not used to substantiate originality or technical guarantees. No systematic result count or search-saturation claim is made.
+
+No new source family or full-text capture was added. The briefing requires a justified difference against competent B3, actual observable evidence, section-specific nearest-work distinctions, held-out consequences and a refutation condition before claiming a new method. Routine stale-sample rejection alone is insufficient. Originality remains unresolved.

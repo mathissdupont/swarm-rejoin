@@ -14,6 +14,8 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
 
 ## Start here
 
+For the team discussion, begin with the [plain-language idea and originality test](docs/13-team-brief.md).
+
 1. Read the [topic assessment and alternatives](docs/01-topic-decision.md).
    Compare the [six candidate thesis topics](docs/09-topic-shortlist.md) before committing to a final question.
 2. Follow the [literature review protocol](docs/03-literature-review-protocol.md) and inspect the [source matrix](research/literature/matrix.md).

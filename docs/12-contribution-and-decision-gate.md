@@ -2,6 +2,8 @@
 
 Prepared: **2026-11-27**. Status: proposed T1/T5 narrowing, not established novelty, advisor approval, a verified protocol or experimental findings. This supplies a new gate; the historical 7 November target was not a completed meeting.
 
+Use the [team briefing](13-team-brief.md) to explain the proposal and challenge its originality. Samet has explicitly prioritized originality; an empirical fallback is not automatically an acceptable substitute for a new-method requirement.
+
 ## Recommended question
 
 **Working title: Navigation Evidence Continuity Across Secure Updates and Swarm Re-admission.**
