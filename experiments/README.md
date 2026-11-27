@@ -1,6 +1,6 @@
 # Experiment specifications
 
-Nothing in this directory is an executed experiment. [scenarios.json](scenarios.json) is a design-only catalog for a future simulator. Its scenarios are project proposals; supporting source identifiers refer to background mechanisms, not to proof that those sources used the same experiments.
+[scenarios.json](scenarios.json) remains a design-only catalog for a future simulator. Its scenarios are project proposals; supporting source identifiers refer to background mechanisms, not to proof that those sources used the same experiments. The separate [executable integration fixture](../docs/16-prototype-quickstart.md) can save ignored run outputs under `results/`; those are authored-evidence smoke runs, not completed catalog scenarios or scientific experiments.
 
 Begin with the [evaluation plan](../docs/06-evaluation-plan.md). Every implemented scenario needs a ground-truth generator, observations visible to policies, precise fault timing/severity, role requirements, and an independently evaluated outcome.
 

@@ -1,0 +1,8 @@
+# Version constraints for the exploratory fixture; not the PDF archive tools.
+# Install with: python -m pip install -c requirements-runtime.txt -e .
+tuf==7.0.1
+securesystemslib==1.6.0
+cryptography==50.0.2
+urllib3==2.8.0
+cffi==2.1.1
+pycparser==3.12

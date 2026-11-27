@@ -4,7 +4,7 @@
 
 **Team:** [Samet Ünsal](https://github.com/mathissdupont) · [Ceren Tolunay](https://github.com/cerentolunay) · [Halil Abacı](https://github.com/halilabaci)
 
-**Status:** Research scoping. The final thesis topic and novelty claim are not yet established.
+**Status:** Research scoping with a first executable verification/lifecycle fixture. The final thesis topic and novelty claim are not yet established.
 
 **Planning target:** May 2027, subject to the university's official deadline.
 
@@ -16,6 +16,7 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
 
 For the team discussion, begin with the [plain-language idea and originality test](docs/13-team-brief.md).
 For the next work assignments, coding entry criteria and Windows/Linux simulation setup, use the [implementation handoff](docs/15-implementation-handoff.md).
+To run the first executable fixture, follow the [prototype quickstart](docs/16-prototype-quickstart.md).
 
 1. Read the [topic assessment and alternatives](docs/01-topic-decision.md).
    Compare the [six candidate thesis topics](docs/09-topic-shortlist.md) before committing to a final question.
@@ -36,13 +37,25 @@ For the next work assignments, coding entry criteria and Windows/Linux simulatio
 - R02's [authored research handoff](research/reports/R02_Secure_Update_Foundations.md), checked 2026-11-27: all four desk deliverables are present; another-author acceptance is still pending in [PR #18](https://github.com/mathissdupont/swarm-rejoin/pull/18).
 - Samet's [T3 configuration-rollout](research/reports/R08_T3_Navigation_Configuration_Assessment.md) and [T5 recovery/evidence](research/reports/R10_T5_Navigation_Recovery_Assessment.md) candidate assessments, plus a [six-topic comparison](research/reports/R05_Topic_Comparison.md), [benchmark candidate](research/reports/R11_T6_Joint_Fault_Benchmark_Assessment.md) and [nearest-work evidence table](research/reports/R01_Closest_Work_Comparison.md). These are research artifacts, not adopted replacement topics or experiment results.
 - [Six accepted update requirements](docs/decisions/0002-update-mvp-requirements.md) for the mission/coordination application prototype, with remaining library, contract, and review work identified.
-- An [accepted companion deployment boundary](docs/decisions/0003-companion-deployment-and-ground-activation.md): target an onboard Linux mission application and activate only while confirmed landed and disarmed; language, framework, and hardware selection remain open.
+- An [accepted companion deployment boundary](docs/decisions/0003-companion-deployment-and-ground-activation.md): target an onboard Linux mission application and activate only while confirmed landed and disarmed. The exploratory fixture uses Python-TUF; hardware and production-installer choices remain open.
 - A [draft update-manifest information model](docs/11-update-manifest-draft.md) separating release authorization, artifact binding, compatibility, runtime evidence, and a possible TUF mapping; this is not an implemented schema or verifier.
 - A proposed architecture, explicit trust assumptions, baseline comparisons, and a fault scenario catalog.
 - A [replanned calendar through May 2027](docs/07-roadmap-and-team.md), with owners, exit criteria, a contribution gate and an early stop/pivot rule.
 - A dependency-free repository checker and a GitHub Actions workflow.
+- A [Python-TUF verification and modeled lifecycle fixture](docs/16-prototype-quickstart.md), with real signed metadata/payload checks, authorized fallback, navigation-context role gates and behavioral tests. This is exploratory infrastructure under [ADR 0004](docs/decisions/0004-exploratory-verification-fixture.md), not the final research simulator or evidence of novelty.
 
-**There is no UAV simulator, signature verifier, updater, GNSS estimator, PX4 adapter, or experimental result yet.** Proposed designs and scenario parameters are not validated findings. A signed release manifest cannot by itself prove what software is running on a remote UAV.
+**There is no vehicle-motion/GNSS simulator, comparative B3/P implementation, real process installer, PX4 adapter or scientific result yet.** The executable fixture uses authored evidence and modeled transitions. Proposed scenario parameters are not validated findings. A signed release manifest cannot by itself prove what software is running on a remote UAV.
+
+## Run the exploratory fixture
+
+```powershell
+python -m venv .venv
+.venv/Scripts/python.exe -m pip install -c requirements-runtime.txt -e .
+.venv/Scripts/python.exe -m swarm_rejoin.demo
+.venv/Scripts/python.exe -m unittest discover -s tests -p "test_*.py"
+```
+
+The [quickstart](docs/16-prototype-quickstart.md) includes Linux commands, saved run artifacts and exact trust/model limits. The fixture's nine deterministic events are an integration check, not an experiment measuring GNSS integrity or a policy advantage.
 
 ## Repository layout
 
@@ -52,8 +65,8 @@ research/literature/     Source registry, bibliography, matrix, searches, initia
 research/library/        Source captures, original PDFs, rights/provenance, acquisition gaps
 research/templates/      Paper reviews, experiment reports, meetings, decisions
 experiments/             Planned fault scenarios and result recording conventions
-src/swarm_rejoin/        Implementation boundary map; development starts after topic selection
-tests/                   Future behavioral tests and their acceptance criteria
+src/swarm_rejoin/        Exploratory verification, modeled lifecycle and authored evidence fixture
+tests/                   Behavioral verification/lifecycle/fixture tests and source-library tests
 tools/check_repo.py      Offline checks for references, links, and scenario metadata
 .github/                 Review templates and repository checks
 ```

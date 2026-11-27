@@ -62,6 +62,8 @@ Bars end on the day after each planned work period. Milestones are targets; no o
 
 ## Next three working days: 30 November-2 December
 
+Exploratory infrastructure is now available in the [prototype quickstart](16-prototype-quickstart.md): actual TUF verification, modeled recovery and role-evidence gates. Continue from those modules instead of recreating them. Sensor/model calibration, team policies and real Linux installer behavior remain open; no milestone is marked complete merely by this fixture.
+
 The [implementation handoff](15-implementation-handoff.md) separates work that can start now from joint integration after the shared-model gate, and specifies the three simulation layers and Windows/WSL2 path.
 
 | Owner | Next inspectable artifact | Tracking |

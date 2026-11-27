@@ -9,6 +9,8 @@
 
 ## Recommendation
 
+**Implementation follow-up, 2026-11-27:** Python-TUF 7.0.1 is now used in the [exploratory integration fixture](../../docs/16-prototype-quickstart.md), including its actual client refresh/target-download workflow. Behavioral tests exercise signatures, payload hashes, metadata expiry/replay and project constraints. This updates the original desk-only status for that bounded component, not deployment feasibility, independent acceptance or the remaining clock/installer limitations.
+
 Use **Python-TUF as the first reference implementation to evaluate for update metadata and artifact verification**. For this desk assessment the examined release is **7.0.1**, pinned to upstream commit `49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15`. This is a research recommendation, not a final product-language decision, adopted repository dependency, or claim of a working updater.
 
 The reason is responsibility coverage: a primitive-only signature library would still leave us designing metadata roles, freshness/version handling and a client workflow. Reusing a reference client makes those established mechanisms a clearer shared baseline for the later GNSS/swarm comparison. Our lifecycle, compatibility and evidence requirements remain outside that library's automatic interpretation.

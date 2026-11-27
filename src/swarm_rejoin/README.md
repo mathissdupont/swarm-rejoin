@@ -1,19 +1,14 @@
-# Implementation boundary map
+# Exploratory implementation boundary map
 
-This directory intentionally contains no executable simulator or security implementation yet. Start after the team selects a concrete question within GNSS, secure updates, and UAV swarms.
+The first [executable fixture](../../docs/16-prototype-quickstart.md) implements the modules below. It is reusable infrastructure authorized by Samet, not the final model/contribution decision or the complete mission simulator.
 
-The [implementation handoff](../../docs/15-implementation-handoff.md) now distinguishes reusable infrastructure/verification tests that can start immediately from integration dependent on the 2 December working contract/model gate. This remains a module plan, not implemented behavior.
-
-Proposed modules:
-
-| Module | Responsibility | Boundary |
+| Module | Implemented responsibility | Limit |
 | --- | --- | --- |
-| `navigation` | GNSS/IMU observations, consistency evidence, uncertainty and age | Does not grant roles or declare a device uncompromised |
-| `updates` | Verified release metadata, staged transfer/activation, permitted recovery | Uses real verification libraries when implemented; does not trust a Boolean self-report |
-| `evidence` | Session binding, provenance, freshness, software/navigation appraisal | Exposes appraised evidence to policies; separate from hidden truth |
-| `policies` | Baselines and candidate joint decisions under hard constraints | Cannot read evaluator ground truth |
-| `simulation` | Agent/mission dynamics, faults, reproducible event scheduling | Defines physical and operational modeling limits |
-| `evaluation` | Independent labels, metrics, uncertainty and traces | Does not define safety from the policy's own score |
-| `adapters` | A later PX4/companion-service case study | Must not equate a service restart with autopilot firmware flashing |
+| `verification.py` | Actual Python-TUF bootstrap/metadata/payload workflow and narrow project release appraisal | No installer, hardware protection or latest-release knowledge guarantee |
+| `fixture_repository.py` | Real signed in-memory repository, ephemeral in-memory signing keys, deterministic transfer-fault transport | Test/demo publisher, not deployment infrastructure or an identity protocol |
+| `lifecycle.py` | Ground/health/update/fallback transitions, current authorization and session/producer/age-bound role grants | In-process operational/health/navigation observations and protected-state assumptions; no real process or flight commands |
+| `demo.py` and `fixtures/rejoin.json` | Six-vehicle, nine-event authored fixture with saved provenance, public metadata and independent authored labels | No vehicle dynamics, GNSS/IMU estimation, B3/P comparison or scientific performance result |
 
-These names are implementation proposals, not stable APIs. Select packaging and dependencies when executable behavior exists.
+Future modules remain `navigation` (selected sensor/truth model), `policies` (fair nominal/contingency baselines and P if justified), `simulation` (mission/event/fault models), `evaluation` (independent physical labels/metrics) and `adapters` (Linux process/PX4 integration). They are not implemented by merely naming them here.
+
+The [handoff](../../docs/15-implementation-handoff.md) and [D01 draft](../../docs/14-recovery-and-role-contract.md) define pending team/model work. A process/session change is not a flight-controller reset; a verified artifact is not proof of uncompromised running software or correct navigation.

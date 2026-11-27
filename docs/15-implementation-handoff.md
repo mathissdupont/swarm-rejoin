@@ -2,6 +2,8 @@
 
 Prepared: **2026-11-27** for **Samet Ünsal, Ceren Tolunay and Halil Abacı**. PR #20 was merged at Samet's request. Its merge publishes the research artifacts; it does not establish originality, peer acceptance or implemented UAV behavior.
 
+**Executable follow-up:** The [prototype quickstart](16-prototype-quickstart.md) now runs a bounded verification/lifecycle/role fixture. The work below remains the broader handoff: motion/GNSS models, comparative policies, real process recovery and PX4 are pending. This fixture does not mark the 2 December model/contribution gate complete.
+
 ## When coding can start
 
 **Start reusable implementation work now:** environment/dependency recording, event/data types, deterministic trace loading, real update-verification tests and an evaluator skeleton. These support either a positive or negative research outcome. Do not wait for a proven novelty claim before building the tools needed to test it.

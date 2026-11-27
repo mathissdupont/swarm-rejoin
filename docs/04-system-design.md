@@ -1,6 +1,8 @@
 # Proposed system design
 
-Status: design candidate A, joining GNSS evidence, secure updates, and swarm rejoining; no implementation exists. Requirements here are project choices, not a claim of TUF, Uptane, SUIT, or RATS conformance.
+Status: design candidate A, joining GNSS evidence, secure updates, and swarm rejoining. Requirements here are project choices, not a claim of TUF, Uptane, SUIT, or RATS conformance.
+
+**Implementation follow-up, 2026-11-27:** The [first fixture](16-prototype-quickstart.md) implements a bounded subset: actual TUF verification and modeled lifecycle/role gates. Navigation, mission policies, a real installer and PX4 integration remain unimplemented. Python-TUF 7.0.1 is now the exploratory fixture dependency; the historical framework/platform choices below are not production-feasibility evidence.
 
 The six update requirements in [ADR 0002](decisions/0002-update-mvp-requirements.md) were accepted by Samet on 2026-11-10. They fix the companion mission/coordination application as the update target, the authority/trust-anchor model, mandatory verification, interrupted-transfer behavior, permitted fallback, and conservative handling of insufficient freshness evidence. Other interfaces and the final research question remain provisional.
 
