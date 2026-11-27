@@ -12,6 +12,12 @@ The research problem is to understand how **navigation integrity evidence and se
 
 The intended scope keeps GNSS, secure updates, and swarm behavior together. A specific link between GNSS confidence and update timing must be justified by the modeled operation; it is not assumed to hold for every UAV architecture.
 
+## Concrete narrowing to assess
+
+The latest [originality decision analysis](../research/reports/Originality_Assessment_2026-11-27.md) and [D01 draft](14-recovery-and-role-contract.md) examine pre-activation navigation-role readiness after authorized recovery. Revalidation is common baseline behavior. A generic contingency-aware role planner receives the same predictions/branches as P and may match it; a win against nominal planning alone is insufficient for algorithmic originality.
+
+The [2026-11-27 contribution proposal](12-contribution-and-decision-gate.md) makes C1-C3 operational through navigation-evidence dependencies, application/producer continuity, role permission invalidation and a competent static comparator. It is a proposed narrowing, not a replacement for accepted deployment requirements or a proven novel policy. Use its three-working-day gate and the [dated roadmap](07-roadmap-and-team.md); freeze the final hypotheses after the decision.
+
 ## Proposed contribution hierarchy
 
 | Item | Candidate contribution | What would support it |

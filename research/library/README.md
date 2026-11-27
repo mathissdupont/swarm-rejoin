@@ -1,6 +1,6 @@
 # Research source library
 
-27 source records; 19 full-text Markdown captures; 12 original PDFs. Counts describe stored material, not completed reviews.
+33 source records; 21 full-text Markdown captures; 13 original PDFs. Counts describe stored material, not completed reviews.
 
 Every retained source has a local record. Full text is stored only when retrieval and redistribution are supported. A record-only item is explicitly incomplete; it is not a substitute for the full paper.
 
@@ -35,6 +35,12 @@ Existing material in Ceren's literature folder is indexed in place to avoid dupl
 | [pant2024](pant2024/README.md) | [Full text](../../research/library/pant2024/full-text.md) | [PDF](../../research/library/pant2024/source.pdf) | Complete PDF and automatic text capture; reading status is unchanged. |
 | [flagger-canary](flagger-canary/README.md) | [Full text](../../research/library/flagger-canary/full-text.md) | not located | Original Markdown captured. No separate official PDF was located on the inspected source. |
 | [px4-local-position](px4-local-position/README.md) | [Full text](../../research/library/px4-local-position/full-text.md) | not located | Complete native message-definition source wrapped as Markdown, not the complete generated documentation. No official standalone PDF located. |
+| [varadharajan2018](varadharajan2018/README.md) | Record only | redistribution unconfirmed | Institutional manuscript rights notice requires IEEE permission for redistribution to servers/lists; public retrieval is not a redistribution grant. Local PDF retrieval timed out. Selected indexed passages were checked; no full text is archived. |
+| [robotap2024](robotap2024/README.md) | [Full text](../../research/library/robotap2024/full-text.md) | [PDF](../../research/library/robotap2024/source.pdf) | HAL cover explicitly grants CC BY 4.0. Unchanged seven-page PDF and all-page transcription archived; selected method reading only, no benchmark reproduced. |
+| [openswarm-d24](openswarm-d24/README.md) | Record only | redistribution unconfirmed | Cover marks public release but expressly limits reproduction/distribution to OpenSwarm Consortium members and the European Commission. No repository redistribution permission established; no full text archived. |
+| [shagor2026](shagor2026/README.md) | Record only | redistribution unconfirmed | Publisher PDF retrieved for selected reading. NC/ND terms do not establish permission for this repository full-text conversion/publication workflow; retain a source record and official link, not an archived full-text claim. |
+| [notomista2021](notomista2021/README.md) | Record only | redistribution unconfirmed | Public preprint uses an arXiv-specific nonexclusive distribution license; repository redistribution permission is unconfirmed. Retain abstract-level note and metadata; no full text or PDF archived. |
+| [swarmada-rollouts](swarmada-rollouts/README.md) | [Full text](../../research/library/swarmada-rollouts/full-text.md) | not located | Complete pinned API and two controller files wrapped as Markdown, plus unchanged Apache license. This is a three-file source snapshot, not the whole project or executed validation. No separate official PDF located. |
 
 ## Add or update a source
 

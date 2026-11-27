@@ -141,3 +141,82 @@ Full-text access and reviewed version:
 Claims or table cells changed:
 Next citation-chasing step:
 ```
+
+## Targeted originality follow-up - 2026-11-27
+
+Purpose: respond to the request for a defensible contribution and concrete roadmap, challenging the T1/T5 proposal rather than claiming novelty. Assisted preparation for Samet Ünsal. Web search used default ordering without date/domain filters. Exact queries from this follow-up:
+
+```text
+robot swarm software update recovery navigation evidence rejoining attestation state freshness
+robot software rollback localization state reinitialization mission rejoining
+"RobOTAP" swarm programming paper
+"s41598-026-78674-0"
+"OpenSwarm" "D2.4" firmware
+"Over-the-Air Updates for Robotic Swarms" "rollback"
+site:hal.science/hal-04581750 "RobOTAP"
+"D2.4" "OpenSwarm" "2024" author
+site:espace2.etsmtl.ca/id/eprint/18907 "Personal use" permission
+site:inria.hal.science/hal-04581750 "Creative Commons"
+```
+
+| Retained ID | Selection / reading depth | Acquisition |
+| --- | --- | --- |
+| `varadharajan2018` | Closest swarm-OTA overlap; indexed update-strategy page | Record only: IEEE rights restriction, local timeout |
+| `robotap2024` | Primary HAL protocol/implementation/conclusion passages; archive cover and protocol figure visually inspected | Original seven-page PDF plus complete Markdown; cover grants CC BY 4.0 |
+| `openswarm-d24` | Official cover and executive summary, selected reading | Distribution restricted; record only |
+| `shagor2026` | Publisher title/abstract and original Article in Press limitations | NC/ND workflow restriction recorded; no published full-text capture |
+
+RobOTAP was also found in Inria's official 2024 AIO activity report; the HAL manuscript, not an unrelated DeepMind RoboTAP result, is the retained study. The Nature DOI resolves to the firmware-policy title recorded in the registry; the inconsistent earlier discovery label is not treated as another paper. Source versions and reading limits are explicit in the individual notes. ROSBuzz's 2020 follow-up (DOI 10.3389/frobt.2020.00051) is a citation-chasing lead, not a completed comparison. Commercial rollback guidance, bibliography aggregators and unrelated patent results were not used as mechanism evidence. Rights searches returning unrelated PDFs did not establish rights for our sources.
+
+This is a targeted pass, not a systematic screening export or saturation finding. No total-screened count is asserted. Existing sources are reused in place. The library now has 31 records, 20 full-source Markdown captures and 13 original PDFs; these are storage counts, not reading completions. Three newly retained items are record-only. Full text is not mislabeled as archived when permissions or acquisition are unresolved.
+
+The [bounded contribution gate](../../docs/12-contribution-and-decision-gate.md) and [roadmap](../../docs/07-roadmap-and-team.md) replace an open-ended research loop with a proposed 11 December decision. Ordinary freshness/invalidation is not automatically a research contribution. Final comparison must allow a competent static baseline to preserve a continuously running estimator. No code, model check, experiment, cross-review approval or advisor meeting was completed in this follow-up.
+
+## Schedule acceleration requested on 2026-11-27
+
+Samet requested a faster schedule after reviewing the initial roadmap. The working contribution/contract gate moves from 11 December to **2 December 2026**, using existing notes and designed traces rather than restarting research. The revised [roadmap](../../docs/07-roadmap-and-team.md) targets the first vertical prototype on 11 December and the core technical report/reproducibility package on **22 January 2027**. Later SITL is optional; the complete first thesis draft target is 26 February, with revisions before the provisional May deadline. This is a planning change, not additional research, a confirmed team-capacity estimate, advisor approval or completed work. The preceding search entry preserves the original target as history.
+
+## Team explanation and originality challenge - 2026-11-27
+
+Samet requested an explanation for the other authors and explicitly emphasized originality. Prepared the [team briefing](../../docs/13-team-brief.md), distinguishing routine engineering from a possible method or empirical contribution. No message was sent, meeting held or approval inferred. The 2 December working gate and accelerated roadmap are unchanged.
+
+Targeted web searches used default ordering and no date/domain filters:
+
+```text
+"swarm" "software update" "navigation" "rejoining"
+robot software update localization state continuity revalidation evidence
+"Over-the-Air Updates for Robotic Swarms" rollback
+"RobOTAP" "Over-the-Air Programming"
+```
+
+Reused the existing swarm-OTA, RobOTAP and RASUES records. The [institutional OTA publication page](https://pure.etsmtl.ca/en/publications/over-the-air-updates-for-robotic-swarms/) and Inria's official activity report corroborated the established swarm-update context; they were discovery/corroboration locations for existing studies, not additional retained papers. ROSBuzz remains a citation-chasing lead. An Internet-Draft, an evolving teaching page, commercial revalidation guidance and community posts appeared in the broad search; their original claims, status and dependencies were not reviewed and they were not used to substantiate originality or technical guarantees. No systematic result count or search-saturation claim is made.
+
+No new source family or full-text capture was added. The briefing requires a justified difference against competent B3, actual observable evidence, section-specific nearest-work distinctions, held-out consequences and a refutation condition before claiming a new method. Routine stale-sample rejection alone is insufficient. Originality remains unresolved.
+
+## Recovery-to-navigation readiness investigation - 2026-11-27
+
+Purpose: respond to Samet's request to find a concrete originality candidate and perform the necessary research handoff. Assisted author-stage work; no independent approval. Web search used default ordering without date filters; explicit exclusions are part of the queries below.
+
+```text
+"cooperative localization" "software update"
+"rolling updates" "multi-robot"
+"swarm" "software updates" scheduling failure
+robot software update scheduling mission capabilities recovery
+"robot" "software updates" "scheduling" "swarm" -site:dev.to -site:academia.edu -site:patents.google.com
+"rolling upgrade" "failure" "planning" paper
+"multi-robot" "capability" "resilient" task allocation
+"GNSS" "update scheduling" UAV
+"secure updates" "task allocation" robots
+"software updates" "recoverability" "robot"
+"robot" "updates" "capability" "rollback" scheduling -site:dev.to -site:patents.google.com -site:github.com
+```
+
+Retained `notomista2021` from its original arXiv abstract, license link and Crossref metadata. Its v1 is dated 2021, while Crossref's journal publication is February 2022; do not silently conflate versions. The arXiv license grants distribution to arXiv, with no repository republication permission established. Record-only source, not an archived or fully reviewed paper. Its feature/capability resilience makes a generic contingency-aware comparator necessary.
+
+Retained `swarmada-rollouts` as an official implementation/design reference, not a peer-reviewed evaluation. GitHub API resolved commit `8415495eff904b5d03c47ffdb263d895c0ed752a`. Captured the complete rollout API and two controller files as Markdown plus the unchanged Apache-2.0 license. Selected maximum-unavailability, failure pause and recovery sections were inspected, without building/running the code or auditing the full project. Three-file capture is not a whole-project archive. No official PDF was located for these source files.
+
+Kubernetes' official disruption guide was inspected as context for existing count-based disruption budgets; no claim that those budgets model all rollout or involuntary failures was adopted. It is a contextual lead, not a retained new study or our implementation. Earlier NeRTA and cooperative-localization references were reused; the EWSN NeRTA version is a related-version lead rather than an additional independently reviewed study. Broader results included patents, commercial/blog guidance, general resilience work and unrelated news. They were not used as experimental evidence or to claim novelty; no numerical search-screening total or saturation is asserted.
+
+Delivered the [D01 contract draft](../../docs/14-recovery-and-role-contract.md) and [originality/decision analysis](../reports/Originality_Assessment_2026-11-27.md). The worked table is an explicitly designed projected-capability fixture, not sensor simulation or measured performance. It distinguishes nominal from branch-aware choices and explicitly records that a generic contingency-aware planner can equal P. Navigation-readiness calibration and full adjacent-method review remain scientific blockers; no new-algorithm claim follows.
+
+Storage totals: 33 source/library records, 21 complete named-source Markdown captures, 13 original PDFs. No new PDF was archived in this pass. The accelerated dates remain targets; no source review, model check, experiment, meeting or issue closure is fabricated.

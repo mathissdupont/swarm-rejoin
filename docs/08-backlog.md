@@ -50,3 +50,9 @@ The table below keeps the larger scope visible. It is not a claim that every imp
 | O01 | Setup | Samet | Publish the public repository and invite the team | Public repository created; write invitations sent to the verified accounts; acceptance checked separately; license remains a team decision |
 
 Use [research issue templates](../.github/ISSUE_TEMPLATE/research_task.md) and [decision records](../research/templates/decision-record.md) as work begins. Live task state and assignments belong in [GitHub issues](https://github.com/mathissdupont/swarm-rejoin/issues). The table above is a scope map, not an automatically synchronized issue-status report.
+
+## Bounded next gate - 2026-11-27 replan
+
+An initial [D01 contract](14-recovery-and-role-contract.md) and [originality/decision analysis](../research/reports/Originality_Assessment_2026-11-27.md) are now authored. D01/#12 remains open: Ceren must validate navigation-readiness branches, Samet must check installer-consistent fallback paths, and Halil must check generic contingency-aware B3 and recourse. This replaces asking for another blank dependency table; it does not imply independent acceptance or implementation.
+
+Use the [30 November-2 December contribution gate](12-contribution-and-decision-gate.md) and [dated roadmap with owners](07-roadmap-and-team.md). Deliver the update/navigation dependency contract, justified monitor assumptions and B3/P hand traces through existing R01/R02/R03/R04/D01/D03 tasks. R05/R06 record the contribution decision and actual advisor response; they are not complete merely because this plan exists. Park optional candidate work unless the gate requires it. No issue state or peer acceptance is changed by this local roadmap.
