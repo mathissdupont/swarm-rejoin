@@ -8,6 +8,8 @@ We study a UAV returning to a swarm after a connection loss and an authorized mi
 
 Our proposed model tracks which navigation claims remain usable when the application, navigation producer, configuration or reference frame changes. It then appraises the vehicle for a specific swarm role using current evidence and unchanged security constraints. The flight-controller estimator may continue while the companion application restarts; preserving that continuity must not mean trusting an old position sample.
 
+The [concrete follow-up](../research/reports/Originality_Assessment_2026-11-27.md) uses this shared contract before activation too: assess which roles remain feasible if the update fails and the authorized fallback succeeds. A recovered application may be healthy before its navigation evidence qualifies it for the next mission phase. The [D01 draft](14-recovery-and-role-contract.md) specifies that decision and a hand-worked example. A generic contingency-aware planner is a required comparator; it may already make the same choice.
+
 We want to determine whether this explicit model exposes important cross-component failures and supports better service decisions than a competent static policy. We will share fault traces, independent truth and reproducible comparisons. We are investigating a contribution, not announcing the first secure swarm updater or a proven new algorithm.
 
 ## A concrete episode

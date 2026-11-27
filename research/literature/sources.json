@@ -409,5 +409,32 @@
     "verified_on": "2026-11-27",
     "full_text_review_complete": false,
     "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "notomista2021",
+    "title": "A Resilient and Energy-Aware Task Allocation Framework for Heterogeneous Multi-Robot Systems",
+    "year": 2021,
+    "kind": "journal_article",
+    "url": "https://arxiv.org/abs/2105.05586",
+    "doi": "10.1109/TRO.2021.3102379",
+    "observed_version": "arXiv:2105.05586v1, 12 May 2021; Crossref records journal publication February 2022 with Multirobot in journal title",
+    "accessed_material": "Original arXiv abstract and license link; Crossref authors/publication metadata. No full-method review or numerical replication. arXiv nonexclusive distribution grant is to arXiv, not repository republication.",
+    "review_status": "seed_abstract",
+    "full_text_review_complete": false,
+    "verified_on": "2026-11-27",
+    "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "swarmada-rollouts",
+    "title": "Swarmada rollout API and controller source snapshot",
+    "year": 2026,
+    "kind": "official_documentation",
+    "url": "https://github.com/swarmada/swarmada",
+    "observed_version": "Commit 8415495eff904b5d03c47ffdb263d895c0ed752a; rollout_types.go and firmware/model rollout controllers",
+    "accessed_material": "Complete pinned API and two controller files retained; selected rollout limits, batch admission, model recovery and firmware rollback comments/code inspected. No build, test, deployment or complete security/GNSS audit performed.",
+    "review_status": "seed_selected_sections",
+    "full_text_review_complete": false,
+    "verified_on": "2026-11-27",
+    "proposed_lead": "Samet Ünsal"
   }
 ]

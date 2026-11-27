@@ -76,4 +76,6 @@ Before committing to A:
 
 ## Originality follow-up: 2026-11-27
 
+**Concrete next artifact:** The [originality assessment](../research/reports/Originality_Assessment_2026-11-27.md) supplies a worked example, equivalence/negative cases and a proposed [recovery/navigation/role contract](14-recovery-and-role-contract.md). Investigate navigation-qualified recovery before activation; stale-cache rejection alone is no longer proposed as the main novelty. Resilient allocation and current robot rollout code materially constrain the claim, so generic contingency-aware planning is a required comparator. No new algorithm or literature absence is established.
+
 Swarm OTA itself has closer prior work in [Varadharajan et al.](../research/literature/notes/varadharajan2018.md) and [RobOTAP](../research/literature/notes/robotap2024.md). See the [specific contribution candidate](12-contribution-and-decision-gate.md) for a proposed navigation-evidence dependency/role contract across authorized application recovery. Ordinary reacquisition may already match it; the main baseline must not be forced into an artificial filter reset. The proposal preserves the accepted deployment boundary and remains conditional on source/contract review, observable provenance and an accepted thesis contribution type.

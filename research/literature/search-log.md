@@ -192,3 +192,31 @@ robot software update localization state continuity revalidation evidence
 Reused the existing swarm-OTA, RobOTAP and RASUES records. The [institutional OTA publication page](https://pure.etsmtl.ca/en/publications/over-the-air-updates-for-robotic-swarms/) and Inria's official activity report corroborated the established swarm-update context; they were discovery/corroboration locations for existing studies, not additional retained papers. ROSBuzz remains a citation-chasing lead. An Internet-Draft, an evolving teaching page, commercial revalidation guidance and community posts appeared in the broad search; their original claims, status and dependencies were not reviewed and they were not used to substantiate originality or technical guarantees. No systematic result count or search-saturation claim is made.
 
 No new source family or full-text capture was added. The briefing requires a justified difference against competent B3, actual observable evidence, section-specific nearest-work distinctions, held-out consequences and a refutation condition before claiming a new method. Routine stale-sample rejection alone is insufficient. Originality remains unresolved.
+
+## Recovery-to-navigation readiness investigation - 2026-11-27
+
+Purpose: respond to Samet's request to find a concrete originality candidate and perform the necessary research handoff. Assisted author-stage work; no independent approval. Web search used default ordering without date filters; explicit exclusions are part of the queries below.
+
+```text
+"cooperative localization" "software update"
+"rolling updates" "multi-robot"
+"swarm" "software updates" scheduling failure
+robot software update scheduling mission capabilities recovery
+"robot" "software updates" "scheduling" "swarm" -site:dev.to -site:academia.edu -site:patents.google.com
+"rolling upgrade" "failure" "planning" paper
+"multi-robot" "capability" "resilient" task allocation
+"GNSS" "update scheduling" UAV
+"secure updates" "task allocation" robots
+"software updates" "recoverability" "robot"
+"robot" "updates" "capability" "rollback" scheduling -site:dev.to -site:patents.google.com -site:github.com
+```
+
+Retained `notomista2021` from its original arXiv abstract, license link and Crossref metadata. Its v1 is dated 2021, while Crossref's journal publication is February 2022; do not silently conflate versions. The arXiv license grants distribution to arXiv, with no repository republication permission established. Record-only source, not an archived or fully reviewed paper. Its feature/capability resilience makes a generic contingency-aware comparator necessary.
+
+Retained `swarmada-rollouts` as an official implementation/design reference, not a peer-reviewed evaluation. GitHub API resolved commit `8415495eff904b5d03c47ffdb263d895c0ed752a`. Captured the complete rollout API and two controller files as Markdown plus the unchanged Apache-2.0 license. Selected maximum-unavailability, failure pause and recovery sections were inspected, without building/running the code or auditing the full project. Three-file capture is not a whole-project archive. No official PDF was located for these source files.
+
+Kubernetes' official disruption guide was inspected as context for existing count-based disruption budgets; no claim that those budgets model all rollout or involuntary failures was adopted. It is a contextual lead, not a retained new study or our implementation. Earlier NeRTA and cooperative-localization references were reused; the EWSN NeRTA version is a related-version lead rather than an additional independently reviewed study. Broader results included patents, commercial/blog guidance, general resilience work and unrelated news. They were not used as experimental evidence or to claim novelty; no numerical search-screening total or saturation is asserted.
+
+Delivered the [D01 contract draft](../../docs/14-recovery-and-role-contract.md) and [originality/decision analysis](../reports/Originality_Assessment_2026-11-27.md). The worked table is an explicitly designed projected-capability fixture, not sensor simulation or measured performance. It distinguishes nominal from branch-aware choices and explicitly records that a generic contingency-aware planner can equal P. Navigation-readiness calibration and full adjacent-method review remain scientific blockers; no new-algorithm claim follows.
+
+Storage totals: 33 source/library records, 21 complete named-source Markdown captures, 13 original PDFs. No new PDF was archived in this pass. The accelerated dates remain targets; no source review, model check, experiment, meeting or issue closure is fabricated.

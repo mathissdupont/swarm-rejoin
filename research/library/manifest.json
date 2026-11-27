@@ -912,6 +912,57 @@
       "artifacts": [],
       "record_path": "research/library/shagor2026/README.md",
       "record_sha256": "8ace2b340de9dce5a4a68bb5aa44cb8faa18eea14e1ccd1fa687b2a3ec7a3359"
+    },
+    {
+      "source_id": "notomista2021",
+      "canonical_url": "https://arxiv.org/abs/2105.05586",
+      "retrieved_on": "2026-11-27",
+      "version": "arXiv:2105.05586v1, 12 May 2021; Crossref records journal publication February 2022 with Multirobot in journal title",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "arXiv-nonexclusive-distrib-1.0",
+        "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "evidence_url": "https://arxiv.org/abs/2105.05586",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Public preprint uses an arXiv-specific nonexclusive distribution license; repository redistribution permission is unconfirmed. Retain abstract-level note and metadata; no full text or PDF archived.",
+      "artifacts": [],
+      "record_path": "research/library/notomista2021/README.md",
+      "record_sha256": "01a9260bb6c8201419047ff4fd5587c929356eb0b9f32ca40d4c84c4861f1ecd"
+    },
+    {
+      "source_id": "swarmada-rollouts",
+      "canonical_url": "https://github.com/swarmada/swarmada",
+      "retrieved_on": "2026-11-27",
+      "version": "Commit 8415495eff904b5d03c47ffdb263d895c0ed752a; rollout_types.go and firmware/model rollout controllers",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "Apache-2.0",
+        "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "evidence_url": "https://raw.githubusercontent.com/swarmada/swarmada/8415495eff904b5d03c47ffdb263d895c0ed752a/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete pinned API and two controller files wrapped as Markdown, plus unchanged Apache license. This is a three-file source snapshot, not the whole project or executed validation. No separate official PDF located.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/swarmada-rollouts/full-text.md",
+          "sha256": "9fd9bead1f0dc8cb193ae99a5c7900884c4fdb36546e8b8e113d3068b971bd85",
+          "origin_url": "https://github.com/swarmada/swarmada",
+          "transformation": "Complete three-file Go source snapshot in Markdown fences, with pinned per-file URLs; not the complete project"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/swarmada-rollouts/LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "origin_url": "https://raw.githubusercontent.com/swarmada/swarmada/8415495eff904b5d03c47ffdb263d895c0ed752a/LICENSE",
+          "transformation": "Unchanged upstream Apache-2.0 license"
+        }
+      ],
+      "record_path": "research/library/swarmada-rollouts/README.md",
+      "record_sha256": "15857c8aa26785a5b6607fb0ef63b34e4f8547ad3a924195b74fe4c61111ae9f"
     }
   ]
 }

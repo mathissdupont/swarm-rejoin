@@ -1,6 +1,6 @@
 # Literature matrix
 
-Updated on 2026-11-27. The registry contains **31 references**: the initial 16, four sources from the R03 follow-up, two R02 library references, five retained candidate-assessment sources, and four originality-follow-up sources. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
+Updated on 2026-11-27. The registry contains **33 references**: the initial 16, four sources from the R03 follow-up, two R02 library references, five retained candidate-assessment sources, four originality-follow-up sources, and two recovery-planning comparators. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
 
 Metadata, access details, and proposed leads are in [sources.json](sources.json); citation records are in [references.bib](references.bib).
 
@@ -41,6 +41,9 @@ Full-text/PDF storage and acquisition gaps are indexed separately in the [source
 | `robotap2024` | HAL v1 PDF archived; selected III-IV/VI | Signed/hash-checked robot-swarm image transfer | MCU timings not transferable; planned recovery extensions differ from implemented behavior; later implementations unchecked |
 | `openswarm-d24` | Official cover/executive summary only | Attested firmware state before network admission | Distribution restricted, methods unreviewed; public label is not a reuse license |
 | `shagor2026` | Article in Press abstract and limitations | Software admission and rollback/persistence boundary | No full-paper review or hardware assurance; NC/ND conversion not published |
+
+| `notomista2021` | Original arXiv abstract/license and Crossref metadata only | Feature/capability-aware resilient allocation under environmental/component changes | Full model may subsume our planner; method unreviewed; redistribution unconfirmed |
+| `swarmada-rollouts` | Three complete pinned source files archived; selected API/batch/recovery inspection | Robot rollout limits, failure pauses and model-recovery/capability context | No build/tests/full audit; firmware rollback field explicitly differs from implemented model recovery |
 
 The [R03 review](../reviews/2026-11-01-r03-review.md) records what was checked and what still blocks scientific acceptance. Survey availability and automatic transcription do not complete the primary-method reading requirement.
 

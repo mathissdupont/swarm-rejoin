@@ -76,6 +76,8 @@ The physical source of operational evidence, freshness bounds, arming/takeoff en
 
 ## Metadata and evidence contract to implement
 
+The [D01 semantic contract draft](14-recovery-and-role-contract.md) now specifies recovery options, navigation provenance/readiness, invalidations, role grants and proposed branch-aware planning. It remains unimplemented and requires sensor/installer validation; modeled readiness is not a runtime grant or cryptographic verification.
+
 The [manifest discussion draft](11-update-manifest-draft.md) expands the release side of this table and distinguishes it from runtime operational, software and navigation evidence. Its illustrative JSON is incomplete and unsigned; it is not a selected wire format or an implementation.
 
 | Object | Planned contents | Trust boundary |

@@ -4,11 +4,15 @@ Prepared: **2026-11-27**. Status: proposed T1/T5 narrowing, not established nove
 
 Use the [team briefing](13-team-brief.md) to explain the proposal and challenge its originality. Samet has explicitly prioritized originality; an empirical fallback is not automatically an acceptable substitute for a new-method requirement.
 
+**Concrete follow-up, 2026-11-27:** The [originality assessment](../research/reports/Originality_Assessment_2026-11-27.md) rejects standalone stale-evidence handling as the main novelty claim. The [D01 contract draft](14-recovery-and-role-contract.md) now specifies pre-activation decisions using navigation-role readiness after authorized recovery. It supplies an initial dependency table, branch rule and worked differing/equivalent cases; they are design analysis, not validated sensor behavior or measured benefit.
+
 ## Recommended question
 
-**Working title: Navigation Evidence Continuity Across Secure Updates and Swarm Re-admission.**
+**Refined working title: Navigation-Qualified Recovery for Secure Updates in UAV Swarms.**
 
-> After an authorized mission-application update or recovery, which navigation evidence remains usable for a specific swarm role, and can dependency-aware revalidation preserve useful service under the same security and role constraints as a competent static policy?
+> Can planning for navigation-role eligibility after authorized application recovery reduce mission-capability shortfalls during updates, and what does it add over a generic contingency-aware role planner under the same security constraints?
+
+The continuity rules below remain shared requirements, not a standalone invention. Compare nominal and contingency-aware B3 variants as specified in D01; a generic planner matching P refutes a new-algorithm advantage even if both outperform nominal planning.
 
 Keep the [accepted boundary](decisions/0003-companion-deployment-and-ground-activation.md): Linux companion mission application, ground-only activation/recovery with landed/disarmed evidence and an interlock. Flight-control firmware is excluded. Its estimator can continue while the consumer application restarts.
 

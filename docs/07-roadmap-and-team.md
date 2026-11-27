@@ -6,7 +6,7 @@ May 2027 remains provisional. About six months remain; the official deadline, fi
 
 ## Direction and ownership
 
-Work toward [navigation-evidence continuity across secure updates and swarm re-admission](12-contribution-and-decision-gate.md), a proposed T1/T5 narrowing. Decide its contribution by **2 December**. Do not research all six candidates indefinitely. A new optimizer is conditional on a real baseline limitation.
+Work toward [navigation-qualified recovery planning](14-recovery-and-role-contract.md), a proposed T1/T5 refinement using navigation-evidence continuity as a shared prerequisite. The [worked decision analysis](../research/reports/Originality_Assessment_2026-11-27.md) supplies a draft contract and nominal-versus-contingency example; cross-check it rather than recreate it. Decide its contribution by **2 December**. Do not research all six candidates indefinitely. A new optimizer is conditional on a real baseline limitation.
 
 Keep the accepted Linux companion mission-application target, ground-only activation/recovery with landed/disarmed evidence and an interlock, five to eight abstract agents, one mission, one navigation model and a small release/role table. Flight-controller updating, new cryptography and hardware attestation are outside the starting scope. PX4 SITL follows a credible core study only if feasible.
 
@@ -64,9 +64,9 @@ Bars end on the day after each planned work period. Milestones are targets; no o
 
 | Owner | Next inspectable artifact | Tracking |
 | --- | --- | --- |
-| Samet | Dependency table for app/producer/configuration/frame/time, A-D traces and OTA/RobOTAP/RASUES comparison | [R01 #1](https://github.com/mathissdupont/swarm-rejoin/issues/1), [R02 #2](https://github.com/mathissdupont/swarm-rejoin/issues/2), [D01 #12](https://github.com/mathissdupont/swarm-rejoin/issues/12) |
-| Ceren | One monitor/model with justified age/error assumptions, continuity/warm-up conditions and two annotated navigation traces | [R03 #3](https://github.com/mathissdupont/swarm-rejoin/issues/3), [D01 #12](https://github.com/mathissdupont/swarm-rejoin/issues/12); administrative closure of #3 does not settle validation |
-| Halil | One mission/useful-role table, independent eligibility rules and B3/P hand decisions for A-F including equivalence | [D03 #13](https://github.com/mathissdupont/swarm-rejoin/issues/13), [R04 #4](https://github.com/mathissdupont/swarm-rejoin/issues/4) |
+| Samet | Check the authored D01 dependency/recovery table and traces against actual installer paths, retained images, schema compatibility and authority changes | [R01 #1](https://github.com/mathissdupont/swarm-rejoin/issues/1), [R02 #2](https://github.com/mathissdupont/swarm-rejoin/issues/2), [D01 #12](https://github.com/mathissdupont/swarm-rejoin/issues/12) |
+| Ceren | Validate or refute the worked U/V recovery-readiness distinction using one monitor/model; check retained history/buffer alternatives, justified age/error assumptions and clean/faulted traces | [R03 #3](https://github.com/mathissdupont/swarm-rejoin/issues/3), [D01 #12](https://github.com/mathissdupont/swarm-rejoin/issues/12); administrative closure of #3 does not settle validation |
+| Halil | Check demand timing, real useful roles, independent labels and nominal/generic contingency-aware B3 versus P; keep an equivalence case | [D03 #13](https://github.com/mathissdupont/swarm-rejoin/issues/13), [R04 #4](https://github.com/mathissdupont/swarm-rejoin/issues/4) |
 | All | Cross-review, topic/contribution decision and advisor answers on empirical contribution, deadline and hardware | [R05 #10](https://github.com/mathissdupont/swarm-rejoin/issues/10), [R06 #11](https://github.com/mathissdupont/swarm-rejoin/issues/11) |
 
 Use the existing notes and designed traces as drafts to verify, not as a reason to restart the literature review. Samet checks the update/provenance assumptions, Ceren supplies the smallest justified navigation model, and Halil checks role decisions concurrently. Do not rewrite Samet's completed standards notes simply to keep research open. Remaining acceptance work is source/contract cross-review and an explicit contribution decision. Optional candidates are parked unless the gate identifies a need.
