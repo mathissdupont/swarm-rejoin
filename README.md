@@ -23,12 +23,13 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
 ## What exists today
 
 - An evidence-based topic assessment, six candidate thesis topics, and a keep/pivot gate.
-- Twenty-two tracked references with access and reading status, BibTeX, search records, and review templates.
+- Twenty-seven tracked references with access and reading status, BibTeX, search records, and review templates.
 - A [central source library](research/library/README.md) with full Markdown/original PDFs where obtainable and redistributable, plus explicit records for missing material. Follow the [archive workflow](docs/10-source-archive.md) for future research.
 - Ceren's [R03 navigation research draft](research/reports/R03_GNSS_IMU_Integrity_Research_Report.md) and an [independent review dated 2026-11-01](research/reviews/2026-11-01-r03-review.md), with remaining work stated explicitly.
 - A [source-based R02 starting note](research/reports/R02_Secure_Update_Foundations.md) covering update authority, manifests, recovery, GNSS time, and two designed failure traces.
 - A [versioned R02 library desk assessment](research/reports/R02_Verification_Library_Assessment.md) and [research closeout assessment](research/reports/Research_Closeout_Assessment_2026-11-16.md), distinguishing available source evidence from pending cross-review, topic selection and implementation.
 - R02's [authored research handoff](research/reports/R02_Secure_Update_Foundations.md), checked 2026-11-27: all four desk deliverables are present; another-author acceptance is still pending in [PR #18](https://github.com/mathissdupont/swarm-rejoin/pull/18).
+- Samet's [T3 configuration-rollout](research/reports/R08_T3_Navigation_Configuration_Assessment.md) and [T5 recovery/evidence](research/reports/R10_T5_Navigation_Recovery_Assessment.md) candidate assessments, plus a [six-topic comparison](research/reports/R05_Topic_Comparison.md), [benchmark candidate](research/reports/R11_T6_Joint_Fault_Benchmark_Assessment.md) and [nearest-work evidence table](research/reports/R01_Closest_Work_Comparison.md). These are research artifacts, not adopted replacement topics or experiment results.
 - [Six accepted update requirements](docs/decisions/0002-update-mvp-requirements.md) for the mission/coordination application prototype, with remaining library, contract, and review work identified.
 - An [accepted companion deployment boundary](docs/decisions/0003-companion-deployment-and-ground-activation.md): target an onboard Linux mission application and activate only while confirmed landed and disarmed; language, framework, and hardware selection remain open.
 - A [draft update-manifest information model](docs/11-update-manifest-draft.md) separating release authorization, artifact binding, compatibility, runtime evidence, and a possible TUF mapping; this is not an implemented schema or verifier.

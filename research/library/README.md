@@ -1,6 +1,6 @@
 # Research source library
 
-22 source records; 16 full-text Markdown captures; 11 original PDFs. Counts describe stored material, not completed reviews.
+27 source records; 19 full-text Markdown captures; 12 original PDFs. Counts describe stored material, not completed reviews.
 
 Every retained source has a local record. Full text is stored only when retrieval and redistribution are supported. A record-only item is explicitly incomplete; it is not a substitute for the full paper.
 
@@ -30,6 +30,11 @@ Existing material in Ceren's literature folder is indexed in place to avoid dupl
 | [tanil2018](tanil2018/README.md) | Record only | redistribution unconfirmed | Inherited author-hosted PDF URL returned 404 during the review. Full-text redistribution permission is not established; indexed abstract and original-method access limits are recorded. |
 | [python-tuf](python-tuf/README.md) | [Full text](../../research/library/python-tuf/full-text.md) | not located | Complete upstream README capture, not the complete API manual. Selected versioned API/source passages are cited in the R02 assessment. No official standalone PDF was located. |
 | [cryptography-ed25519](cryptography-ed25519/README.md) | [Full text](../../research/library/cryptography-ed25519/full-text.md) | not located | Complete upstream RST page source captured as preformatted Markdown; autodoc expansions are not included. The rendered API was checked through browsing; direct versioned HTML retrieval returned HTTP 403. No standalone original PDF was located. |
+| [aljaafreh2026](aljaafreh2026/README.md) | Record only | access blocked | Publisher/Crossref confirm CC BY 4.0. Publisher HTML selected passages were accessible through browsing; direct publisher and official CDN PDF requests returned HTTP 403. No complete Markdown or PDF capture is claimed. |
+| [rodriguez2025](rodriguez2025/README.md) | Record only | access blocked | Publisher/Crossref confirm CC BY 4.0. Publisher HTML selected passages were accessible through browsing; direct publisher and official CDN PDF requests returned HTTP 403. No complete Markdown or PDF capture is claimed. |
+| [pant2024](pant2024/README.md) | [Full text](../../research/library/pant2024/full-text.md) | [PDF](../../research/library/pant2024/source.pdf) | Complete PDF and automatic text capture; reading status is unchanged. |
+| [flagger-canary](flagger-canary/README.md) | [Full text](../../research/library/flagger-canary/full-text.md) | not located | Original Markdown captured. No separate official PDF was located on the inspected source. |
+| [px4-local-position](px4-local-position/README.md) | [Full text](../../research/library/px4-local-position/full-text.md) | not located | Complete native message-definition source wrapped as Markdown, not the complete generated documentation. No official standalone PDF located. |
 
 ## Add or update a source
 

@@ -98,6 +98,34 @@ Checked live GitHub issues #1, #2, #3, #4, #10, #11 and #12 against local report
 
 A local ignored environment was installed only for package/API inspection; no project runtime dependency, verifier, simulator, signing/recovery experiment or benchmark was added. No study-screening count, reviewer approval or measured performance is inferred from these checks.
 
+## Samet's remaining candidate assessments and literature acquisition - 2026-11-27
+
+Purpose: deliver the authored T3/T5 candidate investigations, deepen the RASUES comparison, and prepare the shared topic/benchmark discussion. PR #18 was merged at Samet's explicit request. Its merge is not evidence of Ceren/Halil acceptance; the only submitted review at merge time was an automated quota-failure notice, not a substantive review.
+
+Discovery used the web search tool with default returned ordering and no explicit year/domain filter. Exact queries:
+
+```text
+robot navigation configuration updates canary deployment regression testing software
+robot localization estimator restart stale state recovery software update attestation
+GNSS fault injection UAV benchmark software update recovery
+```
+
+This targeted pass did not generate a systematic database export, total screened-result count or saturation claim. Retained sources were checked against original publisher/arXiv pages, Crossref metadata where applicable, and official project source/license files. Technical claims were not taken from commercial guidance pages. Dagmont robot regression guidance and Service Robot Co. rollout guidance were not retained as technical evidence; unrelated change-control/regulatory and service-advertising hits were excluded. Other navigation surveys were not added merely to increase reference count.
+
+| Retained record | Reason and reading depth | Acquisition result |
+| --- | --- | --- |
+| `pant2024` | Sensor-fault test-framework overlap; comparative main-text desk review I-VI, original figures/pages 2, 4, 5 and 6 checked | CC BY 4.0 confirmed via arXiv's license link. Original v1 PDF and all-page Markdown transcription archived; seven actual PDF pages, despite six-page submission commentary |
+| `flagger-canary` | Existing staged promotion/rollback practice; official Canary analysis section | Complete Markdown and Apache-2.0 license archived at pinned commit `2a102257913e7267b229e3d8fd36c1a77dc96f6e`; no standalone official PDF located |
+| `px4-local-position` | Timestamp/validity/reset semantics relevant to recovery evidence | Complete native message definition wrapped as Markdown plus BSD license, pinned commit `5819a3e0d748bb8631d8f528e1283ac20da9915d`; not a generated API manual or hardware result |
+| `aljaafreh2026` | Navigation-reintegration overlap; selected publisher mode-management/discussion text | Publisher/Crossref confirm CC BY 4.0. Direct publisher and official CDN PDF requests returned HTTP 403. Record-only acquisition gap, not a full-text capture |
+| `rodriguez2025` | Formation-state/fault-analysis overlap; abstract and selected CoFI/ConOps passages | Publisher/Crossref confirm CC BY 4.0. Publisher/CDN PDF retrieval returned HTTP 403. Record-only gap; no unexamined result treated as verified |
+
+Previously archived RASUES material was reused in place, not downloaded/duplicated again. Main text sections 1-9 and Appendix A were read for the comparative desk note, with original protocol/evaluation/limitation PDF pages 7, 11 and 14 rendered and inspected. This completes an authored paper review, not experiment/proof reproduction or independent team review. Referenced neighboring schemes are leads rather than independently verified findings; forward/backward checking of the full nearest-work family remains limited. The source registry records this reading-depth change explicitly.
+
+MIXED-SENSE's main text was also reviewed comparatively, including the constant-delay feasibility condition, physical setup and the future-work distinction. RASUES and MIXED-SENSE are the two author-stage deep-reading artifacts in this pass; neither status implies another author's approval, reproduced results or a completed systematic search.
+
+The library now contains 27 source records, 19 complete source-text captures and 12 original PDFs. Complete capture describes a retained document/file, not every linked API expansion or a completed review of every source. Existing access/rights gaps, including Tanil/Dong, remain explicit. See the [topic comparison](../reports/R05_Topic_Comparison.md), [T3](../reports/R08_T3_Navigation_Configuration_Assessment.md), [T5](../reports/R10_T5_Navigation_Recovery_Assessment.md), [T6](../reports/R11_T6_Joint_Fault_Benchmark_Assessment.md) and [nearest-work table](../reports/R01_Closest_Work_Comparison.md). No simulator, detector, updater, physical flight or benchmark result was created.
+
 ## Entry template
 
 Use this entry format:

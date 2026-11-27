@@ -2,7 +2,9 @@
 
 Source ID: `usman2026`. [Publisher page](https://link.springer.com/article/10.1007/s10207-026-01233-1).
 
-Last checked: **2026-11-16**. Reading depth: selected complete-text passages in sections 3/3.1, 5.1-5.5, 6.1, 7 and 8-9, using the [archived original and text capture](../../library/usman2026/README.md). This is an assisted source-based note, not a complete paper review or a Ceren/Halil cross-review. Figures and equations have not been independently validated.
+Last checked: **2026-11-27**. Reading depth: comparative desk reading of the article's main text, sections 1-9 and Appendix A, using the [archived original and text capture](../../library/usman2026/README.md). The protocol figure on PDF page 7, evaluation figures/table on page 11 and limitations on page 14 were inspected in the original rendered PDF. This is an assisted author-stage paper review for Samet Ünsal; experiments, proofs and software were not reproduced, and no Ceren/Halil cross-review is claimed. Bibliographic entries are leads, not independently verified evidence about every cited scheme.
+
+Inclusion: retain as a nearest update/attestation/recovery study for R01 and R10/T5. Reviewed version: published article, International Journal of Information Security 25:75, 18 PDF pages, DOI above; file identity/provenance is recorded in the archive.
 
 ## Observed overlap
 
@@ -25,4 +27,20 @@ Section 5.4 / PDF page 9 states that the current prototype does not support the 
 
 RASUES is a close architectural/security reference, not yet a runnable baseline for our GNSS-aware swarm policy. Matching its trusted attestation environment, update target, reference-state management and fault assumptions would be required for a quantitative security comparison. We should compare against the same secure update/measurement assumptions in B3 and P rather than give only P stronger evidence.
 
-The checked passages do not settle whether the entire work covers navigation-integrity-based role eligibility or swarm mission capacity. Those properties remain **unknown**, not absent. Complete the protocol/analysis reading and inspect the paper's own referenced neighboring schemes before asserting a narrow gap. No numerical result from this paper has been reproduced here.
+## Question, method and evaluation quality
+
+The paper's concrete question is how to connect software update processing and changed expected measurements to a RATS-style attestation/appraisal workflow. Section 4 and Figure 4 divide this into update, remote attestation and appraisal. Its trusted reference-value provider and verifier are not equivalent to trusting an arbitrary device's update self-report. The intact attestation environment and the IMA/kernel assumptions materially constrain the security interpretation.
+
+Section 6.1 / PDF page 10 describes one Raspberry Pi attester and virtualized supporting entities, with a no-reboot update in the evaluated scenario. Figure 8 reports 20 iterations; Figure 9 / page 12 reports a separate comparison over 50 iterations. These are protocol-operation observations, not independent swarm missions. Section 6.2 explicitly reports added latency relative to CHARRA due to the extra measurement work. No paper latency is imported as our updater duration or as evidence of superiority under our mission assumptions.
+
+Section 7 is a structured threat analysis based on the protocol sequence, not a completed formal security proof; section 8 identifies formal verification as future work. The appendix gives SWUpdate packaging/measurement examples and a hardware setup, but these were not executed here. Raw-data availability and prototype completeness must be checked before any numerical reproduction; the declarations say no datasets were generated or analysed, which does not by itself supply an experiment archive.
+
+## Critical findings and our comparison boundary
+
+1. A nonce establishes a session-related freshness property, not knowledge of the newest authorized software release. A before/after expected-state comparison is not a generic anti-downgrade policy.
+2. The page-14 rollback limitation is explicit. Its accompanying discussion of A/B recovery must not be interpreted as proving protection against prohibited rollback.
+3. Section 8 / page 14 identifies a check/use attack and proposes an integrity-key mechanism as future work. Broad atomicity language elsewhere in the paper must be read with that stated limit; our own design still needs to protect verified bytes and state until use.
+4. The watchdog is part of the conceptual recovery flow, while section 5.4 states the particular prototype module does not implement it. Treat those as different evidence levels.
+5. Authenticating the application state does not directly establish whether navigation uncertainty, evidence age or current mission requirements allow a swarm role. The reviewed protocol does not specify our proposed role/evidence contract; this observation is not a global claim that no related work addresses it.
+
+The resulting candidate difference is a bounded empirical question about role service after authorized recovery under a shared security model. It is not a claim to invent updates plus attestation or hardware-backed recovery. A fair B3/P comparison must share software evidence assumptions and recovery options. The next acceptance step for this note is another author's source/claim review; no disagreement or approval has yet been recorded.
