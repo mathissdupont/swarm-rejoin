@@ -7,7 +7,7 @@ The live research issues were created on **2026-10-24**. Leads below are propose
 | ID | GitHub issue | Proposed lead | Completion artifact |
 | --- | --- | --- | --- |
 | R01 | [#1 — Closest reconnection, attestation, and update studies](https://github.com/mathissdupont/swarm-rejoin/issues/1) | All | Three section-cited, cross-reviewed notes |
-| R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | [Mechanism/threat table and designed traces](../research/reports/R02_Secure_Update_Foundations.md); [six MVP decisions accepted](decisions/0002-update-mvp-requirements.md); [library desk assessment](../research/reports/R02_Verification_Library_Assessment.md) available; source cross-review pending |
+| R02 | [#2 — Secure-update requirements and clock assumptions](https://github.com/mathissdupont/swarm-rejoin/issues/2) | Samet | Author research deliverables complete, checked 2026-11-27: [requirements, mechanism/threat table and designed traces](../research/reports/R02_Secure_Update_Foundations.md), [library assessment](../research/reports/R02_Verification_Library_Assessment.md); Ceren/Halil acceptance review pending in [PR #18](https://github.com/mathissdupont/swarm-rejoin/pull/18) |
 | R03 | [#3 — GNSS/IMU integrity evidence](https://github.com/mathissdupont/swarm-rejoin/issues/3) | Ceren | [Consolidated draft report](../research/reports/R03_GNSS_IMU_Integrity_Research_Report.md), administratively closed; [2026-11-01 review](../research/reviews/2026-11-01-r03-review.md) records checks and remaining acceptance work |
 | R04 | [#4 — Swarm, localization, and update literature](https://github.com/mathissdupont/swarm-rejoin/issues/4) | Halil | Search log, reading notes, and comparator table |
 | R07 | [#5 — T2: update freshness under GNSS time faults](https://github.com/mathissdupont/swarm-rejoin/issues/5) | Ceren + Samet | One candidate assessment and refutation criterion |
@@ -31,7 +31,7 @@ The table below keeps the larger scope visible. It is not a claim that every imp
 | ID | Priority | Lead | Task | Acceptance evidence |
 | --- | --- | --- | --- | --- |
 | R01 | Now | All | Review the three nearest studies together | Section-level notes for Dong, RASUES, NeRTA; overlapping claims corrected |
-| R02 | Now | Samet | Read TUF/Uptane and relevant SUIT requirements | Threat-to-mechanism table; clear distinction between reused mechanism and candidate contribution |
+| R02 | Review | Samet | Authored standards/reference-library research complete; obtain another author's acceptance review | Requirements, section-cited threat/mechanism table, failure and recovery traces, library assessment; no implementation result required for desk-work completion |
 | R03 | Now | Ceren | Define navigation evidence and its limits | A monitor design, uncertainty/time-source assumptions, and benign/faulted trace examples |
 | R04 | Now | Halil | Find team-level update/recovery and benchmark literature | Logged queries, candidate screening, and nearest comparator analysis |
 | R05 | Now | All | Compare the six candidate topics T1–T6 | Evidence-backed overlap assessment, feasible minimum study, and refutation criterion; no automatic novelty score |

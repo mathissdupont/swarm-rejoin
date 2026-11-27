@@ -18,6 +18,8 @@ The [source-based R02 starting note](reports/R02_Secure_Update_Foundations.md), 
 
 The [2026-11-16 verification-library desk assessment](reports/R02_Verification_Library_Assessment.md) compares responsibility levels and recommends Python-TUF 7.0.1 as a first reference for later evaluation. R02 now also includes a mechanism/threat table and explicit fallback/downgrade examples. Another-author source review remains pending.
 
+**Author-stage handoff checked 2026-11-27:** all four R02 authored research deliverables are linked in section 11 of the foundations report. Another-author acceptance remains separate. Numerical budgets, a final executable schema and behavioral experiments belong to subsequent design/implementation work, not an indefinite extension of Samet's initial literature task.
+
 ## Research closeout
 
 The [2026-11-16 closeout assessment](reports/Research_Closeout_Assessment_2026-11-16.md) records checked issue/artifact status, a main-question/fallback recommendation, nearest-work evidence and exact remaining research acceptance gaps. It is not a completed team meeting, advisor decision or implementation report.

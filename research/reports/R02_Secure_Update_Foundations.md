@@ -3,6 +3,7 @@
 - Task: [R02 / #2](https://github.com/mathissdupont/swarm-rejoin/issues/2)
 - Date: 2026-11-10
 - Follow-up: 2026-11-16, adding a mechanism/threat synthesis, explicit fallback/downgrade examples and the [verification-library assessment](R02_Verification_Library_Assessment.md)
+- Author-stage disposition checked: **2026-11-27**. All four R02 research deliverables have inspectable artifacts; independent acceptance remains pending. This records completion of the authored desk work, not a full review of every source or completion of implementation.
 - Preparation: source-based assisted draft for Samet Ünsal's research work. Handwritten notes were not supplied for transcription.
 - Reading depth: the cited architecture, manifest, verification, recovery, and time passages were checked. This is not a claim of complete standards conformance, completed independent cross-review, or experimental validation.
 - Prototype requirements: Samet approved the six choices recorded in [ADR 0002](../../docs/decisions/0002-update-mvp-requirements.md) on 2026-11-10. The target is the mission/coordination application, with staged verification, permitted fallback, and deferral when freshness evidence is insufficient.
@@ -129,6 +130,27 @@ In the first case, use current authorization that permits A, not an arbitrary ol
 
 ## 11. Research disposition and follow-up
 
+### Completed author research deliverables
+
+| R02 deliverable | Delivered evidence | Research conclusion |
+| --- | --- | --- |
+| Authorization, target, digest, freshness, persistence, compatibility and recovery requirements | Sections 1-6 and the section-cited threat/mechanism table in section 9 | Reuse established mechanisms; keep authorization, byte integrity, running-state evidence and mission fitness separate |
+| Release/metadata/security-state distinction and recovery examples | Sections 4 and 10 | Older application bytes may be permitted under current authorization; neither a past signature nor recovery may override the persistent security restriction |
+| Faulty GNSS time and isolation limits | Section 6 and worked trace B in section 8 | Position consistency does not establish trusted time. Defer a new update when freshness cannot be established; appraise continued service separately |
+| Existing verification reference to evaluate | [Versioned library assessment](R02_Verification_Library_Assessment.md) | Python-TUF 7.0.1 is the examined first reference for metadata/artifact verification; its API does not supply mission semantics, installation, hardware protection or a public reference-clock parameter |
+
+Worked traces A/B in sections 7-8 and the fallback/downgrade examples in section 10 supply the requested conceptual failure analysis. They are designed traces, not executed experiments. The source records and reading depths remain explicit.
+
+### Handoff to design and implementation
+
+The carried-forward baseline is the accepted mission/coordination companion target, provisioned release trust, mandatory authenticated metadata and full-payload verification, preserved active software during transfer, authorized recovery, conservative freshness handling, and ground-only activation. Recommended initial limits remain one full application package, exact protocol/platform matching and no incompatible persistent-data migration. The latter limits are recommendations, not additional team-approved decisions.
+
+There is no outstanding generic literature-reading task inside R02's four authored deliverables. Exact schema types, packaging, resource/time budgets, health predicates, persistent-state commit points and behavioral tests are subsequent design/validation tasks. If implementation exposes a contradicted assumption, reopen that specific question rather than treating the research scope as indefinitely expandable.
+
+### Acceptance still outstanding
+
+On 2026-11-27, [PR #18](https://github.com/mathissdupont/swarm-rejoin/pull/18) had no submitted reviews, inline review threads or conversation comments. Another author's check of the source interpretations and designed traces has therefore not occurred in the inspected GitHub records. The acceptance criterion remains unchanged; this assistant-prepared completion record does not substitute for Ceren or Halil's review.
+
 - The mission/coordination application target and six prototype behaviors are accepted in ADR 0002. The [2026-11-16 desk assessment](R02_Verification_Library_Assessment.md) recommends Python-TUF as the first verification reference and records fit/limits. No project signature-verification code exists.
 - [ADR 0003](../../docs/decisions/0003-companion-deployment-and-ground-activation.md) accepts an onboard Linux companion target with ground-only activation/application-restart recovery. Python-TUF remains an evaluation candidate; hardware suitability and implementation timing are unmeasured.
 - R02's source-based requirements, mechanism/threat table, failure traces, fallback/downgrade distinction, time limitations and reference-library assessment are available for cross-review. Numerical budgets, an executable schema and behavioral tests are D01/D02 or later implementation work; they are not claimed complete here.
@@ -137,4 +159,4 @@ In the first case, use current authorization that permits A, not an arbitrary ol
 - Cross-review the source interpretations and both traces with Ceren/Halil.
 - Validate failures in code and simulation before making security, timing, or mission-performance claims.
 
-This artifact answers the first reading questions and starts the mechanism/failure-trace deliverable. It does not close R02, establish an original contribution, or assert that Samet's independent handwritten work was reproduced.
+This artifact completes R02's authored desk deliverables and is ready for another author's acceptance review. Issue #2 remains open for that review, not for additional generic manifest expansion or implementation results. This does not establish an original contribution, approve the final thesis question, or assert that Samet's independent handwritten work was reproduced.
