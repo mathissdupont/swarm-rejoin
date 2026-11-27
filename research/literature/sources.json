@@ -274,7 +274,7 @@
     "accessed_material": "Versioned README, package metadata, ngclient Updater API and selected updater/config source at v7.0.1. Source inspection only; no application verifier or security experiment was implemented.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
-    "proposed_lead": "Samet ?nsal"
+    "proposed_lead": "Samet Ünsal"
   },
   {
     "id": "cryptography-ed25519",
@@ -287,7 +287,7 @@
     "accessed_material": "Selected rendered Ed25519 sign/verify API passages through browsing and complete upstream RST page source at tag 50.0.2. Direct versioned HTML retrieval returned HTTP 403; archived RST does not expand generated API docstrings.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
-    "proposed_lead": "Samet ?nsal"
+    "proposed_lead": "Samet Ünsal"
   },
   {
     "id": "aljaafreh2026",
@@ -300,7 +300,7 @@
     "accessed_material": "Publisher abstract and selected relevant HTML sections; Crossref metadata and CC BY 4.0 license checked. Direct publisher/CDN PDF requests returned HTTP 403; complete article/equation review and result replication are not claimed.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
-    "proposed_lead": "Samet ?nsal"
+    "proposed_lead": "Samet Ünsal"
   },
   {
     "id": "rodriguez2025",
@@ -313,7 +313,7 @@
     "accessed_material": "Publisher abstract and selected relevant HTML sections; Crossref metadata and CC BY 4.0 license checked. Direct publisher/CDN PDF requests returned HTTP 403; complete article/equation review and result replication are not claimed.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
-    "proposed_lead": "Samet ?nsal"
+    "proposed_lead": "Samet Ünsal"
   },
   {
     "id": "pant2024",
@@ -326,7 +326,7 @@
     "accessed_material": "Comparative author-stage desk review of arXiv v1 main text I-VI; original PDF pages 2, 4, 5 and 6 visually inspected. Architecture, timing assumptions, physical demonstration and future swarm-work boundary extracted. No code, proof or experiment reproduced; proceedings version and independent team review remain unconfirmed.",
     "review_status": "full_review",
     "full_text_review_complete": true,
-    "proposed_lead": "Samet ?nsal",
+    "proposed_lead": "Samet Ünsal",
     "doi": "10.48550/arXiv.2407.09342"
   },
   {
@@ -340,7 +340,7 @@
     "accessed_material": "Official guide and complete pinned Markdown; canary analysis, metrics and rollback settings inspected. Kubernetes reference, not a UAV deployment result.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
-    "proposed_lead": "Samet ?nsal"
+    "proposed_lead": "Samet Ünsal"
   },
   {
     "id": "px4-local-position",
@@ -353,6 +353,61 @@
     "accessed_material": "Official generated guide and complete pinned message definition; timestamp, validity and reset fields inspected. No integration or trustworthy-measurement assurance demonstrated.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
-    "proposed_lead": "Samet ?nsal"
+    "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "varadharajan2018",
+    "title": "Over-the-Air Updates for Robotic Swarms",
+    "year": 2018,
+    "kind": "journal_article",
+    "url": "https://doi.org/10.1109/MS.2018.111095718",
+    "doi": "10.1109/MS.2018.111095718",
+    "observed_version": "Institutional accepted manuscript; IEEE Software 35(2), 44-50",
+    "accessed_material": "Indexed institutional manuscript update-strategy passage and Figure 1, PDF page 3; bibliographic metadata checked. Direct local PDF retrieval timed out. Selected reading only; no reproduction.",
+    "review_status": "seed_selected_sections",
+    "verified_on": "2026-11-27",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "robotap2024",
+    "title": "RobOTAP: Over-the-Air Programming of Robotic Swarms",
+    "year": 2024,
+    "kind": "conference_paper",
+    "url": "https://hal.science/hal-04581750",
+    "doi": "10.1109/CrystalFreeIoT62484.2024.00012",
+    "observed_version": "HAL hal-04581750v1, deposited 21 May 2024; seven-page file including archive cover",
+    "accessed_material": "Complete HAL PDF acquired; selected sections III-IV and VI read for protocol, cryptography and recovery boundary; original archive cover and PDF page 4 visually inspected. Evaluation not independently reproduced; no full-review flag.",
+    "review_status": "seed_selected_sections",
+    "verified_on": "2026-11-27",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "openswarm-d24",
+    "title": "D2.4 Footprint of a secure firmware management solution for embedded devices",
+    "year": 2024,
+    "kind": "official_documentation",
+    "url": "https://openswarm.eu/wp-content/uploads/2025/11/D2.4-Footprint-of-a-secure-firmware-management-solution-for-embedded-devices.pdf",
+    "observed_version": "OpenSwarm deliverable version 02, submitted 31 October 2024; not a normative guideline",
+    "accessed_material": "Indexed official cover/document information and executive summary, PDF pages 1 and 4; direct retrieval failed TLS verification and browser retrieval timed out. Remaining methods and measurements unreviewed.",
+    "review_status": "seed_selected_sections",
+    "verified_on": "2026-11-27",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet Ünsal"
+  },
+  {
+    "id": "shagor2026",
+    "title": "Policy-gated firmware trust and anti-rollback resilience for autonomous UAV edge platforms: a software validation study",
+    "year": 2026,
+    "kind": "journal_article",
+    "url": "https://doi.org/10.1038/s41598-026-78674-0",
+    "doi": "10.1038/s41598-026-78674-0",
+    "observed_version": "Scientific Reports Article in Press, published 14 November 2026; retrieved PDF has 22 pages",
+    "accessed_material": "Publisher abstract and original Article in Press PDF abstract, page 19 limitation subsections and license inspected; selected reading, no full-paper review or result reproduction. Earlier discovery title was not retained as authoritative metadata.",
+    "review_status": "seed_selected_sections",
+    "verified_on": "2026-11-27",
+    "full_text_review_complete": false,
+    "proposed_lead": "Samet Ünsal"
   }
 ]

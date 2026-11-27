@@ -18,12 +18,13 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
    Compare the [six candidate thesis topics](docs/09-topic-shortlist.md) before committing to a final question.
 2. Follow the [literature review protocol](docs/03-literature-review-protocol.md) and inspect the [source matrix](research/literature/matrix.md).
 3. Use the [research brief](docs/02-research-brief.md), [system design](docs/04-system-design.md), and [threat model](docs/05-threat-model.md) to challenge the candidate.
-4. Agree on the [evaluation plan](docs/06-evaluation-plan.md), then work from the [team roadmap](docs/07-roadmap-and-team.md) and [backlog](docs/08-backlog.md).
+4. Examine the [specific contribution candidate and 11 December gate](docs/12-contribution-and-decision-gate.md).
+5. Agree on the [evaluation plan](docs/06-evaluation-plan.md), then work from the [team roadmap](docs/07-roadmap-and-team.md) and [backlog](docs/08-backlog.md).
 
 ## What exists today
 
 - An evidence-based topic assessment, six candidate thesis topics, and a keep/pivot gate.
-- Twenty-seven tracked references with access and reading status, BibTeX, search records, and review templates.
+- Thirty-one tracked references with access and reading status, BibTeX, search records, and review templates.
 - A [central source library](research/library/README.md) with full Markdown/original PDFs where obtainable and redistributable, plus explicit records for missing material. Follow the [archive workflow](docs/10-source-archive.md) for future research.
 - Ceren's [R03 navigation research draft](research/reports/R03_GNSS_IMU_Integrity_Research_Report.md) and an [independent review dated 2026-11-01](research/reviews/2026-11-01-r03-review.md), with remaining work stated explicitly.
 - A [source-based R02 starting note](research/reports/R02_Secure_Update_Foundations.md) covering update authority, manifests, recovery, GNSS time, and two designed failure traces.
@@ -34,7 +35,7 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
 - An [accepted companion deployment boundary](docs/decisions/0003-companion-deployment-and-ground-activation.md): target an onboard Linux mission application and activate only while confirmed landed and disarmed; language, framework, and hardware selection remain open.
 - A [draft update-manifest information model](docs/11-update-manifest-draft.md) separating release authorization, artifact binding, compatibility, runtime evidence, and a possible TUF mapping; this is not an implemented schema or verifier.
 - A proposed architecture, explicit trust assumptions, baseline comparisons, and a fault scenario catalog.
-- A two-semester plan and proposed responsibilities for all three authors.
+- A [replanned calendar through May 2027](docs/07-roadmap-and-team.md), with owners, exit criteria, a contribution gate and an early stop/pivot rule.
 - A dependency-free repository checker and a GitHub Actions workflow.
 
 **There is no UAV simulator, signature verifier, updater, GNSS estimator, PX4 adapter, or experimental result yet.** Proposed designs and scenario parameters are not validated findings. A signed release manifest cannot by itself prove what software is running on a remote UAV.

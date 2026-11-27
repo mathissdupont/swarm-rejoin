@@ -22,3 +22,7 @@ The additional [navigation reintegration overlap](../literature/notes/aljaafreh2
 ## Acceptance status
 
 Samet's RASUES reading artifact is delivered at comparative desk-review depth, with no replicated security/performance result. R01 as a whole remains incomplete: Dong access, NeRTA's full review, backward/forward checking of relevant neighboring work and another-author source review remain explicit. This comparison does not complete three independent primary readings or mark absent features on the basis of abstract silence.
+
+## Additional swarm-specific overlap found on 2026-11-27
+
+The comparison must also include [Varadharajan et al.](../literature/notes/varadharajan2018.md), [RobOTAP](../literature/notes/robotap2024.md) and the selected [OpenSwarm report](../literature/notes/openswarm-d24.md); general swarm updating/integrity admission cannot stand as our contribution. Their access/reading limits remain explicit. The [new gate](../../docs/12-contribution-and-decision-gate.md) narrows the comparison to application/producer evidence dependencies and role re-admission. A complete assumption-matched comparison and independent review remain pending.

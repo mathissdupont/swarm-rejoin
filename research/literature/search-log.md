@@ -141,3 +141,33 @@ Full-text access and reviewed version:
 Claims or table cells changed:
 Next citation-chasing step:
 ```
+
+## Targeted originality follow-up - 2026-11-27
+
+Purpose: respond to the request for a defensible contribution and concrete roadmap, challenging the T1/T5 proposal rather than claiming novelty. Assisted preparation for Samet Ünsal. Web search used default ordering without date/domain filters. Exact queries from this follow-up:
+
+```text
+robot swarm software update recovery navigation evidence rejoining attestation state freshness
+robot software rollback localization state reinitialization mission rejoining
+"RobOTAP" swarm programming paper
+"s41598-026-78674-0"
+"OpenSwarm" "D2.4" firmware
+"Over-the-Air Updates for Robotic Swarms" "rollback"
+site:hal.science/hal-04581750 "RobOTAP"
+"D2.4" "OpenSwarm" "2024" author
+site:espace2.etsmtl.ca/id/eprint/18907 "Personal use" permission
+site:inria.hal.science/hal-04581750 "Creative Commons"
+```
+
+| Retained ID | Selection / reading depth | Acquisition |
+| --- | --- | --- |
+| `varadharajan2018` | Closest swarm-OTA overlap; indexed update-strategy page | Record only: IEEE rights restriction, local timeout |
+| `robotap2024` | Primary HAL protocol/implementation/conclusion passages; archive cover and protocol figure visually inspected | Original seven-page PDF plus complete Markdown; cover grants CC BY 4.0 |
+| `openswarm-d24` | Official cover and executive summary, selected reading | Distribution restricted; record only |
+| `shagor2026` | Publisher title/abstract and original Article in Press limitations | NC/ND workflow restriction recorded; no published full-text capture |
+
+RobOTAP was also found in Inria's official 2024 AIO activity report; the HAL manuscript, not an unrelated DeepMind RoboTAP result, is the retained study. The Nature DOI resolves to the firmware-policy title recorded in the registry; the inconsistent earlier discovery label is not treated as another paper. Source versions and reading limits are explicit in the individual notes. ROSBuzz's 2020 follow-up (DOI 10.3389/frobt.2020.00051) is a citation-chasing lead, not a completed comparison. Commercial rollback guidance, bibliography aggregators and unrelated patent results were not used as mechanism evidence. Rights searches returning unrelated PDFs did not establish rights for our sources.
+
+This is a targeted pass, not a systematic screening export or saturation finding. No total-screened count is asserted. Existing sources are reused in place. The library now has 31 records, 20 full-source Markdown captures and 13 original PDFs; these are storage counts, not reading completions. Three newly retained items are record-only. Full text is not mislabeled as archived when permissions or acquisition are unresolved.
+
+The [bounded contribution gate](../../docs/12-contribution-and-decision-gate.md) and [roadmap](../../docs/07-roadmap-and-team.md) replace an open-ended research loop with a proposed 11 December decision. Ordinary freshness/invalidation is not automatically a research contribution. Final comparison must allow a competent static baseline to preserve a continuously running estimator. No code, model check, experiment, cross-review approval or advisor meeting was completed in this follow-up.

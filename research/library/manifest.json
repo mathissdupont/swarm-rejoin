@@ -824,6 +824,94 @@
       ],
       "record_path": "research/library/px4-local-position/README.md",
       "record_sha256": "28e23bda0054c2cff903bdb480918e8598ed0f41cc2a63adae8680d5d488846f"
+    },
+    {
+      "source_id": "varadharajan2018",
+      "canonical_url": "https://doi.org/10.1109/MS.2018.111095718",
+      "retrieved_on": "2026-11-27",
+      "version": "Institutional accepted manuscript; IEEE Software 35(2), 44-50",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "unconfirmed",
+        "license_url": "",
+        "evidence_url": "https://espace2.etsmtl.ca/id/eprint/18907/1/St-Onge%20D%202018%2018907.pdf",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Institutional manuscript rights notice requires IEEE permission for redistribution to servers/lists; public retrieval is not a redistribution grant. Local PDF retrieval timed out. Selected indexed passages were checked; no full text is archived.",
+      "artifacts": [],
+      "record_path": "research/library/varadharajan2018/README.md",
+      "record_sha256": "54bb5beab26abebc43a9a23e9d0f9f3ce574f8b186868598a863bf1b4e33adfa"
+    },
+    {
+      "source_id": "robotap2024",
+      "canonical_url": "https://hal.science/hal-04581750",
+      "retrieved_on": "2026-11-27",
+      "version": "HAL hal-04581750v1, deposited 21 May 2024; seven-page file including archive cover",
+      "status": "full_text",
+      "pdf_status": "archived",
+      "rights": {
+        "license_id": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "evidence_url": "https://hal.science/hal-04581750/document",
+        "redistribution": "permitted"
+      },
+      "reason": "HAL cover explicitly grants CC BY 4.0. Unchanged seven-page PDF and all-page transcription archived; selected method reading only, no benchmark reproduced.",
+      "artifacts": [
+        {
+          "kind": "pdf",
+          "path": "research/library/robotap2024/source.pdf",
+          "sha256": "f7a593599e99028f60cb692716a188d829a0e3e77fab55b483c8f358dd9a6923",
+          "origin_url": "https://hal.science/hal-04581750/document",
+          "pages": 7,
+          "transformation": "Unchanged original HAL PDF"
+        },
+        {
+          "kind": "markdown",
+          "path": "research/library/robotap2024/full-text.md",
+          "sha256": "324fdd8c91b28699a41701c863bded09a9d0e719aa350beac5ea31b4e82632d2",
+          "origin_url": "https://hal.science/hal-04581750/document",
+          "transformation": "pypdf plain-mode extraction of all seven pages including archive cover; equations and figures require original PDF"
+        }
+      ],
+      "record_path": "research/library/robotap2024/README.md",
+      "record_sha256": "26bcc779e860dbd8448135a209704fefa5cf58a56a2fbbbdc45c93a7131eebfe"
+    },
+    {
+      "source_id": "openswarm-d24",
+      "canonical_url": "https://openswarm.eu/wp-content/uploads/2025/11/D2.4-Footprint-of-a-secure-firmware-management-solution-for-embedded-devices.pdf",
+      "retrieved_on": "2026-11-27",
+      "version": "OpenSwarm deliverable version 02, submitted 31 October 2024; not a normative guideline",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "unconfirmed",
+        "license_url": "",
+        "evidence_url": "https://openswarm.eu/wp-content/uploads/2025/11/D2.4-Footprint-of-a-secure-firmware-management-solution-for-embedded-devices.pdf",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Cover marks public release but expressly limits reproduction/distribution to OpenSwarm Consortium members and the European Commission. No repository redistribution permission established; no full text archived.",
+      "artifacts": [],
+      "record_path": "research/library/openswarm-d24/README.md",
+      "record_sha256": "dd9906d00b9b38ee879edd92843c23065e34312a124055be82d7eee0bd05dda6"
+    },
+    {
+      "source_id": "shagor2026",
+      "canonical_url": "https://doi.org/10.1038/s41598-026-78674-0",
+      "retrieved_on": "2026-11-27",
+      "version": "Scientific Reports Article in Press, published 14 November 2026; retrieved PDF has 22 pages",
+      "status": "record_only",
+      "pdf_status": "redistribution_unconfirmed",
+      "rights": {
+        "license_id": "CC-BY-NC-ND-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "evidence_url": "https://www.nature.com/articles/s41598-026-78674-0_reference.pdf",
+        "redistribution": "unconfirmed"
+      },
+      "reason": "Publisher PDF retrieved for selected reading. NC/ND terms do not establish permission for this repository full-text conversion/publication workflow; retain a source record and official link, not an archived full-text claim.",
+      "artifacts": [],
+      "record_path": "research/library/shagor2026/README.md",
+      "record_sha256": "8ace2b340de9dce5a4a68bb5aa44cb8faa18eea14e1ccd1fa687b2a3ec7a3359"
     }
   ]
 }

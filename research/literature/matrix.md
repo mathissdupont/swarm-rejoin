@@ -1,6 +1,6 @@
 # Literature matrix
 
-Updated on 2026-11-27. The registry contains **27 references**: the initial 16, four sources from the R03 follow-up, two R02 library references, and five retained primary/official sources for the candidate assessments. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
+Updated on 2026-11-27. The registry contains **31 references**: the initial 16, four sources from the R03 follow-up, two R02 library references, five retained candidate-assessment sources, and four originality-follow-up sources. Reading depth differs by source; this count is not a completed-review count or a systematic-review inclusion count. `Unknown` means unexamined, not absent.
 
 Metadata, access details, and proposed leads are in [sources.json](sources.json); citation records are in [references.bib](references.bib).
 
@@ -36,6 +36,11 @@ Full-text/PDF storage and acquisition gaps are indexed separately in the [source
 | `px4-local-position` | Pinned native message definition | Producer timestamps, validity/reset indicators and error estimates | No automatic trusted boot/session binding, authentication or calibration guarantee |
 | `aljaafreh2026` | Selected publisher mode-management/discussion passages; original PDF blocked | Navigation source quarantine and reintegration already have related work | Full method/claims not reviewed; software-update/swarm-role coverage unknown |
 | `rodriguez2025` | Abstract and selected CoFI/ConOps passages; original PDF blocked | Formation-state/fault modeling involving navigation, link and energy faults | Exact reproducibility and update-security coverage not confirmed |
+
+| `varadharajan2018` | Selected indexed manuscript, page 3 / Figure 1 | Swarm OTA, rollback and membership handling | Local PDF timeout, redistribution unconfirmed; complete navigation-role comparison pending |
+| `robotap2024` | HAL v1 PDF archived; selected III-IV/VI | Signed/hash-checked robot-swarm image transfer | MCU timings not transferable; planned recovery extensions differ from implemented behavior; later implementations unchecked |
+| `openswarm-d24` | Official cover/executive summary only | Attested firmware state before network admission | Distribution restricted, methods unreviewed; public label is not a reuse license |
+| `shagor2026` | Article in Press abstract and limitations | Software admission and rollback/persistence boundary | No full-paper review or hardware assurance; NC/ND conversion not published |
 
 The [R03 review](../reviews/2026-11-01-r03-review.md) records what was checked and what still blocks scientific acceptance. Survey availability and automatic transcription do not complete the primary-method reading requirement.
 

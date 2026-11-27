@@ -12,6 +12,10 @@ The research problem is to understand how **navigation integrity evidence and se
 
 The intended scope keeps GNSS, secure updates, and swarm behavior together. A specific link between GNSS confidence and update timing must be justified by the modeled operation; it is not assumed to hold for every UAV architecture.
 
+## Concrete narrowing to assess
+
+The [2026-11-27 contribution proposal](12-contribution-and-decision-gate.md) makes C1-C3 operational through navigation-evidence dependencies, application/producer continuity, role permission invalidation and a competent static comparator. It is a proposed narrowing, not a replacement for accepted deployment requirements or a proven novel policy. Use its two-week gate and the [dated roadmap](07-roadmap-and-team.md); freeze the final hypotheses after the decision.
+
 ## Proposed contribution hierarchy
 
 | Item | Candidate contribution | What would support it |

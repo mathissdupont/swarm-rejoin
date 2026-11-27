@@ -42,7 +42,9 @@ Investigate two explicit links: **navigation evidence to role eligibility during
 
 Ceren's work covers the navigation evidence model, validation, uncertainty propagation, and fault scenarios. Samet's work covers authorized updates and recovery. Halil's work covers joint decisions and swarm mission effects. A new GNSS spoofing detector is not automatically required, but navigation evidence must have a measurable role in the final question.
 
-## Decision gate: 2026-11-07
+## Historical decision gate: 2026-11-07
+
+**Replan, 2026-11-27:** The [contribution gate](12-contribution-and-decision-gate.md) now targets 11 December; [the roadmap](07-roadmap-and-team.md) supplies dated deliverables. The historical target below is retained for traceability and is not marked complete.
 
 The two-week date is a working team target. Move it if the team agrees, while protecting time for implementation and writing.
 
@@ -71,3 +73,7 @@ Before committing to A:
 - Define the specific mission and role compatibility contract.
 - Define concrete activation, health, and evidence contracts for the mission/coordination application target accepted in [ADR 0002](decisions/0002-update-mvp-requirements.md); the first prototype excludes flight-control firmware replacement.
 - Confirm the official May deadline, thesis format, contribution expectations, and licensing/visibility choices.
+
+## Originality follow-up: 2026-11-27
+
+Swarm OTA itself has closer prior work in [Varadharajan et al.](../research/literature/notes/varadharajan2018.md) and [RobOTAP](../research/literature/notes/robotap2024.md). See the [specific contribution candidate](12-contribution-and-decision-gate.md) for a proposed navigation-evidence dependency/role contract across authorized application recovery. Ordinary reacquisition may already match it; the main baseline must not be forced into an artificial filter reset. The proposal preserves the accepted deployment boundary and remains conditional on source/contract review, observable provenance and an accepted thesis contribution type.
