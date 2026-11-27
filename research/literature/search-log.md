@@ -84,6 +84,20 @@ Checked official RFC Editor PDFs, NIST SP 800-series rights guidance, Uptane's o
 
 R02 re-examined selected RFC 9019, RFC 9124, Uptane Standard 2.1.0, and Uptane Deployment 2.1.0 passages. Its [starting note](../reports/R02_Secure_Update_Foundations.md) distinguishes established mechanisms, project choices, and two designed failure traces. Uptane section 7.10 already covers location-based updates, so no broad novelty claim about location-aware updating is introduced. No source was promoted to a completed full-text review by the archive operation.
 
+## R02 synthesis and research closeout assessment - 2026-11-16
+
+Purpose: finish the desk evidence for secure-update mechanisms and reference-library fit, deepen the nearest-work comparison, and identify actual research acceptance gaps. This was a targeted source/API review and issue audit, not a systematic search or an implementation study.
+
+Accessed the official versioned Python-TUF 7.0.1 API/README, pinned upstream source at `49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15`, and PyPI release metadata. Inspected `Updater` bootstrap/refresh/download responsibilities, its constructor, cache/concurrency conditions and configuration limits. The public constructor exposes no reference-clock argument; GNSS fault/independent-time integration therefore remains explicit follow-up work. Checked the cryptography 50.0.2 Ed25519 API and complete upstream RST source to distinguish a signing primitive from an update protocol.
+
+Retained `python-tuf` and `cryptography-ed25519` as official references. The source library now has 22 records and 16 complete source-text captures, including the pinned Python-TUF README and the original Ed25519 RST file wrapped in Markdown. The RST's generated autodoc content is not expanded; direct versioned HTML retrieval returned HTTP 403. No standalone official PDF was located for these two references. Rights, exact versions, transformations and checksums are recorded; neither capture is labeled a complete API-manual review.
+
+Read selected archived RASUES sections 3/3.1, 5.1-5.5, 6.1, 7 and 8-9, and NeRTA introduction/related-work, sections 3.1-3.2 and 8-9. Expanded both comparative notes with source sections/pages and remaining unknowns; no source was promoted to `full_review`. The checked passages clarify software-state/update overlap, low-level scheduling assumptions and the distinction between a modeled update task and an applied update. Dong's unresolved complete-text access remains a comparison limitation; no absence/novelty conclusion follows.
+
+Checked live GitHub issues #1, #2, #3, #4, #10, #11 and #12 against local reports. R02 now has a mechanism/threat table, designed failure traces, explicit fallback/downgrade examples and a library desk assessment. Another-author review remains unrecorded. The [closeout assessment](../reports/Research_Closeout_Assessment_2026-11-16.md) records a proposed main question/fallback and finite acceptance gaps without closing research issues or claiming an advisor meeting.
+
+A local ignored environment was installed only for package/API inspection; no project runtime dependency, verifier, simulator, signing/recovery experiment or benchmark was added. No study-screening count, reviewer approval or measured performance is inferred from these checks.
+
 ## Entry template
 
 Use this entry format:

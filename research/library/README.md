@@ -1,6 +1,6 @@
 # Research source library
 
-20 source records; 14 full-text Markdown captures; 11 original PDFs. Counts describe stored material, not completed reviews.
+22 source records; 16 full-text Markdown captures; 11 original PDFs. Counts describe stored material, not completed reviews.
 
 Every retained source has a local record. Full text is stored only when retrieval and redistribution are supported. A record-only item is explicitly incomplete; it is not a substitute for the full paper.
 
@@ -28,6 +28,8 @@ Existing material in Ceren's literature folder is indexed in place to avoid dupl
 | [boguspayev2023](boguspayev2023/README.md) | [Full text](../../research/literature/cerentolunay/applsci-13-04819.md) | [PDF](../../research/literature/cerentolunay/applsci-13-04819.pdf) | Existing full PDF/Markdown indexed in place; original author, license, and conversion notices retained. |
 | [alipour2026](alipour2026/README.md) | [Full text](../../research/literature/cerentolunay/s41315-026-00528-9.md) | [PDF](../../research/literature/cerentolunay/s41315-026-00528-9.pdf) | Existing full PDF/Markdown indexed in place; original author, license, and conversion notices retained. |
 | [tanil2018](tanil2018/README.md) | Record only | redistribution unconfirmed | Inherited author-hosted PDF URL returned 404 during the review. Full-text redistribution permission is not established; indexed abstract and original-method access limits are recorded. |
+| [python-tuf](python-tuf/README.md) | [Full text](../../research/library/python-tuf/full-text.md) | not located | Complete upstream README capture, not the complete API manual. Selected versioned API/source passages are cited in the R02 assessment. No official standalone PDF was located. |
+| [cryptography-ed25519](cryptography-ed25519/README.md) | [Full text](../../research/library/cryptography-ed25519/full-text.md) | not located | Complete upstream RST page source captured as preformatted Markdown; autodoc expansions are not included. The rendered API was checked through browsing; direct versioned HTML retrieval returned HTTP 403. No standalone original PDF was located. |
 
 ## Add or update a source
 

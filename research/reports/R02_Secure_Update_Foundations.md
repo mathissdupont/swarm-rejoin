@@ -2,6 +2,8 @@
 
 - Task: [R02 / #2](https://github.com/mathissdupont/swarm-rejoin/issues/2)
 - Date: 2026-11-10
+- Follow-up: 2026-11-16, adding a mechanism/threat synthesis, explicit fallback/downgrade examples and the [verification-library assessment](R02_Verification_Library_Assessment.md)
+- Author-stage disposition checked: **2026-11-27**. All four R02 research deliverables have inspectable artifacts; independent acceptance remains pending. This records completion of the authored desk work, not a full review of every source or completion of implementation.
 - Preparation: source-based assisted draft for Samet Ünsal's research work. Handwritten notes were not supplied for transcription.
 - Reading depth: the cited architecture, manifest, verification, recovery, and time passages were checked. This is not a claim of complete standards conformance, completed independent cross-review, or experimental validation.
 - Prototype requirements: Samet approved the six choices recorded in [ADR 0002](../../docs/decisions/0002-update-mvp-requirements.md) on 2026-11-10. The target is the mission/coordination application, with staged verification, permitted fallback, and deferral when freshness evidence is insufficient.
@@ -30,6 +32,8 @@ For our proposed companion-service update, a minimum candidate model would cover
 | Installation/recovery conditions | Define activation, failure, and permitted fallback behavior | Project lifecycle model informed by existing guidance |
 
 This table is a proposed project model, not a claim that a JSON file with these fields implements SUIT or Uptane. See RFC 9019 section 6 / PDF page 15 and RFC 9124 sections 3.2-3.19 for source definitions.
+
+The [2026-11-10 manifest discussion draft](../../docs/11-update-manifest-draft.md) develops the information groups, separates live evidence from release metadata, and records a possible TUF mapping and remaining decisions. It is not an approved schema or implemented verifier.
 
 ## 3. How do a digest, signature, and compatibility check differ?
 
@@ -92,12 +96,67 @@ Designed example. Assumptions: an older metadata object has a valid authority si
 
 A nonce does not resolve release freshness during indefinite isolation. The exact offline policy and resulting service loss are research/modeling decisions, not fixed results supplied by the standards.
 
-## 9. What remains open for R02?
+## 9. Mechanism/threat synthesis
 
-- The mission/coordination application target and six prototype behaviors are accepted in ADR 0002. Evaluate a maintained verification implementation; no signature-verification code exists yet.
-- Specify provisioning, persistence, freshness/time bounds, role compatibility, and permitted recovery in an executable contract.
+This table is the section-cited R02 mechanism/threat deliverable. Standard mechanisms and project-specific conditions are distinguished; it is not experimental evidence.
+
+| Threat or failure | Mechanism and evidence | Project consequence / remaining boundary |
+| --- | --- | --- |
+| Unauthorized update | RFC 9019 sections 2-3; TUF sections 2.1 and 4.3 define authority/trust-role responsibilities | Provision trusted keys and component/target authority; an authenticated device identity is not release authorization |
+| Changed or incomplete payload | RFC 9124 sections 3.13-3.15; TUF sections 4.5 and 5.7 bind target size/hashes to authenticated metadata | Never activate partial or mismatching bytes; protect them between verification and use |
+| Wrong device or incompatible component | RFC 9124 sections 3.3-3.6/3.11; Uptane section 5.3.2 considers dependencies/conflicts | Target matching and the exact swarm-role/protocol contract are separate checks |
+| Replay or metadata regression | RFC 9124 sections 3.2 and 4.3.1; TUF sections 5.4-5.6 check trusted metadata state and expiration | Persist applicable metadata state; do not sort application labels as an anti-rollback policy |
+| Faulty clock or freeze during isolation | Uptane Deployment sections 3.1-3.1.1 | Use sufficient independent freshness evidence or defer; counters/nonces do not prove that no newer release is withheld |
+| Interrupted transfer or failed installation | RFC 9019 section 4; Uptane sections 5.4.3.3-5.4.3.6 | Separate staging, activation and reported outcome; retain only an authorized usable fallback |
+| Recovery reintroduces prohibited bytes | Uptane section 5.4.3.4 checks release counters; the project's security floor is a separate abstraction | Recovery cannot reset security state or override current authorization; application-data compatibility must also hold |
+| Old evidence after restart | RFC 9334 sections 7.4, 10 and 12 distinguish trustworthy evidence and its freshness context | Session/boot/age binding and fresh software/navigation appraisal remain D01 design obligations |
+| Mission pressure overrides security | Project threat-model invariant I7 and ADR 0002 | Utility is optimized only among admissible actions; report a service shortfall when none is feasible |
+
+Full source records: [RFC 9019](../library/rfc9019/README.md), [RFC 9124](../library/rfc9124/README.md), [RFC 9334](../library/rfc9334/README.md), [TUF](../library/tuf-spec/README.md), [Uptane Standard](../library/uptane-standard/README.md), [Uptane Deployment](../library/uptane-deployment/README.md). Selected cited passages were checked; these are not full-conformance reviews.
+
+## 10. Authorized fallback versus prohibited downgrade
+
+These are designed examples with hypothetical labels and counters, not observed runs. Assume landed/disarmed activation, protected persistent state and current authenticated authorization.
+
+| State/event | Authorized fallback example | Prohibited downgrade example |
+| --- | --- | --- |
+| Persistent restriction | Security floor is 2 | Security floor is 3 |
+| Candidate failure | Release B, epoch 2, fails health | Release B, epoch 3, fails health |
+| Available old image | Release A, epoch 2, exact bytes verified; still authorized as a recovery image; its application data remains usable | Release A, epoch 2, has a valid old signature but is below the current floor |
+| Decision | A can be attempted under the recovery/operational contract; metadata state and the security floor are preserved | A cannot be used; another authorized recovery image meeting floor 3 is needed |
+| Mission outcome | Reappraise health and current navigation/role evidence before any mission permission | If no permitted usable image exists, keep mission isolation; do not lower the floor to regain service |
+
+In the first case, use current authorization that permits A, not an arbitrary old metadata object merely because it was signed once. Application-data restoration must not restore old security counters or trust state. These examples complete the conceptual distinction; exact crash-safe commit behavior is later D02 work.
+
+## 11. Research disposition and follow-up
+
+### Completed author research deliverables
+
+| R02 deliverable | Delivered evidence | Research conclusion |
+| --- | --- | --- |
+| Authorization, target, digest, freshness, persistence, compatibility and recovery requirements | Sections 1-6 and the section-cited threat/mechanism table in section 9 | Reuse established mechanisms; keep authorization, byte integrity, running-state evidence and mission fitness separate |
+| Release/metadata/security-state distinction and recovery examples | Sections 4 and 10 | Older application bytes may be permitted under current authorization; neither a past signature nor recovery may override the persistent security restriction |
+| Faulty GNSS time and isolation limits | Section 6 and worked trace B in section 8 | Position consistency does not establish trusted time. Defer a new update when freshness cannot be established; appraise continued service separately |
+| Existing verification reference to evaluate | [Versioned library assessment](R02_Verification_Library_Assessment.md) | Python-TUF 7.0.1 is the examined first reference for metadata/artifact verification; its API does not supply mission semantics, installation, hardware protection or a public reference-clock parameter |
+
+Worked traces A/B in sections 7-8 and the fallback/downgrade examples in section 10 supply the requested conceptual failure analysis. They are designed traces, not executed experiments. The source records and reading depths remain explicit.
+
+### Handoff to design and implementation
+
+The carried-forward baseline is the accepted mission/coordination companion target, provisioned release trust, mandatory authenticated metadata and full-payload verification, preserved active software during transfer, authorized recovery, conservative freshness handling, and ground-only activation. Recommended initial limits remain one full application package, exact protocol/platform matching and no incompatible persistent-data migration. The latter limits are recommendations, not additional team-approved decisions.
+
+There is no outstanding generic literature-reading task inside R02's four authored deliverables. Exact schema types, packaging, resource/time budgets, health predicates, persistent-state commit points and behavioral tests are subsequent design/validation tasks. If implementation exposes a contradicted assumption, reopen that specific question rather than treating the research scope as indefinitely expandable.
+
+### Acceptance still outstanding
+
+On 2026-11-27, [PR #18](https://github.com/mathissdupont/swarm-rejoin/pull/18) had no submitted reviews, inline review threads or conversation comments. Another author's check of the source interpretations and designed traces has therefore not occurred in the inspected GitHub records. The acceptance criterion remains unchanged; this assistant-prepared completion record does not substitute for Ceren or Halil's review.
+
+- The mission/coordination application target and six prototype behaviors are accepted in ADR 0002. The [2026-11-16 desk assessment](R02_Verification_Library_Assessment.md) recommends Python-TUF as the first verification reference and records fit/limits. No project signature-verification code exists.
+- [ADR 0003](../../docs/decisions/0003-companion-deployment-and-ground-activation.md) accepts an onboard Linux companion target with ground-only activation/application-restart recovery. Python-TUF remains an evaluation candidate; hardware suitability and implementation timing are unmeasured.
+- R02's source-based requirements, mechanism/threat table, failure traces, fallback/downgrade distinction, time limitations and reference-library assessment are available for cross-review. Numerical budgets, an executable schema and behavioral tests are D01/D02 or later implementation work; they are not claimed complete here.
+- Specify provisioning, persistence, freshness/time bounds, role compatibility, and permitted recovery in the subsequent contract.
 - Match the navigation evidence described in [R03](R03_GNSS_IMU_Integrity_Research_Report.md) to activation and re-admission events.
 - Cross-review the source interpretations and both traces with Ceren/Halil.
 - Validate failures in code and simulation before making security, timing, or mission-performance claims.
 
-This artifact answers the first reading questions and starts the mechanism/failure-trace deliverable. It does not close R02, establish an original contribution, or assert that Samet's independent handwritten work was reproduced.
+This artifact completes R02's authored desk deliverables and is ready for another author's acceptance review. Issue #2 remains open for that review, not for additional generic manifest expansion or implementation results. This does not establish an original contribution, approve the final thesis question, or assert that Samet's independent handwritten work was reproduced.

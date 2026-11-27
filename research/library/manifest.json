@@ -619,6 +619,72 @@
       "artifacts": [],
       "record_path": "research/library/tanil2018/README.md",
       "record_sha256": "fd93070ec057aed2acdabf8674da91645ba9e012a083610a0f7dad56451eb9dc"
+    },
+    {
+      "source_id": "python-tuf",
+      "canonical_url": "https://github.com/theupdateframework/python-tuf",
+      "retrieved_on": "2026-11-16",
+      "version": "v7.0.1-49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "MIT",
+        "license_url": "https://github.com/theupdateframework/python-tuf/blob/49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15/LICENSE-MIT",
+        "evidence_url": "https://github.com/theupdateframework/python-tuf/blob/49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15/pyproject.toml",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete upstream README capture, not the complete API manual. Selected versioned API/source passages are cited in the R02 assessment. No official standalone PDF was located.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/python-tuf/full-text.md",
+          "sha256": "e10e63e1b8d22ed5257d12827edc311fa7b93e2ec87d429079db27f52374c820",
+          "origin_url": "https://raw.githubusercontent.com/theupdateframework/python-tuf/49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15/README.md",
+          "transformation": "Original Markdown snapshot with relative links resolved to source URLs"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/python-tuf/LICENSE.txt",
+          "sha256": "ad52fe92b0d21a9b3733b484eb6f865e83855f4a6f9b9b8812b9012dc4587d27",
+          "origin_url": "https://raw.githubusercontent.com/theupdateframework/python-tuf/49eb1da48c58cf0cbb0f2e490f7ad39fbd8c1f15/LICENSE-MIT",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/python-tuf/README.md",
+      "record_sha256": "ca15ccb12ff2ca73e673a14753d725716b0084be834e957d9c19062a2b74495f"
+    },
+    {
+      "source_id": "cryptography-ed25519",
+      "canonical_url": "https://cryptography.io/en/stable/hazmat/primitives/asymmetric/ed25519/",
+      "retrieved_on": "2026-11-16",
+      "version": "50.0.2",
+      "status": "full_text",
+      "pdf_status": "not_located",
+      "rights": {
+        "license_id": "BSD-3-Clause",
+        "license_url": "https://github.com/pyca/cryptography/blob/50.0.2/LICENSE.BSD",
+        "evidence_url": "https://github.com/pyca/cryptography/blob/50.0.2/LICENSE",
+        "redistribution": "permitted"
+      },
+      "reason": "Complete upstream RST page source captured as preformatted Markdown; autodoc expansions are not included. The rendered API was checked through browsing; direct versioned HTML retrieval returned HTTP 403. No standalone original PDF was located.",
+      "artifacts": [
+        {
+          "kind": "markdown",
+          "path": "research/library/cryptography-ed25519/full-text.md",
+          "sha256": "2d2645d5e8a70acdab1462bef8bfa2b68a056c73b456a237801dfa31c72a9fe0",
+          "origin_url": "https://raw.githubusercontent.com/pyca/cryptography/50.0.2/docs/hazmat/primitives/asymmetric/ed25519.rst",
+          "transformation": "Complete original RST source wrapped verbatim in Markdown; generated autodoc content is not expanded"
+        },
+        {
+          "kind": "license",
+          "path": "research/library/cryptography-ed25519/LICENSE.txt",
+          "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb",
+          "origin_url": "https://raw.githubusercontent.com/pyca/cryptography/50.0.2/LICENSE.BSD",
+          "transformation": "Unchanged upstream license"
+        }
+      ],
+      "record_path": "research/library/cryptography-ed25519/README.md",
+      "record_sha256": "e27b176886deeb32b1a19c8ab67fd6bb38e0b9f43cf550b2bc97e95e0aa2be65"
     }
   ]
 }
