@@ -28,7 +28,7 @@ The [six-topic shortlist](09-topic-shortlist.md) expands the three directions be
 
 | Candidate | Concrete question and possible output | Main overlap to investigate | Feasibility and decision |
 | --- | --- | --- | --- |
-| **A. GNSS-aware secure updates and rejoining** | Can navigation integrity evidence guide update/defer/recovery and role admission choices for returning swarm members? Output: a joint navigation/software/swarm-state model and comparative experiments. | Uptane compatibility/recovery, RASUES state transitions, GNSS integrity monitors, mobile robot update scheduling, and reconnection protocols. The possible contribution lies in a precisely defined interaction and its evaluation. | Leading candidate for a two-week investigation. All three intended areas are central; no original method is claimed yet. |
+| **A. GNSS-aware secure updates and rejoining** | Can navigation integrity evidence guide update/defer/recovery and role admission choices for returning swarm members? Output: a joint navigation/software/swarm-state model and comparative experiments. | Uptane compatibility/recovery, RASUES state transitions, GNSS integrity monitors, mobile robot update scheduling, and reconnection protocols. The possible contribution lies in a precisely defined interaction and its evaluation. | Leading candidate; use the accelerated contribution gate below. All three intended areas are central; no original method is claimed yet. |
 | **B. Swarm update freshness when GNSS time is untrusted** | During bounded swarm disconnections and GNSS-time faults, how do time/counter policies affect stale update acceptance and legitimate rejoining? Output: a bounded model and comparison of existing freshness strategies in that swarm setting. | TUF expiration, Uptane's secure time requirements, secure clocks and disconnected-device update protocols. Nonces alone cannot establish that a repository release is the latest. | A narrower alternative within the same three-area direction. Novelty and availability guarantees remain uncertain. |
 | **C. Joint GNSS/update/rejoining fault benchmark** | Which combinations of navigation faults, update failures, and swarm reconnections expose differences between admission policies? Output: scenario specification, baselines, trace format, and characterization. | Existing navigation fault, OTA testing, and robotics benchmarks must be searched explicitly. Useful coverage and credible models are required. | An empirical alternative within the same direction if a new controller is unjustified. Confirm that this contribution type meets thesis requirements. |
 
@@ -44,9 +44,9 @@ Ceren's work covers the navigation evidence model, validation, uncertainty propa
 
 ## Historical decision gate: 2026-11-07
 
-**Replan, 2026-11-27:** The [contribution gate](12-contribution-and-decision-gate.md) now targets 11 December; [the roadmap](07-roadmap-and-team.md) supplies dated deliverables. The historical target below is retained for traceability and is not marked complete.
+**Replan, 2026-11-27:** The [contribution gate](12-contribution-and-decision-gate.md) now targets 2 December; [the roadmap](07-roadmap-and-team.md) supplies dated deliverables. The historical target below is retained for traceability and is not marked complete.
 
-The two-week date is a working team target. Move it if the team agrees, while protecting time for implementation and writing.
+The original two-week target below is historical. The current working gate is 30 November-2 December 2026; use the linked replan for active dates.
 
 Before committing to A:
 

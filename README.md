@@ -18,7 +18,7 @@ The working title is **GNSS-Aware Secure Updates and Rejoining in UAV Swarms**. 
    Compare the [six candidate thesis topics](docs/09-topic-shortlist.md) before committing to a final question.
 2. Follow the [literature review protocol](docs/03-literature-review-protocol.md) and inspect the [source matrix](research/literature/matrix.md).
 3. Use the [research brief](docs/02-research-brief.md), [system design](docs/04-system-design.md), and [threat model](docs/05-threat-model.md) to challenge the candidate.
-4. Examine the [specific contribution candidate and 11 December gate](docs/12-contribution-and-decision-gate.md).
+4. Examine the [specific contribution candidate and 2 December gate](docs/12-contribution-and-decision-gate.md).
 5. Agree on the [evaluation plan](docs/06-evaluation-plan.md), then work from the [team roadmap](docs/07-roadmap-and-team.md) and [backlog](docs/08-backlog.md).
 
 ## What exists today

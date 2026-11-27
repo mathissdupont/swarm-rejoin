@@ -2,11 +2,11 @@
 
 Replanned: **2026-11-27**. Team: **Samet Ünsal, Ceren Tolunay, Halil Abacı**. Verified accounts: [CONTRIBUTORS.md](../CONTRIBUTORS.md).
 
-May 2027 remains provisional. About six months remain; the official deadline, first-semester assessment and hardware expectations need confirmation. These dates are working targets, not agreed appointments or completed work. This replaces the 24 October calendar; no missed gate is retroactively complete.
+May 2027 remains provisional. About six months remain; the official deadline, first-semester assessment and hardware expectations need confirmation. At Samet's request, the core research/prototype/study target is now **eight weeks: 30 November 2026-22 January 2027**, followed by optional integration and thesis revision. This assumes all three authors can work concurrently and reuse the existing research artifacts; availability is not yet quantified. These are intensive targets, not agreed appointments or completed work. No missed gate is retroactively complete.
 
 ## Direction and ownership
 
-Work toward [navigation-evidence continuity across secure updates and swarm re-admission](12-contribution-and-decision-gate.md), a proposed T1/T5 narrowing. Decide its contribution by **11 December**. Do not research all six candidates indefinitely. A new optimizer is conditional on a real baseline limitation.
+Work toward [navigation-evidence continuity across secure updates and swarm re-admission](12-contribution-and-decision-gate.md), a proposed T1/T5 narrowing. Decide its contribution by **2 December**. Do not research all six candidates indefinitely. A new optimizer is conditional on a real baseline limitation.
 
 Keep the accepted Linux companion mission-application target, ground-only activation/recovery with landed/disarmed evidence and an interlock, five to eight abstract agents, one mission, one navigation model and a small release/role table. Flight-controller updating, new cryptography and hardware attestation are outside the starting scope. PX4 SITL follows a credible core study only if feasible.
 
@@ -23,43 +23,44 @@ Owners are proposed, not new GitHub assignments or recorded acceptance. Workstre
 
 | Phase / working dates | Deliverable / lead | Exit evidence and dependencies |
 | --- | --- | --- |
-| **G0: 30 Nov-11 Dec 2026** | All: [contribution assessment](12-contribution-and-decision-gate.md), six hand traces, evidence/role contract v0.1 and closest-work cross-review | Observable provenance, justified GNSS assumptions, competent B3/P comparison. Record go/narrow/pivot and actual advisor response; no gap claim from a failed search |
-| **M1: 14 Dec 2026-8 Jan 2027** | Samet: update/recovery core; Ceren: navigation/truth generator; Halil: one deterministic mission and B3 | One clean reconnect and one failed activation/authorized fallback end to end; security/recovery behavioral tests, rejected prohibited images and stale grants. Depends on G0; accommodate university/holiday availability |
-| **M2: 11-29 Jan 2027** | All: event ordering, evidence invalidation, permissions, simple P if justified | A-F checked against independent truth; app-only versus producer restart distinguished; B3 has identical observations/gates/options. Prepare semester material on the actual university schedule |
-| **G1: 1-19 Feb 2027** | Ceren: model checks; Halil: paired pilots; Samet: target selection and resource measurements if available | Correct modeling bugs; test credible B3 equivalence. Freeze confirmatory scenarios, practical margins, risk criteria and run counts using precision/cost needs. No positive-result requirement |
-| **M3: 22 Feb-19 Mar 2027** | Halil coordinates paired held-out runs; all inspect failures | Frozen code/configuration/analysis, independent truth, raw traces/seeds and failed/censored runs; uncertainty and negative outcomes retained |
-| **M4: 22 Mar-9 Apr 2027** | Ceren: calibration/age sensitivity; Samet: recovery/provenance edges; Halil: ablations; optional 2-3 vehicle SITL | Separate abstract, measured crypto and SITL evidence. SITL needs reproducible M3 and available environment; drop it if it threatens analysis. No physical-safety claim from SITL |
-| **M5: 12-30 Apr 2027** | All: complete thesis draft, figures, limits and rerun instructions | Full readable draft and another-author reproduction attempt/review. Writing begins in M1; feature freeze except validity fixes |
-| **M6: 3-14 May 2027** | All: advisor corrections, formatting, presentation and archive | Resolve review, rerun minimal reproducer in recorded environment, check citations/licenses and submission rules |
-| **Buffer: 17 May-official deadline** | All: final corrections and administration | Submit by confirmed deadline. Move M5/M6 earlier if necessary; do not consume the reserve with added scope |
+| **G0: 30 Nov-2 Dec 2026** | All: check the existing contribution assessment and A-F hand traces; freeze one mission, evidence/role contract v0.1 and competent B3 | Record go/narrow/pivot, observable provenance and justified GNSS assumptions. Reuse available notes; log material unknowns and advisor questions rather than starting six new literature tracks |
+| **M1: 3-11 Dec 2026** | Samet: real package verification and modeled staged recovery; Ceren: one navigation/truth generator; Halil: deterministic mission/B3 loop | One clean reconnect and failed activation/authorized fallback end to end, behavioral tests and rejected stale grants/prohibited images. Explicitly separate real verification from simulated navigation/activation. Depends on G0 contract |
+| **M2: 14-18 Dec 2026** | All: event ordering, evidence invalidation, permissions and simple P only if justified | Check A-F against independent truth. Distinguish app-only/producer restarts; give B3 identical observations/gates/options. No new optimizer or second monitor for this milestone |
+| **G1: 21-25 Dec 2026** | Ceren: model checks; Halil: paired pilot; Samet: recovery/crash tests and provenance feasibility | Fix validity defects; check B3 equivalence. Freeze scenario subset, practical margins, risk criteria, run counts and compute budget. If these cannot be justified, move final runs rather than relabel pilots as confirmation |
+| **M3: 28 Dec 2026-8 Jan 2027** | Halil coordinates paired held-out runs; all inspect failures | Frozen revision/protocol, independent truth, raw traces/seeds and failed/censored runs; uncertainty and negative outcomes retained. Adjust working days to actual holiday/university availability |
+| **M4: 11-15 Jan 2027** | Ceren: age/calibration sensitivity; Samet: recovery/provenance edges; Halil: limited ablations | Explain main failure/equivalence regions and reproduce the minimal study. Target-device and SITL measurements are separate, not prerequisites for an honestly bounded abstract study |
+| **M5: 18-22 Jan 2027** | All: core technical report, figures, limitations and reproduction package | Another-author rerun attempt, evidence-backed conclusions and a complete methods/results draft. This is the eight-week core target, not a claim that the university thesis is submission-ready |
+| **Optional M6: 25 Jan-5 Feb 2027** | Samet leads bounded 2-3 vehicle SITL; all support | Attempt only with stable core results and available environment. Separate abstract, crypto and SITL evidence; no physical-safety claim. Cut at the end of this window if integration threatens writing |
+| **M7: 8-26 Feb 2027** | All: complete first thesis draft | Integrate introduction, related work, methods/results and limitations; adapt semester deliverables to the actual university schedule |
+| **Mar-May 2027, by confirmed deadline** | All: advisor revisions, any necessary validity repair, formatting and defense | Confirm deadline early; reserve this period for review/reproduction/submission, not an expanded research scope. Hardware conclusions still require actual target measurements |
 
 ## Roadmap diagram
 
 ```mermaid
 gantt
-    title Proposed thesis roadmap to May 2027
+    title Intensive eight-week core with later thesis revision
     dateFormat YYYY-MM-DD
-    axisFormat %b
-    section Question and contract
-    Contribution gate                  :g0, 2026-11-30, 2026-12-12
-    Go / narrow / pivot target         :milestone, 2026-12-11, 0d
-    section Implementation
-    Vertical prototype                 :m1, 2026-12-14, 2027-01-09
-    Integration and baseline           :m2, 2027-01-11, 2027-01-30
+    axisFormat %d %b
+    section Decision and prototype
+    Contract and contribution gate     :g0, 2026-11-30, 2026-12-03
+    Working topic decision             :milestone, 2026-12-02, 0d
+    First vertical prototype           :m1, 2026-12-03, 2026-12-12
+    Integration and baseline           :m2, 2026-12-14, 2026-12-19
     section Evaluation
-    Pilot and protocol freeze          :g1, 2027-02-01, 2027-02-20
-    Held-out comparative study         :m3, 2027-02-22, 2027-03-20
-    Robustness / optional SITL         :m4, 2027-03-22, 2027-04-10
-    section Writing and delivery
-    Methods and evidence log           :2026-12-14, 2027-04-10
-    Complete thesis draft              :m5, 2027-04-12, 2027-05-01
-    Corrections and readiness          :m6, 2027-05-03, 2027-05-15
-    Reserve begins                     :milestone, 2027-05-17, 0d
+    Pilot and protocol freeze          :g1, 2026-12-21, 2026-12-26
+    Held-out comparative study         :m3, 2026-12-28, 2027-01-09
+    Robustness and reproduction        :m4, 2027-01-11, 2027-01-16
+    section Writing and handoff
+    Methods and evidence log           :2026-12-03, 2027-01-16
+    Core technical report              :m5, 2027-01-18, 2027-01-23
+    Core study target                  :milestone, 2027-01-22, 0d
+    Optional SITL                      :m6, 2027-01-25, 2027-02-06
+    Full first thesis draft            :m7, 2027-02-08, 2027-02-27
 ```
 
 Bars end on the day after each planned work period. Milestones are targets; no official submission day is asserted.
 
-## Next ten working days
+## Next three working days: 30 November-2 December
 
 | Owner | Next inspectable artifact | Tracking |
 | --- | --- | --- |
@@ -68,15 +69,16 @@ Bars end on the day after each planned work period. Milestones are targets; no o
 | Halil | One mission/useful-role table, independent eligibility rules and B3/P hand decisions for A-F including equivalence | [D03 #13](https://github.com/mathissdupont/swarm-rejoin/issues/13), [R04 #4](https://github.com/mathissdupont/swarm-rejoin/issues/4) |
 | All | Cross-review, topic/contribution decision and advisor answers on empirical contribution, deadline and hardware | [R05 #10](https://github.com/mathissdupont/swarm-rejoin/issues/10), [R06 #11](https://github.com/mathissdupont/swarm-rejoin/issues/11) |
 
-Do not rewrite Samet's completed standards notes simply to keep research open. Remaining acceptance work is source/contract cross-review and an explicit contribution decision. Optional candidates are parked unless the gate identifies a need.
+Use the existing notes and designed traces as drafts to verify, not as a reason to restart the literature review. Samet checks the update/provenance assumptions, Ceren supplies the smallest justified navigation model, and Halil checks role decisions concurrently. Do not rewrite Samet's completed standards notes simply to keep research open. Remaining acceptance work is source/contract cross-review and an explicit contribution decision. Optional candidates are parked unless the gate identifies a need.
 
 ## Rhythm and stop rules
 
-Propose one weekly 30-45 minute artifact/blocker review, recorded with the [meeting template](../research/templates/meeting-note.md). No recurring meeting has been scheduled by this document. Keep dated assumptions, source reading depth and configuration decisions.
+During the eight-week core, propose a brief daily artifact/blocker update and one weekly 30-45 minute cross-review, recorded with the [meeting template](../research/templates/meeting-note.md). Neither daily nor weekly meetings have been scheduled by this document. Keep dated assumptions, source reading depth and configuration decisions.
 
 - At G0, if the mechanism is ordinary reacquisition already supplied by competent B3, drop the new-policy claim. Retain a justified C1/C3 empirical thesis only with advisor acceptance, or reconsider the assessed T3 alternative.
 - At G1, if benefit requires an artificial reset, unavailable provenance or relaxed gates, stop that claim. Keep negative results; do not weaken B3.
 - Do not wait indefinitely for inaccessible papers. Retain acquisition gaps and conditional claims where missing material matters.
 - Freeze the confirmatory protocol before M3. Changes after observing results require disclosure and separate exploratory analysis.
 - Cut optional SITL/complexity before fair baselines, sensor validity, failure reporting or writing. Hardware conclusions require target measurements.
-- Write from the first prototype; freeze features in April except documented validity fixes.
+- Write from the first prototype. Freeze confirmatory study features at G1 on 25 December; later validity fixes require a new recorded revision and, where needed, reruns. Optional SITL stays outside the core comparison.
+- If available effort or model validity cannot support the intensive dates, reduce optional scope first and reforecast explicitly. Do not skip security tests, calibration checks or independent labeling to preserve a calendar claim.

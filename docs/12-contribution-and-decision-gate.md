@@ -80,9 +80,9 @@ Specifications only, not executed experiments. Map them to the existing [scenari
 | E: hidden navigation fault | Context and monitor look valid but true role prerequisites fail | Count unsafe physical admission if granted; the policy cannot grade itself |
 | F: team role contention | Returning member and other members compete for scarce useful capability | Show whether fixed/joint decisions differ without inventing a useful or feasible grounded/airborne role |
 
-## Gate: 30 November-11 December 2026
+## Gate: 30 November-2 December 2026
 
-Proposed deadline, not a scheduled/completed meeting. Exit with a decision record; do not wait for every optional topic or inaccessible PDF.
+Accelerated at Samet's request on 2026-11-27. Reuse the authored notes and A-F trace specifications; cross-check the minimum shared assumptions concurrently over three working days. This is a working scope decision, not a completed literature review, advisor acceptance or a meeting. Log unanswered advisor questions and material source gaps explicitly. Do not wait for every optional topic or inaccessible PDF.
 
 | Owner | Required artifact |
 | --- | --- |
