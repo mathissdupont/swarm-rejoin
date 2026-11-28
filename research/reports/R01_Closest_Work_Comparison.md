@@ -1,17 +1,17 @@
 # R01: Claim-to-evidence comparison of the starting nearest work
 
-- Date: 2026-11-27
+- Initial comparison: 2026-11-27; evidence update: 2026-11-28
 - Task: [#1](https://github.com/mathissdupont/swarm-rejoin/issues/1)
-- Preparation: assisted author-stage comparison for Samet Ünsal; no collective review or absence/novelty finding
+- Preparation: initial assisted author-stage comparison for Samet Ünsal, followed by Halil Abacı's assisted Dong/NeRTA evidence pass. Independent team review remains pending.
 
 | Comparison property | Dong et al., 2026 | RASUES / Usman et al., 2026 | NeRTA / El Yaacoub et al., 2023 |
 | --- | --- | --- | --- |
-| Source access/review | [Retrieved passages only](../literature/notes/dong2026.md); complete-text acquisition unresolved | [Comparative desk review](../literature/notes/usman2026.md), main text and Appendix A; selected original figures/pages inspected | [Selected method/limitation passages](../literature/notes/yaacoub2023.md); full algorithm/evaluation review pending |
-| Identity and update authority | Reconnection passages include identity and program checks; exact update authority unresolved | Sections 3-4 distinguish trusted verifier/reference-value provider and software-update processing | Related work discusses secure OTA; the exact authorization mechanism is not established by our reviewed subset |
-| Exact software bytes versus runtime evidence | Retrieved program integrity/test-task overlap is material, but full protocol details remain unknown | Sections 4-5 / Figure 4 connect update processing, expected measurements and attestation/appraisal under an intact measurement-environment assumption | Section 3.2 assumes valid update stages with known timing; actual byte verification is not the studied timing result |
-| Recovery and security rollback | Unknown from the limited source access | Sections 5.2/7/8 distinguish described A/B recovery and stated rollback/check-use limitations | Complete recovery coverage is unknown; section 8 states the evaluated update is a modeled-duration task |
-| Navigation and swarm role contract | Unknown; do not claim prior rejoining is identity-only | The reviewed protocol does not specify our proposed navigation-evidence/mission-role contract; no global absence claim follows | Target/update assumptions differ from ground-only companion recovery; navigation/team coverage outside the checked passages remains unknown |
-| Quantitative comparator fit | Unresolved until full assumptions can be matched | One trusted-hardware attester and protocol-operation measurements are not the same as our swarm mission experiment | Low-level scheduler properties require release-time/update-duration assumptions that an arbitrary Linux process does not inherit |
+| Source access/review | [Contributor-supplied pre-proof](../literature/notes/dong2026.md); §§4, 6 and selected §8 evidence and publisher figures checked | [Comparative desk review](../literature/notes/usman2026.md), main text and Appendix A; selected original figures/pages inspected | [Published article](../literature/notes/yaacoub2023.md); §§3–8 method/evaluation evidence checked, including original idle-time plot |
+| Identity and update authority | §6.2.1 verifies membership identity; cluster key updates are separate from software release authorization | §§3–4 distinguish trusted verifier/reference-value provider and software-update processing | §3.2 models update timing under assumed valid stages; release authorization is outside this timing evidence |
+| Exact software bytes versus runtime evidence | §6.2.2 compares a reported program hash with a reference; equivalence to hardware-backed running-state evidence remains unestablished | §§4–5 and Figure 4 connect update processing, expected measurements and attestation under an intact measurement environment | §3.2 assumes valid update stages with known timing; byte verification is outside the studied scheduling result |
+| Recovery and security rollback | §8 and Table 3 describe preserving task data on disconnection; authorized software fallback remains unestablished by the sections examined | §§5.2, 7 and 8 distinguish described A/B recovery and stated rollback/check-use limitations | §8 reports modeled update work in the evaluation; operational recovery remains outside that evidence |
+| Navigation and swarm role contract | §6.3 checks a GPS-activation and camera command example. It establishes protocol compliance; quantitative navigation readiness for a role remains unestablished. | Reviewed protocol gives results to a relying party; our navigation-evidence/mission-role contract is a separate research proposal | §5.2 uses speed for Bounded Reactive Control and discusses GPS-based configuration selection; the checked method does not establish quantitative navigation integrity for role admission |
+| Quantitative comparator fit | §6 provides a direct reconnection comparison; §8/Figure 8 evaluates stored task results. Match trust and cluster-disconnection assumptions before comparing role outcomes. | One trusted-hardware attester and protocol-operation measurements differ from the proposed swarm mission experiment | §7.1 timing observations and §8 update abstractions require matching release times, update-duration bounds and target system before a direct comparison |
 
 ## Consequence for the proposed question
 
@@ -21,7 +21,7 @@ The additional [navigation reintegration overlap](../literature/notes/aljaafreh2
 
 ## Acceptance status
 
-Samet's RASUES reading artifact is delivered at comparative desk-review depth, with no replicated security/performance result. R01 as a whole remains incomplete: Dong access, NeRTA's full review, backward/forward checking of relevant neighboring work and another-author source review remain explicit. This comparison does not complete three independent primary readings or mark absent features on the basis of abstract silence.
+Samet's RASUES review remains the existing comparative desk artifact. The 28 November pass adds evidence from Dong's supplied pre-proof and expands NeRTA's checked method and evaluation. The Dong edition is available for reading outside Git; redistribution of a corresponding full-text capture remains unconfirmed. R01 remains open for additional assumption and neighboring-work checks and independent review of the source claims. No experiment or proof was reproduced.
 
 ## Additional swarm-specific overlap found on 2026-11-27
 

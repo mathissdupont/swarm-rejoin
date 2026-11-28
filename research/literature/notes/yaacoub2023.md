@@ -1,27 +1,26 @@
 # Comparative reading note: El Yaacoub et al. (2023)
 
-Source ID: `yaacoub2023`. [Institutional record](https://epub.uni-regensburg.de/55328/).
+- Source ID: `yaacoub2023`. [Publisher DOI](https://doi.org/10.1145/3623676) · [Institutional record](https://epub.uni-regensburg.de/55328/)
+- [Archived original and text capture](../../library/yaacoub2023/README.md)
+- Edition checked on 2026-11-28: published 27-page ACM journal article. This assisted author-stage update extends the selected-section reading dated 2026-11-16.
+- Reading depth: focused method and evaluation review of §§3–8, including the original idle-time plot. Full proof and neighboring-work checks and an independent team review remain pending.
+- Inclusion: nearest robot-controller update timing reference for [R01](https://github.com/mathissdupont/swarm-rejoin/issues/1).
 
-Last checked: **2026-11-16**. Reading depth: selected full-text introduction, related-work, sections 3.1-3.2 and 8-9, using the [archived original and text capture](../../library/yaacoub2023/README.md). This is an assisted comparative note, not a completed full-method/experiment review or independent team cross-review. Equations, figures and reported numerical results have not been independently validated.
+## Question, method and assumptions
 
-## Observed overlap
+NeRTA estimates when a low-level robot controller can execute update work while preserving its existing task schedule. The scheduler provides each upcoming job's earliest release time. Base NeRTA estimates the conservative idle interval from the earliest of those release times and the current time, then checks whether an update stage of known duration fits. The model assumes computable release times, known worst-case execution times and valid intermediate states for a segmented update. The base scheduler's timing property is conditional on this model.
 
-NeRTA schedules dynamic updates of low-level mobile robot software using processor idle time. Generic claims about nondisruptive robot update scheduling would overlap.
+## Claim-to-evidence table
 
-## Section-specific comparison
+| Authors' mechanism or result | Location | Evidence examined | Limit in this review |
+| --- | --- | --- | --- |
+| Update work fits into available processing time | §3.1–3.3, Figure 6; PDF pp. 6–10 | NeRTA queries the existing scheduler and rechecks after another completed job if no safe window is available. | The release-time and execution-bound assumptions do not carry over automatically to a Linux companion application. |
+| Additional mechanisms enlarge the window | §5.1–5.2 and §7.2–7.3 | Mixed criticality can delay low-criticality jobs. Bounded Reactive Control changes control frequencies within trained limits and uses motion speed. GPS coordinates for selecting predefined settings are discussed as a possibility. | Distinguish the basic schedule-invariance property from these optional changes. Speed-dependent adaptation is prior work. The suggested GPS use is not evidence of quantitative navigation integrity appraisal. |
+| Idle estimates are compared with actual observed idle time | §7.1, Figures 13–14; PDF pp. 19–20 | A stationary, armed drone is instrumented. The authors collected 4,881 paired observations and excluded 571 zero-idle cases. About three quarters of the remaining 4,310 observations had a difference below 15%. | The denominator is retained paired timing samples, not independent flights or missions. This is accuracy of idle-time estimation. |
+| Hardware and simulation support different outcomes | §6, §7.3–7.4, Table 3 and §8 | The study uses a Hackflight-based prototype for timing and a simulator to assess the operational effect of controller changes. The validity section says that update execution in the evaluation is represented by a known-duration task rather than actual installation. | The results do not establish real artifact verification, as-flown update recovery, or end-to-end mission continuity. |
 
-| Topic | Observed evidence | Consequence for SWARM-REJOIN |
-| --- | --- | --- |
-| Operational target | Introduction / PDF pages 3-4 and section 3.1 / PDF page 6 target updates on existing low-level controllers while retaining the scheduler | This differs from our companion application and ground-only activation boundary; generic nondisruptive update scheduling is already studied |
-| Timing assumptions | Section 3.1 / PDF page 6 needs job release-time information and identifies unsuitable scheduling cases without guaranteed inter-arrival timing | We cannot claim NeRTA's scheduling property for an arbitrary Linux process or our event simulation |
-| Update correctness | Section 3.2 / PDF page 7 requires known worst-case durations, non-preemptive update stages and a valid system between stages | A package/installer must define valid transition boundaries; separate code and state updates may leave an invalid combination |
-| Evaluated update model | Section 8 / PDF page 25 states that no actual update is performed during evaluation: an update is modeled as a task with known worst-case duration, and evaluated updates are single-stage | Distinguish real artifact verification, simulated downtime and measured deployment behavior in our own study |
-| Fidelity and generality | Section 8 / PDF pages 24-25 separates simulator dynamics from onboard computing and discusses scheduler/utilization limits | Laptop/SITL timing must not be presented as target-microcontroller performance |
+## Relevance and comparator fit
 
-## Comparator fit and remaining questions
+NeRTA establishes processor-aware update scheduling and reports its cost and validity boundaries. It helps separate any measured installer cost from synthetic downtime in SWARM-REJOIN. Our scope specifies a Linux companion application with ground-only activation. A direct timing comparison would first require matching update target, scheduler information and control objectives. Preserve identical timing inputs, security gates and recovery options across our competing policies. Existing motion-aware scheduling belongs in the prior-work comparison rather than a novelty claim.
 
-NeRTA is relevant to timing assumptions and the limits of update models. It is not automatically a fair drop-in controller for our ground-only application updates and swarm role allocation. A direct implementation comparison would first require matching update granularity, scheduler information and operational objectives. Our B3/P comparison should share the same measured or explicitly synthetic update costs.
-
-The related-work discussion on PDF pages 5-6 recognizes security concerns and complementary secure OTA work. Therefore, do not describe the paper as simply ignoring update security. The complete security/freshness/recovery coverage and any navigation/team-level treatment remain **unknown** until the rest of the method, evaluation and references are checked.
-
-No paper performance number or scheduling guarantee has been reproduced by this repository. A full comparative review still needs the algorithm, assumptions/proofs, experiments and neighboring-work checks, followed by another author's review.
+The complete authorization, freshness and recovery properties of surrounding systems are outside the primary timing evidence in this note. The article's numerical results, scheduler guarantees and replication package have not been independently reproduced. An author other than the contributor should verify the section references and confirm the limits before R01 closure.

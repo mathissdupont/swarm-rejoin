@@ -6,9 +6,9 @@
     "kind": "journal_article",
     "url": "https://doi.org/10.1016/j.bcra.2026.100439",
     "doi": "10.1016/j.bcra.2026.100439",
-    "verified_on": "2026-10-24",
-    "accessed_material": "Publisher-indexed abstract and retrieved reconnection sections; Crossref bibliographic metadata. Direct DOI opening failed in the browsing tool.",
-    "review_status": "seed_partial_text",
+    "verified_on": "2026-11-28",
+    "accessed_material": "Contributor-supplied 15-page Journal Pre-proof: system assumptions and reconnection (§§4, 6), selected evaluation (§8 and Table 3), and publisher-hosted Figures 6 and 8 reviewed for R01. Formal analysis, additional comparator checks, and independent review remain pending.",
+    "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
     "proposed_lead": "Halil Abacı"
   },
@@ -32,8 +32,8 @@
     "kind": "journal_article",
     "url": "https://epub.uni-regensburg.de/55328/",
     "doi": "10.1145/3623676",
-    "verified_on": "2026-11-16",
-    "accessed_material": "Selected archived full-text introduction, related work, sections 3.1-3.2 and 8-9 checked on 2026-11-16: scheduler assumptions, update model and explicit evaluation/generalization limits. Full algorithm/proof/experiment review and independent team cross-review remain pending.",
+    "verified_on": "2026-11-28",
+    "accessed_material": "Focused review of published 27-page ACM article §§3–8: update timing model, mixed criticality and speed-aware control, hardware and simulation evaluation, and limitations. Original idle-time plot inspected. Full proof and neighboring-work checks and independent review remain pending.",
     "review_status": "seed_selected_sections",
     "full_text_review_complete": false,
     "proposed_lead": "Halil Abacı"

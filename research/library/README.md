@@ -8,7 +8,7 @@ Existing material in Ceren's literature folder is indexed in place to avoid dupl
 
 | Source | Capture | Original PDF | Status / limitation |
 | --- | --- | --- | --- |
-| [dong2026](dong2026/README.md) | Record only | access blocked | Crossref records CC BY 4.0 for the version of record. Publisher article requests returned HTTP 403; the official API supplied metadata rather than complete article text, and its PDF request returned 406. No full text is claimed. |
+| [dong2026](dong2026/README.md) | Record only | redistribution unconfirmed | Contributor-supplied Journal Pre-proof checked outside Git. Its CC BY-NC-ND notice and checksum are recorded with the distinct version-of-record metadata. Rights for the paired Markdown capture remain unconfirmed. |
 | [usman2026](usman2026/README.md) | [Full text](../../research/library/usman2026/full-text.md) | [PDF](../../research/library/usman2026/source.pdf) | Complete PDF and automatic text capture; reading status is unchanged. |
 | [yaacoub2023](yaacoub2023/README.md) | [Full text](../../research/library/yaacoub2023/full-text.md) | [PDF](../../research/library/yaacoub2023/source.pdf) | Complete PDF and automatic text capture; reading status is unchanged. |
 | [kuppusamy2018](kuppusamy2018/README.md) | Record only | redistribution unconfirmed | Publisher metadata carries IEEE terms; a license permitting republication of the complete article has not been established. A public-access link alone is not a redistribution grant. |
