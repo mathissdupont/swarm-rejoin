@@ -4,20 +4,20 @@
     {
       "source_id": "dong2026",
       "canonical_url": "https://doi.org/10.1016/j.bcra.2026.100439",
-      "retrieved_on": "2026-11-10",
-      "version": "",
+      "retrieved_on": "2026-11-28",
+      "version": "Contributor-supplied Journal Pre-proof, 15 pages",
       "status": "record_only",
-      "pdf_status": "access_blocked",
+      "pdf_status": "redistribution_unconfirmed",
       "rights": {
-        "license_id": "CC-BY-4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "evidence_url": "https://api.crossref.org/works/10.1016/j.bcra.2026.100439",
-        "redistribution": "permitted"
+        "license_id": "CC-BY-NC-ND-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "evidence_url": "https://doi.org/10.1016/j.bcra.2026.100439",
+        "redistribution": "unconfirmed"
       },
-      "reason": "Crossref records CC BY 4.0 for the version of record. Publisher article requests returned HTTP 403; the official API supplied metadata rather than complete article text, and its PDF request returned 406. No full text is claimed.",
+      "reason": "The contributor supplied a Journal Pre-proof with a CC BY-NC-ND 4.0 cover notice; Crossref reports different licensing for the version of record. The acquired edition and its checksum are documented in the source record. Rights for a converted full-text Markdown capture of this edition remain unconfirmed.",
       "artifacts": [],
       "record_path": "research/library/dong2026/README.md",
-      "record_sha256": "cadf1fc2dfc1a5480db7d14e414d179d3be3756fc1863e7982d5f537c1f80ac6"
+      "record_sha256": "b88bb74e0f80a91d3e28ae666ad53fd5896fe66cba12e8cd5e7223cfe51cfc01"
     },
     {
       "source_id": "usman2026",

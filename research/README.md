@@ -28,7 +28,7 @@ The [2026-11-16 closeout assessment](reports/Research_Closeout_Assessment_2026-1
 
 Samet's authored candidate deliverables are in [R08/T3](reports/R08_T3_Navigation_Configuration_Assessment.md) and [R10/T5](reports/R10_T5_Navigation_Recovery_Assessment.md). A [six-topic comparison](reports/R05_Topic_Comparison.md) prepares the advisor decision without claiming it occurred. The [T6 assessment](reports/R11_T6_Joint_Fault_Benchmark_Assessment.md) compares existing coverage and proposes a minimal reusable study; the advisor question is still unanswered.
 
-The [nearest-work comparison](reports/R01_Closest_Work_Comparison.md) links the expanded RASUES author-stage review and preserves Dong/NeRTA access/reading gaps. The new source records include a permitted original MIXED-SENSE PDF/Markdown pair, pinned Flagger/PX4 source documents, and honest access-blocked records for two additional papers. Archiving and authored review do not replace independent team acceptance.
+The [nearest-work comparison](reports/R01_Closest_Work_Comparison.md) links the RASUES author-stage review and the additional Dong pre-proof and NeRTA method/evaluation evidence. It records the remaining validation and cross-review work. The new source records include a permitted original MIXED-SENSE PDF/Markdown pair, pinned Flagger/PX4 source documents, and honest access-blocked records for two additional papers. Archiving and authored review do not replace independent team acceptance.
 
 ## Supplied survey texts
 
